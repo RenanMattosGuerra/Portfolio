@@ -31,5 +31,8 @@
     nav{
         margin-bottom: 30px;
     }
+    div.itens{
+        font-size: 0.8em;
+    }
 
 }
