@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media screen (max-width: 600px) {
+    header{
+        height:10vh;
+    }
+    img.pic{
+        width: 75px;
+        height: 75px;
+    }
+    button.button{
+        font-size: 0.7em;
+        padding: 5px;
+    }
+    main{
+        height: 40vh;
+    }
+    div#menu{
+        height: 40vh;
+    }
+    div.comidas{
+        height: 40vh;
+    }
+    div.itens{
+        width: 80px;
+        height: 95px;
+    }
+
+}
