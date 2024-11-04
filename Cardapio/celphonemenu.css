@@ -13,13 +13,13 @@
         padding: 5px;
     }
     main{
-        height: 40vh;
+        height: 50vh;
     }
     div#menu{
-        height: 40vh;
+        height: 50vh;
     }
     div.comidas{
-        height: 40vh;
+        height: 50vh;
     }
     div.itens{
         width: 80px;
@@ -27,6 +27,9 @@
     }
     p{
         font-size: 0.6em;
+    }
+    nav{
+        margin-bottom: 30px;
     }
 
 }
