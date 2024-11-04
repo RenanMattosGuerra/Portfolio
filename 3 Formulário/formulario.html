@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="formstyle.css" media="screen">
+    
+</head>
+<body>
+    <header>
+        <img src="imagens/82ef3cb2-1ae1-4795-94f4-21c80383012e.png" alt="icone">
+        <h1>Formulário de Ingresso</h1>
+    </header>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Dados</legend>
+            <label for="inome">Nome completo : </label>
+            <input type="text" name="nome" id="inome" minlength="7" required>
+            <label for="iemail">Email : </label>
+            <input type="email" name="email" id="iemail" minlength="5" required>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Ingresso(s)</legend>            
+            <label for="iinteira">Inteira(s) R$20,00 (máx:3) :</label>
+            <select name="inteira" id="iinteira">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            
+            
+            <label for="imeiaestudante">Meia(s) estudante R$10,00 (máx:3) :</label>
+            <select name="meiaestudante" id="imeiaestudante">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            
+            <label for="imeiaidoso">Meia(s) idoso R$10,00 (máx:3) :</label>
+            <select name="meiaidoso" id="imeiaidoso">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <label for="imeiacriança">Meia(s) criança R$10,00 (máx:3) :</label>
+            <select name="meiacriança" id="imeiacriança">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+        </fieldset>
+
+        <h2>Total(R$):<p id="total"></p>
+        <input type="submit" value="Avançar">
+        </h2>
+
+    </form>
+
+    <section id="lugares">
+        <main>
+            <h3>PALCO</h3>
+            <div class="assentos" id="a1"></div>
+            <div class="assentos" id="a2"></div>
+            <div class="assentos" id="a3"></div>
+            <div class="assentos" id="a4"></div>
+            <div class="assentos" id="b1"></div>
+            <div class="assentos" id="b2"></div>
+            <div class="assentos" id="b3"></div>
+            <div class="assentos" id="b4"></div>
+            <div class="assentos" id="c1"></div>
+            <div class="assentos" id="c2"></div>
+            <div class="assentos" id="c3"></div>
+            <div class="assentos" id="c4"></div>
+            <div class="assentos" id="d1"></div>
+            <div class="assentos" id="d2"></div>
+            <div class="assentos" id="d3"></div>
+            <div class="assentos" id="d4"></div>
+        </main>
+    </section>
+    
+    <script src="formscript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="phonemenu.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&family=Merienda:wght@300..900&family=Passion+One:wght@400;700;900&family=Rock+Salt&family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Cardápio</h1><img id="carda" src="imagens/android-chrome-192x192.png" alt="">
+    </header>
+    <nav>
+        <button class="button" onclick="entradas()">Entradas</button>
+        <button class="button" onclick="sandubas()">Sanduíches</button>
+        <button class="button" onclick="pizzas()">Pizzas</button>
+        <button class="button" onclick="pratos()">Pratos</button>
+        <button class="button" onclick="bebidas()">Bebidas</button>
+    </nav>
+    <main> 
+        <div id="menu">
+            <h3>Menu</h3>
+        </div>       
+        <div class="comidas" id="Entradas">
+             <div class="itens"><img class="pic" src="imagens/Salada caesar.jpg" alt="">Salada Italiana</div>
+             <div class="itens"><img class="pic" src="imagens/batata frita.jpg" alt="">Batata frita com queijo e bacon</div>
+             <div class="itens"><img class="pic" src="imagens/pasteis.jpg" alt="">Pastéis</div>
+             <div class="itens"><img class="pic" src="imagens/coxinhas.jpg" alt="">Coxinhas</div>
+             <div class="itens"><img class="pic" src="imagens/Bruschettas.jpg" alt="">Bruschettas</div>
+        </div>
+        <div class="comidas" id="Sanduiches">
+            <div class="itens"><img class="pic" src="imagens/sanduiche1.jpg" alt="">Sanduíche vegano</div>
+            <div class="itens"><img class="pic" src="imagens/sanduiche2 tomate.jpg" alt="">Sanduíche de queijo, presunto e tomate</div>
+            <div class="itens"><img class="pic" src="imagens/sanduba atum.jpg" alt="">Sanduíche de atum</div>
+            <div class="itens"><img class="pic" src="imagens/sandubafrango.jpg" alt="">Sanduíche de frango com cream cheese</div>
+        </div>
+        <div class="comidas" id="Pizzas">
+            <div class="itens"><img class="pic" src="imagens/pizzacalabresa.jpg" alt="">Pizza de Calabresa</div>
+            <div class="itens"><img class="pic" src="imagens/pizzaportguesa.jpg" alt="">Pizza Portuguesa</div>
+            <div class="itens"><img class="pic" src="imagens/pizzaMargherita.jpg" alt="">Pizza Margherita</div>
+            <div class="itens"><img class="pic" src="imagens/pizza4queijos.jpg" alt="">Pizza de Quatro Queijos</div>
+            <div class="itens"><img class="pic" src="imagens/pizzafrangocatupiry.jpg" alt="">Pizza de Frango com catupiry</div>
+        </div>
+        <div class="comidas" id="Pratos">
+            <div class="itens"><img class="pic" src="imagens/pratoarrozfeijao.jpg" alt="">Arroz, feijão, batata frita e bife</div>
+            <div class="itens"><img class="pic" src="imagens/estrogonofe.jpg" alt="">Strogonoff de carne</div>
+            <div class="itens"><img class="pic" src="imagens/spaghetti.jpg" alt="">Spaghetti com bife à parmeggiana</div>
+            <div class="itens"><img class="pic" src="imagens/peixe.jpg" alt="">Peixe grelhado com arroz e purê de batata</div>
+        </div>
+        <div class="comidas" id="Bebidas">
+            <div class="itens"><img class="pic" src="imagens/agua.jpg" alt="">Água</div>
+            <div class="itens"><img class="pic" src="imagens/limao.jpg" alt="">Suco de limão</div>
+            <div class="itens"><img class="pic" src="imagens/laranja.jpg" alt="">Suco de laranja</div>
+            <div class="itens"><img class="pic" src="imagens/refri.jpg" alt="">Refrigerante</div>
+        </div>
+
+    </main>
+    <footer>
+        <p>Página criada por Renan Guerra, apenas para fins educacionais. Todas imagens foram geradas por inteligência artificial.</p>
+    </footer>
+
+<script>
+    function entradas(){
+        if (Entradas.style.display=='flex') {
+        Entradas.style.display='none'
+        menu.style.display='flex'
+        } else{
+            Entradas.style.display='flex'
+            Sanduiches.style.display='none'
+            Pizzas.style.display='none'
+            Pratos.style.display='none'
+            menu.style.display='none'
+            Bebidas.style.display='none'
+        }
+    }
+    function sandubas(){
+        if (Sanduiches.style.display=='flex') {
+            Sanduiches.style.display='none'
+            menu.style.display='flex'
+        } else {
+            Sanduiches.style.display='flex'
+            Entradas.style.display='none'
+            Pizzas.style.display='none'
+            Pratos.style.display='none'
+            menu.style.display='none'
+            Bebidas.style.display='none'
+        }
+    }
+    function pizzas(){
+        if (Pizzas.style.display=='flex') {
+            Pizzas.style.display='none'
+            menu.style.display='flex'
+        } else {
+            Pizzas.style.display='flex'
+            Entradas.style.display='none'
+            Sanduiches.style.display='none'
+            Pratos.style.display='none'
+            menu.style.display='none'
+            Bebidas.style.display='none'
+        }
+    }
+    function pratos(){
+        if (Pratos.style.display=='flex'){
+            Pratos.style.display='none'
+            menu.style.display='flex'
+        } else {
+            Pratos.style.display='flex'
+            Entradas.style.display='none'
+            Sanduiches.style.display='none'
+            Pizzas.style.display='none'
+            menu.style.display='none'
+            Bebidas.style.display='none'
+        }
+    }    
+    function bebidas(){
+        if (Bebidas.style.display=='flex'){
+            Bebidas.style.display='none'
+            menu.style.display='flex'
+        } else {
+            Bebidas.style.display='flex'
+            Entradas.style.display='none'
+            Sanduiches.style.display='none'
+            Pizzas.style.display='none'
+            menu.style.display='none'
+            Pratos.style.display='none'
+        }
+    }
+
+</script>
+    
+</body>
+</html>
