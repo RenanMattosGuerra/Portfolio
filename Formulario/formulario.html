@@ -4,89 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Inscrição</title>
-    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="formstyle.css" media="screen">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="stylesheet" href="formphone.css" media="screen">
     
 </head>
 <body>
     <header>
-        <img src="imagens/82ef3cb2-1ae1-4795-94f4-21c80383012e.png" alt="icone">
+        <img id="logo" src="imagens/80x80.png" alt="icone">
         <h1>Formulário de Ingresso</h1>
+        <nav>
+            <h2>Eventos</h2>
+            <h2>Sobre</h2>
+            <h2>Contato</h2>
+        </nav>
     </header>
-    <form action="" method="get">
-        <fieldset>
-            <legend>Dados</legend>
-            <label for="inome">Nome completo : </label>
-            <input type="text" name="nome" id="inome" minlength="7" required>
-            <label for="iemail">Email : </label>
-            <input type="email" name="email" id="iemail" minlength="5" required>
+        
+    <main>
+        <form action="" method="post">
+        
+            <fieldset>
+                <legend>Dados</legend>
+                <label for="inome">Nome completo</label>
+                <input type="text" name="nome" id="inome" minlength="7" required>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" minlength="5" required>
+                <input type="checkbox" name="checkmail" id="checkmail">
+                <label for="checkmail">Autorizo envio de emails sobre promoções e futuros eventos.</label>
+        
+            </fieldset>
+            <fieldset>
+                <legend>Ingresso(s)</legend>
+                <label for="inteira">Inteira(s) R$20,00 (máx:3)</label>
+                <select name="inteira" id="inteira" required>
+                    <option value="0" name="inteira" selected>0</option>
+                    <option value="1" name="inteira" id="1int">1</option>
+                    <option value="2" name="inteira" id="2int">2</option>
+                    <option value="3" name="inteira" id="3int">3</option>
+                </select>
+        
+        
+                <label for="meia">Meia(s) R$10,00 (máx:3)</label>
+                <select name="meiaestudante" id="meia" required>
+                    <option value="0" name="meiaestudante" selected>0</option>
+                    <option value="1" name="meiaestudante" >1</option>
+                    <option value="2" name="meiaestudante" >2</option>
+                    <option value="3" name="meiaestudante" >3</option>
+                </select>
+        
+            </fieldset>
+        
+                <fieldset id="confirm">
+                    <h3 id="total">Total: R$0.00</h3>
+                    <input id="avançar" type="submit" value="Avançar" onclick="checar()">
+                </fieldset>
+        
+        </form>  
+
+        
+        <aside> 
+            <div class="cards">
+                <h4>Próximos Eventos</h4>
+                <p>Workshop</p>
+                <img class="fotos" src="imagens/foto palestra.jpg" alt="">
+                
+            </div>
+            <div class="cards">
+                <h4>Próximos Eventos</h4>
+                <p>Show</p>
+                <img class="fotos" src="imagens/foto show.jpg" alt="">
+                
+            </div>
+            <div class="cards">
+                <h4>Próximos Eventos</h4>
+                <p>Evento de comemoração</p>
+                <img class="fotos" src="imagens/fotoevento.jpg" alt="">
+
+            </div>
             
-        </fieldset>
-        <fieldset>
-            <legend>Ingresso(s)</legend>            
-            <label for="iinteira">Inteira(s) R$20,00 (máx:3) :</label>
-            <select name="inteira" id="iinteira">
-                <option value="0" selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            
-            
-            <label for="imeiaestudante">Meia(s) estudante R$10,00 (máx:3) :</label>
-            <select name="meiaestudante" id="imeiaestudante">
-                <option value="0" selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
+        </aside>
+    </main>
 
-            
-            <label for="imeiaidoso">Meia(s) idoso R$10,00 (máx:3) :</label>
-            <select name="meiaidoso" id="imeiaidoso">
-                <option value="0" selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-
-            <label for="imeiacriança">Meia(s) criança R$10,00 (máx:3) :</label>
-            <select name="meiacriança" id="imeiacriança">
-                <option value="0" selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-
-        </fieldset>
-
-        <h2>Total(R$):<p id="total"></p>
-        <input type="submit" value="Avançar">
-        </h2>
-
-    </form>
-
-    <section id="lugares">
-        <main>
-            <h3>PALCO</h3>
-            <div class="assentos" id="a1"></div>
-            <div class="assentos" id="a2"></div>
-            <div class="assentos" id="a3"></div>
-            <div class="assentos" id="a4"></div>
-            <div class="assentos" id="b1"></div>
-            <div class="assentos" id="b2"></div>
-            <div class="assentos" id="b3"></div>
-            <div class="assentos" id="b4"></div>
-            <div class="assentos" id="c1"></div>
-            <div class="assentos" id="c2"></div>
-            <div class="assentos" id="c3"></div>
-            <div class="assentos" id="c4"></div>
-            <div class="assentos" id="d1"></div>
-            <div class="assentos" id="d2"></div>
-            <div class="assentos" id="d3"></div>
-            <div class="assentos" id="d4"></div>
-        </main>
-    </section>
+    
     
     <script src="formscript.js"></script>
 
