@@ -23,10 +23,10 @@
         flex-direction: column;
     }
     h1{
-        font-size: 1em;
+        font-size: 0.9em;
     }
     h2{
-        font-size: 1em;
+        font-size: 0.7em;
     }
     header{
         height: 15vh;
