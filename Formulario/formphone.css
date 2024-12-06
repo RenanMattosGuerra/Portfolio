@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 @media (max-width:1200px) {
+    main{
+        flex-direction: column;
+    }
     
     form{
         width: 90vw;
@@ -16,10 +19,16 @@
     }
 }
 @media (max-width:768px){
+    main{
+        flex-direction: column;
+    }
     h1{
-        font-size: 1.1em;
+        font-size: 1em;
     }
     h2{
         font-size: 1em;
+    }
+    header{
+        height: 15vh;
     }
 }
