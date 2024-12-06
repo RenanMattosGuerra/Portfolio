@@ -10,7 +10,8 @@ body{
     width: 100vw;
     height: 100vh;   
     color: white;
-    background: linear-gradient(#384147,#1c263a, #13405e);    
+    background: lightcyan;
+    overflow-y: visible;
     
 }
 header{
@@ -22,7 +23,7 @@ header{
     justify-content: flex-start;   
     margin-bottom: 10px;
     padding: 1vw;
-    box-shadow: 3px 3px 5px #384147;
+    box-shadow: 2px 2px 45px 10px white;
 }
 nav{
     margin-left: auto;
@@ -36,16 +37,19 @@ img#logo{
 }
 h2{
     margin: 1vw;
+    
 }
 h2:hover{
     cursor: pointer;
     color:#a5d2f0fa;
-    transform: scale(0.9);
+    transform: scale(0.95);
     transition: ease 0.5s;
 }
 main{
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;    
 }
 form{
     width: 50vw;
@@ -67,8 +71,8 @@ aside{
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
     gap: 50px;
-    background-color: #384147;
-    box-shadow: 5px 5px 15px 30px rgba(187, 203, 233, 0.377);
+    background-color: white;
+    box-shadow: 5px 5px 15px 30px rgba(187, 203, 233, 0.377);    
     
 }
 div.cards{
@@ -107,9 +111,11 @@ fieldset{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 10px;    
-    background-color: #384147;
-    width: 20vw;
+    padding: 15px;    
+    background-color: azure;
+    box-shadow: 5px 5px 15px 10px rgba(187, 203, 233, 0.377);
+    width: 35vw;
+    color: black;
 }
 fieldset#confirm{
     display: flex;
@@ -121,9 +127,16 @@ fieldset#confirm{
 legend{
     font-weight: bolder;
     font-size: 1.4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 30px;
+    
 }
 input{
     margin: 5px;
+    padding: 2px;
+}
+div#group{
+    font-size: 0.9em;
 }
 input#checkmail{
     align-self: flex-start;
