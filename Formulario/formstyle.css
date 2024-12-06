@@ -10,8 +10,8 @@ body{
     width: 100vw;
     height: 100vh;   
     color: white;
-    background: lightcyan;
-    overflow-y: visible;
+    background: lightcyan;    
+    overflow-x: hidden;
     
 }
 header{

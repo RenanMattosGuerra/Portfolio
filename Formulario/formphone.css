@@ -35,5 +35,8 @@
     aside{
         display: none;
     }
+    body{
+        height: 170vh;
+    }
 
 }
