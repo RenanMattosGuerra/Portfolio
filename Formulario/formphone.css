@@ -29,8 +29,8 @@
         height: 90vh;
     }
     h1{
-        font-size: 0.95em;
-        color:#a5d2f0fa;
+        font-size: 0.99em;
+        
     }
     h2{
         font-size: 0.7em;
@@ -43,6 +43,10 @@
     }
     body{
         height: 120vh;
+    }
+    fieldset{
+        width: 50vw;
+        
     }
 
 }
