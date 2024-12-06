@@ -21,11 +21,9 @@
 @media (max-width:768px){
     main{
         flex-direction: column;
-        flex-wrap: wrap;
     }
     h1{
         font-size: 0.9em;
-        color:#a5d2f0fa;
     }
     h2{
         font-size: 0.7em;
