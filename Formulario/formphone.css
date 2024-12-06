@@ -24,16 +24,22 @@
         width: 100vw;
         height: 90vh;
     }
+    nav{
+        flex-direction: column;
+        width: 20vw;
+        justify-content: center;
+        align-items: center;
+    }
     form{
         width: 90vw;
         height: 90vh;
     }
     h1{
-        font-size: 0.99em;
-        
+        font-size: 0.99em;  
+        white-space: nowrap;     
     }
     h2{
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
     header{
         height: 15vh;
@@ -48,5 +54,6 @@
         width: 50vw;
         
     }
+
 
 }
