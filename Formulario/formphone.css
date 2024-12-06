@@ -21,9 +21,16 @@
 @media (max-width:768px){
     main{
         flex-direction: column;
+        width: 100vw;
+        height: 90vh;
+    }
+    form{
+        width: 90vw;
+        height: 90vh;
     }
     h1{
         font-size: 0.95em;
+        color:#a5d2f0fa;
     }
     h2{
         font-size: 0.7em;
@@ -35,7 +42,7 @@
         display: none;
     }
     body{
-        height: 170vh;
+        height: 120vh;
     }
 
 }
