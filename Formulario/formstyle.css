@@ -37,6 +37,7 @@ img#logo{
 }
 h2{
     margin: 1vw;
+    align-content: center;
     
 }
 h2:hover{
