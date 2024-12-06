@@ -17,7 +17,9 @@ body{
 header{
     width: 100vw;
     height: 10vh;
-    background-color: #384147;
+    background-color: azure;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     align-items: center;
     justify-content: flex-start;   
@@ -33,6 +35,7 @@ nav{
 }
 img#logo{
     border-radius: 50%;
+    margin-right: 5px;
 }
 h2{
     margin: 1vw;
@@ -40,7 +43,7 @@ h2{
 }
 h2:hover{
     cursor: pointer;
-    color:#a5d2f0fa;
+    color:#6f8ea3;
     transform: scale(0.95);
     transition: ease 0.5s;
 }
