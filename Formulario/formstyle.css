@@ -70,7 +70,7 @@ aside{
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
     gap: 50px;
-    background-color: white;
+    background-color: azure;
     box-shadow: 5px 5px 15px 30px rgba(187, 203, 233, 0.377);    
     
 }
