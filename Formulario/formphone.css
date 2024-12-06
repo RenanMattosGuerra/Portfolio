@@ -21,6 +21,7 @@
 @media (max-width:768px){
     main{
         flex-direction: column;
+        flex-wrap: wrap;
     }
     h1{
         font-size: 0.9em;
@@ -31,4 +32,8 @@
     header{
         height: 15vh;
     }
+    aside{
+        display: none;
+    }
+
 }
