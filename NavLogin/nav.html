@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavLogin</title>
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="mediquery.css" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200" rel="stylesheet" />
+    <link rel="shortcut icon" href="imagem/favicon-16x16.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+       <h1><span id="homeicon" class="material-symbols-outlined">home</span>Home</h1>
+        <nav>
+            <ul>
+                <a href="#">
+                    <li class="navli">Serviços</li>
+                </a>
+                <a href="#">
+                    <li class="navli" >Projetos</li>
+                </a>
+                <a href="#">
+                    <li class="navli" >Sobre</li>
+                </a>
+            </ul>
+            
+        </nav>
+        <button><a href="">Contato</a></button>
+    </header>
+    <main>
+        <h4>Login</h4>
+        <form action="" method="post">
+            <span class="material-symbols-outlined">mail</span>
+            <label for="imail">E-mail:</label>            
+            <input type="email" name="mail" id="imail" required placeholder="Seu e-mail"> <br>
+            <span class="material-symbols-outlined">key</span>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required placeholder="Sua senha" min="8"> <br>
+            <input type="submit" value="Enter" id="submit">
+            <p id="forgot"><a href="">Esqueci minha senha</a></p>
+            <h3 id="register" ><a href="">Cadastre-se</a></h3>
+        </form>
+        
+    </main>
+    <script>
+        function menuClick(){
+            if (ilist.style.display == "block"){
+                ilist.style.display = "none"
+            } else{
+                ilist.style.display = "block"
+            }
+
+
+        }
+    </script>
+</body>
+</html>

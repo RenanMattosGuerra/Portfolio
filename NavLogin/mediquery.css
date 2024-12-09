@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {                
+    li.navli{
+        margin-right: 30px;
+        font-size: 1.4em;
+    }
+    button{
+        font-size: 1.3em;
+        padding: 15px;
+    }
+    #homeicon{
+        font-size: 1.5em;
+    }
+    h1{
+        font-size: 2em;
+    }
+    #submit{
+        margin-left: 250px;
+        padding: 10px;
+        position: relative;
+        top: -60px;
+        cursor: pointer;    
+    }    
+    main{
+        backdrop-filter: blur(10px);   
+    }
+}
+@media screen and (min-width: 992px) {
+    li.navli{
+        margin-right: 100px;
+        font-size: 1.5em;
+    }
+    header{
+        justify-content: space-around;
+    }    
+    button{
+        font-size: 1.3em;
+        padding: 15px;
+    }
+    #homeicon{
+        font-size: 1.5em;
+        
+    }
+    h1{
+        font-size: 2em;
+    }
+    #submit{
+        margin-left: 250px;
+        padding: 10px;
+        position: relative;
+        top: -60px;
+        cursor: pointer;    
+    }   
+    main{
+        backdrop-filter: blur(10px);   
+    }
+}
+
