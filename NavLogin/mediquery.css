@@ -25,6 +25,7 @@
     main{
         backdrop-filter: blur(10px);   
     }
+    
 }
 @media screen and (min-width: 992px) {
     li.navli{
@@ -33,6 +34,7 @@
     }
     header{
         justify-content: space-around;
+        height: 150px;
     }    
     button{
         font-size: 1.3em;
