@@ -12,6 +12,7 @@ body{
     height: 300vh;
     overflow-x: hidden;    
 }
+
 body.modo-escuro{
     background-color: rgb(2, 2, 2);
     color: white;
@@ -28,6 +29,7 @@ body.modo-escuro{
         border-right: 1px solid white;
     }
 }
+
 header{
     display: flex;
     justify-content: space-around;
@@ -36,10 +38,12 @@ header{
     margin-top: 15px;
     padding: 15px;
 }
+
 h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 3em;
 }
+
 nav{
     display: flex;
     flex-direction: column;
@@ -51,14 +55,12 @@ nav{
     box-shadow: 0px 0px 28px steelblue, 1px -10px 28px -5px lightseagreen;
     border-radius: 5px;
 }
+
 li{
     padding: 20px;
     list-style: disc;
 }
 
-div.modo{
-    
-}
 main{
     margin: auto;
     margin-top: 50px;
@@ -69,7 +71,6 @@ main{
     grid-template-rows: repeat(5,45vh);
     gap: 50px 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 
 article{    
@@ -80,10 +81,10 @@ article{
     width: 65vw;
     margin-left: 5vw;    
 }
+
 #art1{
     overflow: hidden;
     height: 45vh;
-
 }
 
 #art2,#art3,#art4,#art5{
@@ -134,13 +135,12 @@ div.noticiajunto{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+}
 
-}
 h3{
-    font-size: 0.9em;
-    
+    font-size: 0.9em;    
 }
+
 p{
     font-size: 0.8em;
     padding: 25px;
