@@ -6,11 +6,16 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color: lightgrey;
+    --secundary-color: steelblue;
+}
+
 body{
     background-color: rgb(236, 236, 236);
     width: 100vw;
-    height: 300vh;
-    overflow-x: hidden;    
+    height: 290vh;
+    overflow-x: hidden;
 }
 
 body.modo-escuro{
@@ -24,6 +29,7 @@ body.modo-escuro{
     }
     h4{
         color: black;
+        border: 1px solid grey;
     }    
     div.conjunto{        
         border-right: 1px solid white;
@@ -52,7 +58,7 @@ nav{
     padding: 15px;
     width: 150px;
     height: 100px;
-    box-shadow: 0px 0px 28px steelblue, 1px -10px 28px -5px lightseagreen;
+    box-shadow: 0px 0px 28px var(--secundary-color), 1px -10px 28px -5px lightseagreen;
     border-radius: 5px;
 }
 
@@ -96,7 +102,7 @@ h2{
 }
 
 a{
-    color: steelblue;
+    color: var(--secundary-color);
     padding: 5px;
     font-size: 0.9em;
     text-decoration: none;
@@ -167,10 +173,32 @@ h4{
     text-align: center;
     margin-top: 5vh;
     width: 10vw;
-    background-color: lightgrey;
+    background-color: var(--primary-color);
     margin-left: -35px;
 }
 h4:hover{
     cursor: pointer;
     background-color: rgba(211, 211, 211, 0.623);
+}
+
+footer{
+    background-color: var(--secundary-color);
+    height: 40vh;
+    width: 100vw;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+ul#footerul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+.footerli{
+    list-style: none;
+}
+h6{
+    font-size: 1em;
 }
