@@ -31,7 +31,7 @@ header{
 h1{
     color: white;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.5em;
     cursor: pointer;
     white-space: nowrap;       
 }
@@ -65,14 +65,15 @@ button:hover{
     box-shadow: 3px 3px 10px rgb(138, 138, 138) inset;
     color: white;
     transform: scale(1.1);
-    transition: 0.4s;    
+    transition: 0.4s;
+    cursor: pointer;
 }
 #homeicon{
     font-size: 1.3em;
     color: white;
     cursor: pointer;
     vertical-align: middle;
-    padding-bottom: 10px;
+    padding-bottom: 17px;
 }
 
 h2{
@@ -89,8 +90,7 @@ main{
     background-color: rgba(255, 255, 255, 0.555);
     border: 1px solid darkslategray;
     border-radius: 10px;
-    padding: 15px;
-    box-shadow: 1px 1px 3px darkcyan; 
+    padding: 15px;     
     backdrop-filter: blur(50px);   
 }
 h4{
@@ -107,7 +107,7 @@ h4{
     margin-left: 120px;
     padding: 5px;
     cursor: pointer;    
-    margin-top: 10px;
+    margin-top: 10px;    
 }
 #forgot{
     border: 1px solid darkslategray;
@@ -136,8 +136,12 @@ h4{
 h3>a{
     color: white;
     }
+h3:hover{
+    cursor: pointer;
+}
 #forgot:hover{
-    box-shadow: 2px 2px 5px rgb(129, 115, 182) inset;    
+    box-shadow: 0px 0px 3px 2px rgb(129, 115, 182) inset;  
+    cursor: pointer;  
 }
 #register:hover{
     background-color: rgb(45, 38, 71);

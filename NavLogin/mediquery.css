@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 992px) {                
+@media screen and (min-width: 600px) and (max-width: 992px) {                
     li.navli{
         margin-right: 30px;
-        font-size: 1.4em;
+        font-size: 1.1em;
     }
     button{
         font-size: 1.3em;
@@ -11,9 +11,10 @@
     }
     #homeicon{
         font-size: 1.5em;
+        vertical-align: center;             
     }
     h1{
-        font-size: 2em;
+        font-size: 1.5em;
     }
     #submit{
         margin-left: 250px;
@@ -41,8 +42,7 @@
         padding: 15px;
     }
     #homeicon{
-        font-size: 1.5em;
-        
+        font-size: 1.5em;        
     }
     h1{
         font-size: 2em;
