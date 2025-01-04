@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 992px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90vw;
+    }
+    aside{        
+        display: none;        
+    }
+    p{
+        font-size: 0.5em;
+    }
+    h1{
+        font-size: 2em;
+    }
+    article{
+        width: 85vw;
+    }
+    div.noticia{
+        width: 85vw;
+    }
+    div.conjunto{
+        width: 85vw;
+    }
+    p.pconjunto{
+        display: none;
+    }
+    img{
+        height: 150px;
+        width: 150px;
+    }
+    footer{
+        font-size: 0.8em;
+    }
+    h6{
+        text-align: center;
+    }
+    .imgconjunto{
+        width: 90px;
+        height: 90px;
+    }
+}
