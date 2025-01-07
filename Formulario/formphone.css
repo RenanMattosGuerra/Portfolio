@@ -29,6 +29,7 @@
         width: 20vw;
         justify-content: center;
         align-items: center;
+        margin-right: 30px;
     }
     form{
         width: 90vw;
@@ -53,6 +54,10 @@
     fieldset{
         width: 50vw;
         
+    }
+    legend{
+        text-align: center;
+        font-weight: 700;
     }
 
 

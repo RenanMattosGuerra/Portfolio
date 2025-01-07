@@ -10,7 +10,7 @@ body{
     width: 100vw;
     height: 100vh;   
     color: white;
-    background: lightcyan;    
+    background-image: linear-gradient(to bottom, lightcyan, rgb(180, 179, 218) ,rgb(133, 143, 167));    
     overflow-x: hidden;
     
 }
@@ -35,7 +35,7 @@ nav{
 }
 img#logo{
     border-radius: 50%;
-    margin-right: 5px;
+    margin-right: 15px;
 }
 h2{
     margin: 1vw;
