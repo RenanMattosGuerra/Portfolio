@@ -3,11 +3,17 @@
 @media screen and (max-width: 992px) {                
     li.navli{
         margin-right: 30px;
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
-    button{
-        font-size: 1.3em;
+    header{
         padding: 15px;
+    }
+    ul{
+        width: 50vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow: hidden;
     }
     #homeicon{
         font-size: 1.5em;
@@ -17,17 +23,21 @@
         font-size: 1.5em;
     }
     #submit{
-        margin-left: 250px;
-        padding: 10px;
-        position: relative;
+        margin-left: 120px;
+        padding: 10px;        
         top: -60px;
-        cursor: pointer;    
+        cursor: pointer; 
+        height: 40px;
     }    
     main{
         backdrop-filter: blur(10px);   
     }
     body{
-        background-image: none;
+        background-image: url(imagem/pexels-igovisuals-3681805.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-color: darkcyan;
     }
     
