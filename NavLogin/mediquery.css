@@ -1,9 +1,13 @@
 @charset "UTF-8";
+:root{
+    --primary-color: rgb(37, 27, 66);
+}
 
 @media screen and (max-width: 992px) {                
     li.navli{
         margin-right: 30px;
-        font-size: 0.9em;
+        font-size: 0.7em;
+        padding: 0px
     }
     header{
         padding: 15px;
@@ -11,16 +15,22 @@
     ul{
         width: 50vw;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         overflow: hidden;
     }
     #homeicon{
-        font-size: 1.5em;
+        display: none;
+        font-size: 1em;
         vertical-align: center;             
     }
+    button{
+        width: 65px;
+        text-align: center;
+        margin: 0px;
+    }
     h1{
-        font-size: 1.5em;
+        font-size: 1em;        
     }
     #submit{
         margin-left: 120px;
@@ -38,7 +48,7 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-color: darkcyan;
+        background-color: var(--primary-color);
     }
     
 }
