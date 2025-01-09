@@ -79,6 +79,7 @@ div#foto{
     overflow: hidden;
     border: 4px solid white;
     background-color: rgba(0, 0, 0, 0.863);
+    box-shadow: -1px -1px 37px 32px rgba(0,0,0,0.74);
 }
 div#texto{
     width: 15vw;
