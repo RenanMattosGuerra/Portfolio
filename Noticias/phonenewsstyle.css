@@ -27,7 +27,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         white-space: wrap;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;   
         overflow: hidden;
         margin: 0px;  
@@ -45,7 +45,11 @@
         list-style: none;
     }
     p{
-        font-size: 0.5em;
+        font-size: 0.5em;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     h1{
         font-size: 1.5em;
@@ -53,6 +57,7 @@
     h2{
         font-size: 1em;
         margin: 0px;
+        margin-bottom: 20px;
     }
     article{
         width: 90vw;
@@ -75,10 +80,10 @@
                
     }
     div.noticia{
-        width: 85vw;
+        width: 100vw;
     }
     div.conjunto{
-        width: 85vw;
+        width: 100vw;
     }
     p.pconjunto{
         display: none;
