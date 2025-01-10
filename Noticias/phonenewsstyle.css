@@ -46,22 +46,18 @@
     li{
         list-style: none;    
     }
-    p{
-        font-size: 0.5em;        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-        padding: 2px;
+    p{             
+        display: none;        
     }
     h1{
         font-size: 1.5em;
     }
     h2{
+        font-size: 1.1em;
+        margin: 0px;        
+    }
+    h3{
         font-size: 1em;
-        margin: 0px;
-        margin-bottom: 20px;
     }
     article{
         width: 100vw;
@@ -92,8 +88,9 @@
         display: none;
     }
     img{
-        height: 120px;
-        width: 120px;
+        height: 170px;
+        width: 170px;
+        margin-bottom: 20px;
     }
     h6{
         font-size: 0.7em;
@@ -110,7 +107,7 @@
     }
     #footerul{
         height: 5vh;
-        width: 95vw;
+        width: 100vw;
         margin-bottom: 10px;
     }
     li.footerli{
