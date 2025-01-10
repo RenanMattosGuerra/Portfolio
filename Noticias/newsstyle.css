@@ -98,7 +98,7 @@ article{
 }
 
 h2{
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 a{
@@ -148,11 +148,15 @@ h3{
 }
 
 p{
-    font-size: 0.9em;
-    padding: 25px;
+    font-size: 0.8em;
+    padding: 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: start;
     text-indent: 1em;    
+}
+
+p.pconjunto{
+    font-size: 0.7em;
 }
 
 div.imagem{
@@ -183,7 +187,7 @@ h4:hover{
 
 footer{
     background-color: var(--secundary-color);
-    height: 40vh;
+    height: 30vh;
     width: 100vw;
     border: 1px solid var(--primary-color);
     display: flex;
