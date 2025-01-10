@@ -24,7 +24,7 @@
     }
     aside{        
         width: 100vw;
-        height: 30vh;
+        height: 40vh;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -67,7 +67,8 @@
         width: 100vw;
         height: 40vh;
         margin: 0px;
-        margin-top: -50px;
+        margin-top: -30px;
+        margin-bottom: 15px;
     }
     h4{
         font-size: 0.7em;
