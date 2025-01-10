@@ -15,16 +15,51 @@
         font-size: 0.6em;
     }
     aside{        
-        display: none;        
+        width: 90vw;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;        
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7em;
+        
+    }
+    li{
+        list-style: none;
     }
     p{
         font-size: 0.5em;
     }
     h1{
-        font-size: 1.7em;
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1em;
     }
     article{
         width: 85vw;
+    }
+    h4{
+        font-size: 0.7em; 
+        width: 25vw;
+        height: 3vh;        
+        
+    }
+    div#assine{          
+        width: 25vw;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+               
     }
     div.noticia{
         width: 85vw;
@@ -48,5 +83,12 @@
     .imgconjunto{
         width: 90px;
         height: 90px;
+    }
+    footer{
+        font-family: Arial, Helvetica, sans-serif;        
+    }
+    li.footerli{
+        font-size: 1em;
+
     }
 }
