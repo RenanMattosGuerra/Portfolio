@@ -29,8 +29,7 @@
         flex-wrap: wrap;
         white-space: wrap;
         justify-content: center;
-        align-items: center;   
-        overflow: hidden;
+        align-items: center;           
         margin: 0px;  
         margin-bottom: 20px;
     }
@@ -41,10 +40,11 @@
         justify-content: center;
         align-items: center;
         font-size: 0.7em;
+        margin-bottom: -20px;
         
     }
     li{
-        list-style: none;
+        list-style: none;    
     }
     p{
         font-size: 0.5em;        
@@ -111,6 +111,7 @@
     #footerul{
         height: 5vh;
         width: 95vw;
+        margin-bottom: 10px;
     }
     li.footerli{
         font-size: 0.8em;
