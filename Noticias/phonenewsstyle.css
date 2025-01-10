@@ -2,7 +2,10 @@
 
 @media screen and (max-width: 992px) {
     body{
-        height: 320vh;
+        height: 270vh;
+    }
+    header{
+        
     }
 
     main{
@@ -10,7 +13,7 @@
         flex-direction: column;
         justify-content: center;
         width: 100vw;
-        height: 290vh;
+        
         margin: 0px;
     }
     nav{
@@ -22,7 +25,7 @@
     }
     aside{        
         width: 100vw;
-        height: 45vh;
+        height: 25vh;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -62,7 +65,7 @@
     }
     article{
         width: 100vw;
-        height: 60vh;
+        height: 40vh;
         margin: 0px;
         margin-top: -50px;
     }
@@ -93,19 +96,23 @@
     }
     h6{
         font-size: 0.7em;
-    }
-    h6{
         text-align: center;
-    }
+        width: 90vw;
+    }   
     .imgconjunto{
         width: 80px;
         height: 80px;
     }
     footer{
-        font-family: Arial, Helvetica, sans-serif;        
+        font-family: Arial, Helvetica, sans-serif;       
+        height: 20vh; 
+    }
+    #footerul{
+        height: 5vh;
+        width: 95vw;
     }
     li.footerli{
-        font-size: 1em;
+        font-size: 0.8em;
 
     }
 }
