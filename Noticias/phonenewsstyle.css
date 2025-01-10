@@ -22,7 +22,7 @@
     }
     aside{        
         width: 100vw;
-        height: 40vh;
+        height: 45vh;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -50,6 +50,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 30px;
     }
     h1{
         font-size: 1.5em;
@@ -68,7 +69,8 @@
     h4{
         font-size: 0.7em;
         width: 20vw;
-        height: 5vh;        
+        height: 5vh;
+        margin-left: 15px;        
         
     }
     div#assine{
@@ -90,7 +92,7 @@
         width: 120px;
     }
     h6{
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
     h6{
         text-align: center;
