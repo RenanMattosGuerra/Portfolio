@@ -60,24 +60,21 @@
         margin-bottom: 20px;
     }
     article{
-        width: 90vw;
-        height: 70vh;
+        width: 100vw;
+        height: 60vh;
         margin: 0px;
         margin-top: -50px;
     }
     h4{
-        font-size: 0.7em; 
-        width: 25vw;
-        height: 3vh;        
+        font-size: 0.7em;
+        width: 20vw;
+        height: 5vh;        
         
     }
-    div#assine{          
-        width: 25vw;
-        height: 5vh;
+    div#assine{
         display: flex;
         justify-content: center;
-        align-items: center;
-               
+        align-items: center;               
     }
     div.noticia{
         width: 100vw;
