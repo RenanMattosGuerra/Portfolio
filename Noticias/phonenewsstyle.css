@@ -3,17 +3,16 @@
 @media screen and (max-width: 992px) {
     body{
         height: 280vh;
-    }
-    header{
-        
-    }
+    }   
 
     main{
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100vw;        
+        height: 250vh;
         margin: 0px;
+        margin-top: 50px;
     }
     nav{
         width: 125px;
@@ -54,6 +53,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
+        padding: 2px;
     }
     h1{
         font-size: 1.5em;
