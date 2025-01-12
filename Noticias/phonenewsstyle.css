@@ -10,7 +10,7 @@
         flex-direction: column;
         justify-content: center;
         width: 100vw;        
-        height: 250vh;
+        height: 255vh;
         margin: 0px;
         margin-top: 50px;
     }
@@ -39,8 +39,9 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        font-size: 0.7em;
+        font-size: 0.9em;
         margin-bottom: -20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
         
     }
     li{
@@ -62,9 +63,8 @@
     article{
         width: 100vw;
         height: 40vh;
-        margin: 0px;
-        margin-top: -30px;
-        margin-bottom: 15px;
+        margin: 0px;    
+        
     }
     h4{
         font-size: 0.7em;
@@ -83,6 +83,10 @@
     }
     div.conjunto{
         width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     p.pconjunto{
         display: none;
@@ -90,7 +94,7 @@
     img{
         height: 170px;
         width: 170px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
     h6{
         font-size: 0.7em;
