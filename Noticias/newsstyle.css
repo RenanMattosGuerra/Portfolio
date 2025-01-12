@@ -141,6 +141,10 @@ div.noticiajunto{
     height: 100px;
 }
 
+img{
+    border-radius: 5px;
+}
+
 h3{
     font-size: 0.9em;    
 }
@@ -160,6 +164,7 @@ p.pconjunto{
 div.imagem{
     padding: 10px;    
 }
+
 li:hover{
     text-decoration: underline;
     cursor: pointer;
