@@ -80,17 +80,11 @@ main{
 }
 
 article{    
-    border-bottom: 1px solid black;    
-    /*box-shadow: 0px 0px 5px 2px lightseagreen, -2px -2px 15px -5px #1100ff;*/
+    border-bottom: 1px solid black;   
     padding: 5px;
     text-align: center;
     width: 65vw;
     margin-left: 5vw;    
-}
-
-#art1{
-    overflow: hidden;
-    height: 45vh;
 }
 
 #art2,#art3,#art4,#art5{

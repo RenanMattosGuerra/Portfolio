@@ -10,7 +10,7 @@
         flex-direction: column;
         justify-content: center;
         width: 100vw;        
-        height: 255vh;
+        height: 235vh;
         margin: 0px;
         margin-top: 50px;
     }
@@ -62,9 +62,19 @@
     }
     article{
         width: 100vw;
-        height: 40vh;
-        margin: 0px;    
+        height: 30vh;
+        margin: 0px;  
         
+    }
+    .artigo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #art1{
+        overflow: hidden;
+        height: auto;
     }
     h4{
         font-size: 0.7em;
@@ -83,6 +93,7 @@
     }
     div.conjunto{
         width: 100vw;
+        height: 30vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
