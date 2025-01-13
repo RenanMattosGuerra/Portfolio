@@ -6,7 +6,7 @@
     }   
     
     header{
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
     main{
@@ -130,8 +130,8 @@
     }
     footer{
         font-family: Arial, Helvetica, sans-serif;       
-        height: 35vh; 
-        margin-top: 15vh;
+        height: 45vh; 
+        margin-top: 10vh;
     }
     #footerul{
         height: 5vh;
