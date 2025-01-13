@@ -87,7 +87,7 @@ article{
     margin-left: 5vw;    
 }
 
-#art2,#art3,#art4,#art5{
+#art1,#art2,#art3,#art4,#art5{
     grid-column-start: 2;
 }
 
@@ -114,7 +114,7 @@ div.noticia{
     width: 65vw;
     overflow: hidden;    
 }
-article#art5{
+article#art5,#art6,#art7{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,6 +139,7 @@ div.noticiajunto{
 .imgconjunto{
     width: 100px;
     height: 100px;
+    border-radius: 5px;
 }
 
 img{
