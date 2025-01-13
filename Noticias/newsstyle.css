@@ -198,7 +198,7 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 15px;
+    padding: 15px;    
 }
 ul#footerul{
     display: flex;

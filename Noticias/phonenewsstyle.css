@@ -4,6 +4,10 @@
     body{
         height: 320vh;
     }   
+    
+    header{
+        margin-bottom: 50px;
+    }
 
     main{
         display: flex;
@@ -32,6 +36,15 @@
         align-items: center;           
         margin: 0px;  
         margin-bottom: 20px;
+        padding: 5px;
+    }
+    .asideli{
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        box-shadow: 1px -1px 3px 1px var(--primary-color), -1px 1px 3px 1px var(--secundary-color);  
+        padding: 15px;    
+        margin: 3px;
+
     }
     ul{
         display: flex;
@@ -41,7 +54,7 @@
         align-items: center;
         font-size: 0.9em;
         margin-bottom: -20px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         
     }
     li{
@@ -78,7 +91,7 @@
         font-size: 0.7em;
         width: 20vw;
         height: 5vh;
-        margin-left: 15px;        
+        margin-left: 12px;        
         
     }
     div#assine{
@@ -118,6 +131,7 @@
     footer{
         font-family: Arial, Helvetica, sans-serif;       
         height: 35vh; 
+        margin-top: 15vh;
     }
     #footerul{
         height: 5vh;
