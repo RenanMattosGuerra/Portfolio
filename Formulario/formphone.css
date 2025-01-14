@@ -25,11 +25,7 @@
         height: 90vh;
     }
     nav{
-        flex-direction: column;
-        width: 20vw;
-        justify-content: center;
-        align-items: center;
-        margin-right: 15px;
+        display: none;
     }
     form{
         width: 90vw;
@@ -44,6 +40,13 @@
     }
     header{
         height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img#logo{
+        height: 50px;
+        width: 50px;
     }
     aside{
         display: none;
