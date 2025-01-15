@@ -27,7 +27,7 @@ header{
     align-items: center;
     flex-direction: column;
     overflow: hidden;
-    
+    box-shadow: 0px 0px 3px 3px var(--primarycolor);    
 }
 #divheader{
     width: 50vw;
