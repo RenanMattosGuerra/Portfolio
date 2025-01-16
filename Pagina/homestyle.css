@@ -11,6 +11,9 @@
     --secundarycolor: #425192;
 }
 
+@media screen and (min-width:992px) {
+
+
 body{
     height: 350vh;
     width: 100vw;
@@ -170,5 +173,5 @@ p{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1em;
 }
-
+}
 
