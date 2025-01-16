@@ -43,4 +43,7 @@
         width: 25vw;
         font-size: 0.8em;
     }
+    p{
+        margin: -15px;
+    }
 }
