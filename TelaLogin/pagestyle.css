@@ -33,15 +33,14 @@
     
     form{
         width: 25vw;
-        margin-bottom: -50px;
+        margin-bottom: -15px;        
     }
-    section{
-        
-    }
+    
     input#submit{
         width: 15vw;
     }
     button.bcontinue{
         width: 25vw;
+        font-size: 0.8em;
     }
 }

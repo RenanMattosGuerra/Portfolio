@@ -31,7 +31,7 @@ main{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     border: none;
     border-radius: 10px;
@@ -49,14 +49,14 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; 
-    margin-bottom: -65px;       
+    margin-bottom: -25px;        
 }
 
 section{
-    height: 25vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;    
 }
 
@@ -86,12 +86,13 @@ input#submit:hover{
 button.bcontinue{
     padding: 5px;
     background-color: white;
-    width: 45vw;
+    width: 50vw;
     height: 4vh;
     border-radius: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    font-size: 0.7em;
 }
 
 button.bcontinue:hover{
