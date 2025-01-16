@@ -3,15 +3,34 @@
 @media screen and (min-width:992px) {
     body{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         padding: 25px;
-        background: ;
+        background: url(imagens/pexels-tara-winstead-8386440blur.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+
+        
     }
     main{
         width: 30vw;
         height: 75vh;
+        background-color: rgba(240, 255, 255, 0.719);
+        box-shadow: 0px 0px 1px 1px black;
     }
+    div#robo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img#irobo{
+        /* width: 300px;
+        height: 451px; */
+        width: 18vw;
+        height: 50vh;
+    }
+    
     form{
         width: 25vw;
         margin-bottom: -50px;
