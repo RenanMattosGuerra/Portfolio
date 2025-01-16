@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@media screen and (min-width:992px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        background: ;
+    }
+    main{
+        width: 30vw;
+        height: 75vh;
+    }
+    form{
+        width: 25vw;
+        margin-bottom: -50px;
+    }
+    section{
+        
+    }
+    input#submit{
+        width: 15vw;
+    }
+    button.bcontinue{
+        width: 25vw;
+    }
+}

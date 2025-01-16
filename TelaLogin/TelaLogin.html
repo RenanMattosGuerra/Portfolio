@@ -4,44 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
-    <link rel="stylesheet" href="loginphonestyle.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="loginmobilestyle.css">
+    <link rel="stylesheet" href="pagestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Courgette&family=Indie+Flower&family=Merienda:wght@300..900&family=Passion+One:wght@400;700;900&family=Pixelify+Sans:wght@400..700&family=Rock+Salt&family=Sriracha&family=Tektur:wght@400..900&family=Tiny5&display=swap" rel="stylesheet">    
     
 </head>
-<body>
-    <main>
-        <div>
-            <h1>Login</h1>
-            <form action="post">
+<body>    
+    <main>       
+        <h1>Login</h1>
+        <form action="post">            
                 <label for="mail">E-mail</label>
-                <input type="email" name="mail" id="mail" required placeholder="'icone seuemail@exemplo.com'">
-
+                <input type="email" name="mail" id="mail" required placeholder="✉ Seuemail@exemplo.com">
                 <label for="password">Senha</label>
-                <input type="password" name="password" id="password" required placeholder="'icone Sua Senha'">                
-
-            </form>
-
-            <input type="checkbox" name="autorize" id="autorize">
-            <label for="autorize">Autorizo envio de e-mails</label>
-
-            <section>
+                <input type="password" name="password" id="password" required placeholder="&#9919; Sua senha">
+                
+                <div>
+                    <input type="checkbox" name="autorize" id="autorize">
+                    <label for="autorize">Autorizo envio de e-mails</label>
+                </div>            
                 <a href="">
-                    <h3>Esqueci Minha Senha</h3>
+                    <h3>Esqueci minha senha</h3>
                 </a>
-                <button id="entrar">
-                    Entrar
-                </button>
-                <p>ou</p>
-                <button>
-                    Continue com Google
-                </button>
-                <button>
-                    Continue Com Facebook
-                </button>
-                <h2>Não possuí uma conta? Cadastre-se!</h2>
-            </section>
-            
-            
-        </div>
+                <input type="submit" value="Entrar" id="submit">           
+        </form>
+            <section>                
+                <p>-ou-</p>
+                <a href="https://www.google.com " target="_blank">
+                    <button class="bcontinue">
+                       <img class="logo" src="imagens/googlelogo.jpg" alt="google logo"> Continue com Google
+                    </button>
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <button class="bcontinue">
+                        <img class="logo" src="imagens/facebooklogo.jpg" alt="facebook logo">Continue com Facebook
+                    </button>
+                </a>
+                <h2>Não possui uma conta? <a href="">Cadastre-se!</a></h2>
+            </section>       
     </main>
     
 </body>
