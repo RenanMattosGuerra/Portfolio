@@ -101,7 +101,9 @@ main{
     justify-content: space-evenly;
     align-items: flex-start;
     margin-top: 30px;
-    
+    animation: appear ease-in-out;
+    animation-timeline: view();  
+    animation-range: cover 0% cover 50%;    
 }
 
 div#portfolio{
@@ -154,8 +156,8 @@ img.iconlink:hover{
     transition: ease-in-out 0.3s;
 }
 
-img#imglogos:hover{
-    transform: scale(1.2);
+div#logos:hover{
+    transform: scale(1.05);
     transition: ease 0.5s;
 }
 
@@ -166,12 +168,27 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;    
+    align-items: center;  
+    animation: appear ease-in-out;
+    animation-timeline: view();  
+    animation-range: cover 0% cover 50%;
 }
 
 p{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1em;
 }
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        translate: 0vw 100vh;        
+    } to {
+        opacity: 1;
+        translate: 0vw 0vh;        
+    }
+}
+
 }
 
