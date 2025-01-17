@@ -126,3 +126,7 @@ a{
 a:hover{
     text-decoration: underline;
 }
+
+label#check{
+    font-size: 0.9em;
+}
