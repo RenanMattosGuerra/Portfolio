@@ -64,7 +64,7 @@ h5{
     font-weight: 300;
     color: var(--primarycolor);
     font-size: 2em;
-    margin: 25px;
+    margin: 40px;    
 }
 
 ul{
@@ -113,6 +113,17 @@ img#imglogos{
 p{
     padding: 10px;
     text-align: center;
+}
+
+section{
+    margin: auto;       
+    background: url(imagens/Design\ sem\ nome.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    clip-path: circle();
+    width: 50vw;
+    height: 50vh;
 }
 
 

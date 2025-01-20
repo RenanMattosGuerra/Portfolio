@@ -191,5 +191,33 @@ p{
     }
 }
 
+section{
+    margin: auto;
+    margin-top: 30px;
+    background: url(imagens/Design\ sem\ nome.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    clip-path: circle();
+    animation: grow  ease-in-out;
+    animation-timeline: scroll();      
+    animation-range: cover 0% cover 75%;
+}
+
+@keyframes grow{
+    from{        
+        height: 5vh;
+        width: 5vw;
+        transform: rotate(30deg);
+        opacity: 0;
+
+    } to {        
+        height: 50vh;
+        width: 50vw;
+        transform: rotate(0deg);     
+        opacity: 1;          
+    }    
+}
+
 }
 
