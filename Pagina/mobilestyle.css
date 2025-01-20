@@ -24,8 +24,8 @@ div#divheader{
     justify-content: space-evenly;
     align-items: center;
     background-color: rgba(143, 143, 143, 0.185);
-    width: 60vw;
-    height: 50vh;
+    width: 70vw;
+    height: 55vh;
     border-radius: 10px;
     padding: 15px;
 }
