@@ -122,8 +122,10 @@ div#imagem{
     background-position: center center;
     background-size: contain;
     clip-path: circle();
-    width: 50vw;
-    height: 50vh;
+    width: 40vw;
+    height: 40vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 section{
