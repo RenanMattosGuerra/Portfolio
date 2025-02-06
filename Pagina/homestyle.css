@@ -76,6 +76,18 @@ h4{
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     color: rgba(0, 0, 0, 0.774);
+    animation: cor infinite 2s ease-in-out;
+}
+
+@keyframes cor {
+    0%{
+        color: rgba(211, 211, 211, 0.616);
+    } 50%{
+        color: white;
+    } 100%{
+        color: rgba(211, 211, 211, 0.616);
+    }
+    
 }
 
 div#foto{    
