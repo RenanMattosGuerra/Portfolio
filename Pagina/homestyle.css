@@ -50,6 +50,8 @@ h1{
     font-size: 2em;
     white-space: nowrap;
 }
+
+
 h3{    
     color: lightgrey;
     font-size: 1.5em;
@@ -76,16 +78,16 @@ h4{
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     color: rgba(0, 0, 0, 0.774);
-    animation: cor infinite 2s ease-in-out;
+    animation: cor infinite 4s ease-in-out;
 }
 
 @keyframes cor {
     0%{
-        color: rgba(211, 211, 211, 0.616);
+        color: var(--primarycolor);
     } 50%{
-        color: white;
+        color: lightgrey;
     } 100%{
-        color: rgba(211, 211, 211, 0.616);
+        color: var(--primarycolor);
     }
     
 }
