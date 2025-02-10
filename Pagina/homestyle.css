@@ -41,7 +41,7 @@ header{
     align-items: center;       
 }
 
-h1,h3{
+h1,h3,h2{
     font-family: "Chakra Petch", serif;
 }
 
@@ -77,15 +77,26 @@ h3{
 h4{
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
-    color: rgba(0, 0, 0, 0.774);
-    animation: cor infinite 4s ease-in-out;
+    color: lightgrey;    
 }
-
+h2{
+    animation: cor infinite 2s ease-in-out;
+    font-size: 2em;
+    
+}
+#nameheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 16vw;
+    
+}
 @keyframes cor {
     0%{
         color: var(--primarycolor);
     } 50%{
-        color: lightgrey;
+        color: var(--secundarycolor);
     } 100%{
         color: var(--primarycolor);
     }
@@ -199,7 +210,7 @@ p{
 @keyframes appear{
     from{
         opacity: 0;
-        translate: 0vw 100vh;        
+        translate: 0vw 10vh;        
     } to {
         opacity: 1;
         translate: 0vw 0vh;        
@@ -217,15 +228,21 @@ div#imagem{
     background-position: center center;
     background-size: contain;
     clip-path: circle();
-    animation: spin infinite 15s linear;
+    animation: spin infinite 3s linear;
 }
 
 @keyframes spin { 
-    from{        
+    0%{        
         transform: rotate(0deg);
-    } to {        
-        transform: rotate(360deg);        
-    }    
+    }25% {        
+        transform: rotate(-10deg);        
+    }50%{
+        transform: rotate(0deg);
+    }75%{
+        transform: rotate(10deg);
+    }100%{
+        transform: rotate(0deg);
+    }
 }
 
 section{
