@@ -1,7 +1,7 @@
 /*
 const text = document.querySelector(".description")
 const imgs = document.querySelector(".animals")
-const textValue = text.Value
+const textValue = text.value
 
 imgs.addEventListener("mouseover", function(){
     if(textValue.length>0){
