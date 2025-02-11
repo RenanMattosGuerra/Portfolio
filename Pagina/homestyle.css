@@ -14,16 +14,16 @@
 @media screen and (min-width:992px) {
 
 body{
-    height: 300vh;
+    height: 320vh;
     width: 100vw;
     overflow-x: hidden;
-    background-color: rgb(241, 241, 226);
+    background-color: var(--secundarycolor);
 }
 
 header{
     width: 100vw;
     height: 100vh;    
-    background: radial-gradient(circle farthest-corner at center center, var(--secundarycolor) 0%, var(--primarycolor) 80%);
+    background: radial-gradient(circle  at center center, var(--secundarycolor) 0%, var(--primarycolor) 80%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,26 +32,22 @@ header{
     box-shadow: 0px 0px 3px 3px var(--primarycolor);    
 }
 #divheader{
-    width: 50vw;
-    height: 50vh;
-    background-color: rgba(143, 143, 143, 0.185);
+    width: 60vw;
+    height: 50vh;    
     border-radius: 15px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;       
 }
 
 h1,h3,h2{
     font-family: "Chakra Petch", serif;
 }
-
 h1{
     color: lightgrey;
     font-size: 2em;
     white-space: nowrap;
 }
-
-
 h3{    
     color: lightgrey;
     font-size: 1.5em;
@@ -59,7 +55,6 @@ h3{
     overflow: hidden;
     animation: typing 2.5s steps(40) forwards, blink 0.5s step-end infinite;
 }
-
 @keyframes typing{
     from{
         width: 0;
@@ -67,13 +62,11 @@ h3{
         width: 100%;
     }
 }
-
 @keyframes blink{
     50%{
         border-color: transparent;
     }
 }
-
 h4{
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
@@ -82,7 +75,6 @@ h4{
 h2{
     animation: cor infinite 2s ease-in-out;
     font-size: 2em;
-    
 }
 #nameheader{
     display: flex;
@@ -96,20 +88,18 @@ h2{
     0%{
         color: var(--primarycolor);
     } 50%{
-        color: var(--secundarycolor);
+        color: lightgrey;
     } 100%{
         color: var(--primarycolor);
     }
     
 }
-
 div#foto{    
     border-radius: 10%;
     overflow: hidden;
     border: 4px solid white;
     background-color: rgba(0, 0, 0, 0.863);    
 }
-
 div#texto{
     width: 15vw;
     height: 40vh;    
@@ -119,75 +109,111 @@ div#texto{
     align-items: flex-start;    
     text-align: start;    
 }
-
 main{
     width: 100vw;
-    height: 15vh;
+    height: 25vh;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
-    margin-top: 30px;
+    align-items: center;    
     animation: appear ease-in-out;
     animation-timeline: view();  
     animation-range: cover 0% cover 50%;    
 }
-
-div#portfolio{
+.links{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
+    height: 20vh;
 }
-
+i:hover{
+    animation: grow 0.5s ease-in-out;
+}
+@keyframes grow {
+    0%{
+        transform: scale(1);
+    }50%{
+        transform: scale(1.2);
+    }100%{
+        transform: scale(1);
+    }
+    
+}
 h5{
     font-size: 2.5em;
     font-family: "Tiny5", serif;
     font-weight: 300;
+    color: white;
+}
+a{
+    color: var(--primarycolor);
+    font-size: 2em;
+    text-decoration: none;
+}
+i{
     color: var(--primarycolor);
 }
-
-ul{    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-li{
-    list-style: inside square;
-    padding: 25px;
-    
-}
-
-a.github{
-    font-family: "Chakra Petch" ;
-    text-decoration: none;    
-    color: black;
-    font-size: 1.2em;
-}
-
-a.github:hover{
-    text-decoration: underline;   
-}
-
-div#linkedin{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 img.iconlink:hover{
     transform: scale(0.9);
     transition: ease-in-out 0.3s;
 }
-
-div#logos:hover{
-    transform: scale(1.05);
-    transition: ease 0.5s;
+div#logos{
+    font-size: 2em;
 }
-
-
+section{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 60vh;
+    width: 70vw;
+    animation: appear ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+#divprojetos{
+    height: 50vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.projetos{
+    height: 45vh;
+    width: 15vw;
+    border: 2px solid white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primarycolor);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+p.nomeprojeto{
+    font-size: 1em;
+    font-family: "Chakra Petch", serif;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--secundarycolor);
+}
+#login:hover{
+    background-image: url(imagens/robologin.jpg);   
+    
+}
+#cardapio:hover{
+    background-image: url(imagens/cardapioprojeto.jpg);
+}
+#blog:hover{
+    background-image: url(imagens/blogprojeto.jpg);
+}
+#noticias:hover{
+    background-image: url(imagens/noticiasprojeto.jpg);
+}
 article{
     width: 100vw;
     height: 60vh;
@@ -199,30 +225,26 @@ article{
     animation-timeline: view();  
     animation-range: cover 0% cover 50%;
 }
-
 p{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1em;
     text-align: center;    
+    color: white;
 }
-
-
 @keyframes appear{
     from{
         opacity: 0;
-        translate: 0vw 10vh;        
+        translate: 0vw 50vh;        
     } to {
         opacity: 1;
         translate: 0vw 0vh;        
     }
 }
-
 div#imagem{
     width: 75vw;
     height: 50vh;
     margin: auto;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 10vh;    
     background: url(imagens/Design\ sem\ nome.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -230,7 +252,6 @@ div#imagem{
     clip-path: circle();
     animation: spin infinite 3s linear;
 }
-
 @keyframes spin { 
     0%{        
         transform: rotate(0deg);
@@ -244,24 +265,21 @@ div#imagem{
         transform: rotate(0deg);
     }
 }
-
-section{
+footer{
     width: 100vw;
-    height: 70vh;
+    height: 40vh;
     background-color: var(--primarycolor);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-
 h6{
     color: white;
     font-size: 2.5em;
     font-family: "Chakra Petch", serif;
     font-weight: 300;
 }
-
-div.divsection{
+div.divfooter{
     width: 40vw;
     height: 30vh;
     display: flex;
@@ -269,13 +287,11 @@ div.divsection{
     justify-content: space-evenly;
     align-items: center;
 }
-
-p.psection{
+p.pfooter{
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: justify;
     white-space: wrap;
 }
-
 }
 
