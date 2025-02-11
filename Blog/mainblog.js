@@ -1,13 +1,11 @@
-/*
-const text = document.querySelector(".description")
-const imgs = document.querySelector(".animals")
-const textValue = text.value
+const checkbox = document.getElementById("checkmode")
+const text = document.getElementById('contato')
+const modechange = document.querySelectorAll("body, header, nav, main, h1, h2, h3, h4, h5, i, button")
 
-imgs.addEventListener("mouseover", function(){
-    if(textValue.length>0){
-        text.style.display="none"
-    } else{
-        text.style.display="flex"
-    }    
+checkbox.addEventListener("change", () => {
+    modechange.forEach(element => {
+        element.classList.toggle("darkmode")
+        text.classList.toggle('darkmode')
+    })
+    
 })
-*/
