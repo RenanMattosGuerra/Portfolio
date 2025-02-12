@@ -47,12 +47,16 @@ h1{
 }
 h2{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 label{    
     color: var(--terciary-color);
     font-size: 1em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+label:hover{
+    cursor: pointer;
+    color: var(--secundary-color);
 }
 input{
     padding: 10px;
