@@ -46,12 +46,13 @@ h1{
     font-family: "Frijole", serif;
 }
 h2{
-    font-family: "Sriracha", serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
 }
-label{
-    font-family: "Sriracha", serif;
+label{    
     color: var(--terciary-color);
     font-size: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 input{
     padding: 10px;
