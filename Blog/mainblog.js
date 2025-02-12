@@ -6,6 +6,5 @@ checkbox.addEventListener("change", () => {
     modechange.forEach(element => {
         element.classList.toggle("darkmode")
         text.classList.toggle('darkmode')
-    })
-    
+    })    
 })
