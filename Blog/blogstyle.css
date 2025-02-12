@@ -122,7 +122,7 @@ h3{
     font-family: "Courgette", serif;
 }
 p{
-    font-size: 1.3em;
+    font-size: 1.1em;
     text-align: justify;    
 }
 #img{
@@ -130,6 +130,8 @@ p{
     height: 55vh;
     border-radius: 15px;
     overflow: hidden;
+    background-image: url(imagens/pexels-pixabay-235674jaguar.png);
+    background-position: center center;
 }
 aside{
     width: 100vw;

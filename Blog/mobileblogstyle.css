@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@media screen and (max-width:992px) {
+    body{
+        height: 300vh;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+    }    
+    main{
+        font-size: 0.6em;
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    section{
+        font-size: 0.6em;        
+    }    
+    #sec2{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .animals{
+        width: 25vw;
+        height: 25vh;
+    }
+    div.animals{
+        height: 15vh;
+        width: 20vw;
+    }
+    #img{
+        height: 40vh;
+        width: 40vw;
+        background-image: url(imagens/jaguarmobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #text{
+        width: 40vw;
+        height: 40vh;
+    }
+    #content{
+        width: 90vw;
+    }
+    article{
+        width: 100vw;
+        height: 60vh;
+    }
+    .passeios{
+        width: 40vw;
+        text-align: center;
+        height: 40vh;        
+    }
+    .partigo{
+        font-size: 1.4em;
+    }
+}
