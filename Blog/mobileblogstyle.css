@@ -9,6 +9,18 @@
         flex-direction: column;
         height: 20vh;
     }    
+    header{
+        height: 15vh;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    h3{
+        font-size: 2em;
+    }
     main{
         font-size: 0.6em;
         width: 100vw;
@@ -16,7 +28,10 @@
         justify-content: space-evenly;
     }
     p{
-        font-size: 1.5em;
+        font-size: 1em;
+    }
+    p#contato{
+        font-size: 2em;
     }
     section{
         font-size: 0.6em;        
