@@ -295,5 +295,8 @@ p.pfooter{
     text-align: justify;
     white-space: wrap;
 }
+#mailicon{
+    color: var(--secundarycolor);
+}
 }
 
