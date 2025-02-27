@@ -100,7 +100,7 @@ button.bcontinue {
 
 button.bcontinue:hover {
   cursor: pointer;
-  background-color: rgba(211, 211, 211, 0.747);
+  background-color: rgba(226, 226, 226, 0.747);
   transition: 0.2s;
 }
 
