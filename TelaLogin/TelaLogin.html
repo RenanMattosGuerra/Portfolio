@@ -1,55 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tela de Login</title>
-    <link rel="shortcut icon" href="imagens/faviconrobot.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="loginmobilestyle.css">
-    <link rel="stylesheet" href="pagestyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Courgette&family=Indie+Flower&family=Merienda:wght@300..900&family=Passion+One:wght@400;700;900&family=Pixelify+Sans:wght@400..700&family=Rock+Salt&family=Sriracha&family=Tektur:wght@400..900&family=Tiny5&display=swap" rel="stylesheet">    
-    
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="imagens/faviconrobot.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="loginmobilestyle.css" />
+    <link rel="stylesheet" href="pagestyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Courgette&family=Indie+Flower&family=Merienda:wght@300..900&family=Passion+One:wght@400;700;900&family=Pixelify+Sans:wght@400..700&family=Rock+Salt&family=Sriracha&family=Tektur:wght@400..900&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="robo">
-        <img id="irobo" src="imagens/robo corte.png" alt="">
-    </div>       
-    <main>            
-        <h1>Login</h1>
-        <form action="post">            
-                <label for="mail">E-mail</label>
-                <input type="email" name="mail" id="mail" required placeholder="✉ Seuemail@exemplo.com">
-                <label for="pword">Senha</label>
-                <input type="password" name="pword" id="pword" required placeholder="&#9919; Sua senha" minlength="6">
-                
-                <div>
-                    <input type="checkbox" name="showpass" id="showpass" onclick="ShowHide()">
-                    <label id="check" for="showpass">Mostrar/Ocultar Senha</label>
-                </div>            
-                <a href="">
-                    <h3>Esqueci minha senha</h3>
-                </a>
-                <input type="submit" value="Entrar" id="submit">           
-        </form>
-            <section>                
-                <p>ou</p>
-                <a href="https://www.google.com " target="_blank">
-                    <button class="bcontinue">
-                       <img class="logo" src="imagens/googlelogo.jpg" alt="google logo"> Continue com Google
-                    </button>
-                </a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <button class="bcontinue">
-                        <img class="logo" src="imagens/facebooklogo.jpg" alt="facebook logo">Continue com Facebook
-                    </button>
-                </a>
-                <h2>Não possui uma conta? <a href="">Cadastre-se!</a></h2>
-            </section>       
-    </main>
-    
-    <script src="script.js"></script>
+      <img id="irobo" src="imagens/robo corte.png" alt="" />
+    </div>
+    <main>
+      <h1>Login</h1>
+      <form action="post">
+        <label for="mail">E-mail</label>
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          required
+          placeholder="✉ Seuemail@exemplo.com"
+        />
+        <label for="pword">Senha</label>
+        <input
+          type="password"
+          name="pword"
+          id="pword"
+          required
+          placeholder="&#9919; Sua senha"
+          minlength="6"
+        />
 
-</body>
+        <div>
+          <input
+            type="checkbox"
+            name="showpass"
+            id="showpass"
+            onclick="ShowHide()"
+          />
+          <label id="check" for="showpass">Mostrar/Ocultar Senha</label>
+        </div>
+        <a href="">
+          <h3>Esqueci minha senha</h3>
+        </a>
+        <input type="submit" value="Entrar" id="submit" />
+      </form>
+      <section>
+        <p>ou</p>
+        <a href="https://www.google.com " target="_blank">
+          <button class="bcontinue">
+            <img class="logo" src="imagens/googlelogo.jpg" alt="google logo" />
+            Continue com Google
+          </button>
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+          <button class="bcontinue">
+            <img
+              class="logo"
+              src="imagens/facebooklogo.jpg"
+              alt="facebook logo"
+            />Continue com Facebook
+          </button>
+        </a>
+        <h2>Não possui uma conta? <a href="">Cadastre-se!</a></h2>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
