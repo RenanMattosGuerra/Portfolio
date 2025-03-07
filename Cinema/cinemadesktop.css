@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px) {
+  aside {
+    width: 20vw;
+    height: 100vh;
+    left: 0px;
+    animation: appear 0.5s ease-in-out;
+  }
+  @keyframes appear {
+    from {
+      opacity: 0%;
+      transform: translateX(-20%);
+    }
+    to {
+      opacity: 100%;
+      transform: translateX(0%);
+    }
+  }
+  nav {
+    position: fixed;
+    width: 20vw;
+    height: 100vh;
+    left: 0px;
+    box-shadow: 1px 1px 1px lightgray;
+  }
+  li {
+    padding: 20px;
+  }
+  #buscar {
+    width: 20vw;
+    padding: 7px;
+  }
+  .divheader {
+    width: 15vw;
+    justify-content: space-evenly;
+  }
+  main {
+    margin-bottom: 30px;
+  }
+  h5 {
+    max-width: 70vw;
+    margin: auto;
+    margin-top: 60px;
+  }
+  section#map {
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+  div#divmap {
+    width: 30vw;
+  }
+  iframe {
+    border-radius: 45px;
+  }
+  form {
+    border-top: 1px solid rgba(240, 255, 255, 0.26);
+    flex-direction: row;
+    width: 80vw;
+    margin: auto;
+    margin-top: 25px;
+  }
+  input#mail {
+    padding: 7px;
+    width: 500px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+
+  input#text {
+    padding: 8px;
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  input#submit {
+    padding: 7px;
+    border-radius: 5px;
+    width: 80px;
+  }
+}

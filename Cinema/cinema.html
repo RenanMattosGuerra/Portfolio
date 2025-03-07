@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="cinemastyle.css" />
+    <link rel="stylesheet" href="cinemadesktop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Courgette&family=Frijole&family=Indie+Flower&family=Merienda:wght@300..900&family=Mogra&family=Passion+One:wght@400;700;900&family=Pixelify+Sans:wght@400..700&family=Rock+Salt&family=Sriracha&family=Tektur:wght@400..900&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/002403beec.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <aside id="menu">
+      <nav>
+        <h4 id="closeMenu">X</h4>
+        <div>
+          <i class="fa-brands fa-youtube fa-lg"></i>
+          <i class="fa-brands fa-instagram fa-lg"></i>
+          <i class="fa-solid fa-envelope fa-lg"></i>
+          <i class="fa-solid fa-phone fa-lg"></i>
+        </div>
+        <ul>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Como chegar</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <header>
+        <div class="divheader">
+          <i class="fa fa-bars lg" id="openMenu"></i>
+          <h1>Cinema</h1>
+        </div>
+        <div class="divheader" id="buscar">
+          <i class="fa fa-search lg" id="lupa"></i>
+          <input
+            type="search"
+            name="search"
+            id="isearch"
+            placeholder="Procure"
+          />
+        </div>
+      </header>
+
+      <h5>Em cartaz...</h5>
+
+      <section id="secmovies">
+        <div id="movies">
+          <div class="cards">
+            <img
+              src="imagens/Interstellar_Filme.png"
+              alt="Poster Insterestelar"
+            />
+          </div>
+          <div class="cards">
+            <img src="imagens/gladiador.jpg" alt="Poster Gladiador" />
+          </div>
+          <div class="cards">
+            <img src="imagens/4.jpg" alt="Poster Piratas do Caribe" />
+          </div>
+          <div class="cards">
+            <img
+              src="imagens/113720160405-uau-posters-filmes-star-wars-force-awekens.jpg"
+              alt="Poster Star Wars"
+            />
+          </div>
+          <div class="cards">
+            <img src="imagens/godfather.jpg" alt="Poster Poderoso Chefão" />
+          </div>
+          <div class="cards">
+            <img src="imagens/trumanshow.jpg" alt="Poster Show de Truman" />
+          </div>
+          <div class="cards">
+            <img
+              src="imagens/173620140528-uau-posters-filmes-harry-potter-1-e-a-pedra-filosofal--harry-potter-and-the-sorcerer-s-stone-3.jpg"
+              alt="Poster Harry Potter"
+            />
+          </div>
+          <div class="cards">
+            <img src="imagens/jurassicpark.jpg" alt="Poster Jurassic Park" />
+          </div>
+          <div class="cards">
+            <img src="imagens/dune.jpg" alt="Poster Duna" />
+          </div>
+          <div class="cards">
+            <img
+              src="imagens/poster-os-vingadores-ultimato-a-242769bd.jpg"
+              alt="Poster Vingadores"
+            />
+          </div>
+          <div class="cards">
+            <img src="imagens/LOTR.jpg" alt="Poster Senhor dos Anéis" />
+          </div>
+        </div>
+      </section>
+
+      <h5>Em breve...</h5>
+
+      <section id="secmovies2">
+        <div id="movies2">
+          <div class="cards">
+            <img src="imagens/nosferatu.jpg" alt="" />
+          </div>
+          <div class="cards">
+            <img src="imagens/20241024-a-substancia.jpeg" alt="" />
+          </div>
+          <div class="cards">
+            <img src="imagens/a ordem.png" alt="" />
+          </div>
+          <div class="cards">
+            <img src="imagens/nao solte.jpg" alt="" />
+          </div>
+          <div class="cards">
+            <img src="imagens/sonic.jpg" alt="" />
+          </div>
+          <div class="cards">
+            <img
+              src="imagens/650720240909-uau-posters-dragonkeeper-a-menina-e-o-dragao-infantil-filmes.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cards">
+            <img src="imagens/beekeper.jpg" alt="" />
+          </div>
+          <div class="cards">
+            <img src="imagens/alien.jpg" alt="" />
+          </div>
+          <div class="cards">
+            <img src="imagens/ateia.jpeg" alt="" />
+          </div>
+          <div class="cards">
+            <img src="imagens/capa-a-quiet-place-day-one.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="map">
+      <div id="local">
+        <h2>Local</h2>
+        <p>
+          Rua das ruas, 100 <br />
+          Hollywood, Califórnia
+        </p>
+      </div>
+      <div id="divmap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105496.17093552445!2d-118.05143971297866!3d34.28029053513416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2dbef4714d959%3A0xaa04bea62fc51d91!2sAngeles%20National%20Forest!5e0!3m2!1spt-BR!2sbr!4v1741116528899!5m2!1spt-BR!2sbr"
+          width="500"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <form action="post">
+      <h3>Contate-nos</h3>
+      <div id="divform">
+        <label for="mail">E-mail</label>
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="E-Mail"
+          required
+        />
+        <label for="text">Comentário</label>
+        <input
+          type="text"
+          name="text"
+          id="text"
+          placeholder="Digite sua observação..."
+          required
+        />
+        <input type="submit" value="Enviar" id="submit" />
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
