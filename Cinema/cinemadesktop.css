@@ -45,12 +45,13 @@
   }
   section#map {
     flex-direction: row;
-    width: 80vw;
+    width: 90vw;
     justify-content: space-evenly;
     margin: auto;
+    align-items: center;
   }
   div#divmap {
-    width: 30vw;
+    width: 25vw;
   }
   iframe {
     border-radius: 45px;
@@ -58,7 +59,7 @@
   form {
     border-top: 1px solid rgba(240, 255, 255, 0.26);
     flex-direction: row;
-    width: 80vw;
+    width: 90vw;
     margin: auto;
     margin-top: 25px;
   }
