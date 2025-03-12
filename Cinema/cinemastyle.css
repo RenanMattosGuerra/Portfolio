@@ -157,6 +157,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 section#secmovies {
@@ -165,6 +166,7 @@ section#secmovies {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 12px;
 }
 
 h5 {
@@ -190,6 +192,7 @@ h5 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 12px;
 }
 
 #movies2 {
