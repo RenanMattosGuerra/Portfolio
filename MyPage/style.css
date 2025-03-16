@@ -19,7 +19,7 @@
 
 body {
   overflow-x: hidden;
-
+  height: 285vh;
   width: 100vw;
   background-color: var(--color-one);
 }
@@ -208,7 +208,7 @@ h2 {
 
 h3 {
   color: whitesmoke;
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-family: var(--font-two);
 }
 p {
@@ -362,6 +362,7 @@ a.aproj {
 
 footer {
   width: 95vw;
+  height: 15vh;
   margin: auto;
   padding: 10px;
   max-width: 1450px;
