@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px) {
+  #dprojetos {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  #projetos {
+    height: 75vh;
+  }
+  #foto {
+    background: url(imagens/fotoperfilgrande.jpeg);
+    width: 345px;
+    height: 335px;
+    background-position: center;
+  }
+  main {
+    height: 70vh;
+  }
+}
