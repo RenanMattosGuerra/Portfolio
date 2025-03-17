@@ -1,3 +1,5 @@
+// Abrir e fechar menu de navegação
+
 const openMenu = document.getElementById("bars");
 const closeMenu = document.getElementById("xicon");
 const menu = document.getElementById("menu");
@@ -23,11 +25,14 @@ links.forEach((link) => {
   });
 });
 
-const photo = document.getElementById("foto");
+//Animação da foto
 
+const photo = document.getElementById("foto");
 photo.addEventListener("mouseover", () => {
   photo.classList.toggle("animefoto");
 });
+
+//Modo claro e escuro da página
 
 const page = document.getElementById("page");
 const lightdark = document.getElementById("modebox");
@@ -38,4 +43,11 @@ lightdark.addEventListener("change", () => {
   titles.forEach((title) => {
     title.classList.toggle("lightmode");
   });
+});
+
+//Alerta com endereço de email
+const mail = document.getElementById("mailadress");
+
+mail.addEventListener("click", () => {
+  alert("rguerra1998@gmail.com");
 });
