@@ -190,7 +190,7 @@ h2 {
   font-size: 0.9em;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 3s steps(40) forwards, blink 0.5s step-end infinite;
+  animation: typing 5s steps(150) forwards, blink 0.5s step-end infinite;
   font-family: var(--font-two);
 }
 @keyframes typing {
@@ -256,11 +256,25 @@ span {
   max-width: 1450px;
 }
 
+@keyframes slidein {
+  0% {
+    opacity: 0%;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0%);
+  }
+}
+
 #skills {
   height: 50vh;
   margin: auto;
   padding: 10px;
   max-width: 1450px;
+  animation: slidein ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
 }
 
 #dskills {
@@ -315,6 +329,9 @@ span {
   justify-content: space-evenly;
   max-width: 1450px;
   margin-bottom: 50px;
+  animation: slidein ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
 }
 
 #dprojetos {
