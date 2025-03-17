@@ -3,10 +3,10 @@
 @media screen and (min-width: 992px) {
   #dprojetos {
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 10px;
   }
   #projetos {
-    height: 105vh;
+    height: 80vh;
   }
   #foto {
     background: url(imagens/fotoperfilgrande.jpeg);
@@ -19,5 +19,18 @@
   }
   p {
     font-size: 1.2em;
+  }
+  .pfooter {
+    font-size: 0.7em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  span {
+    font-size: 2.5em;
+    text-align: justify;
+  }
+  #psobre {
+    text-align: center;
   }
 }

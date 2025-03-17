@@ -25,7 +25,7 @@ body {
 }
 
 .lightmode {
-  background-color: white;
+  background-color: azure;
   color: var(--color-one);
 }
 
@@ -133,6 +133,7 @@ li:hover {
 }
 
 main {
+  width: 97vw;
   margin: auto;
   height: 60vh;
   display: flex;
@@ -143,7 +144,7 @@ main {
 }
 
 #dmain {
-  width: 45vw;
+  width: 50vw;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -185,7 +186,7 @@ h1 {
 }
 h2 {
   color: whitesmoke;
-  font-size: 1.2em;
+  font-size: 0.9em;
   white-space: nowrap;
   overflow: hidden;
   animation: typing 3s steps(40) forwards, blink 0.5s step-end infinite;
@@ -217,14 +218,11 @@ p {
   max-width: 1400px;
 }
 
-#psobre {
-  text-align: center;
-}
-
 span {
   animation: color 2s infinite ease-in-out;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: var(--font-one);
+  text-align: center;
 }
 
 @keyframes color {
@@ -270,7 +268,7 @@ span {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  padding: 15px;
+  padding: 10px;
 }
 
 .skill {
@@ -314,6 +312,7 @@ span {
   flex-direction: column;
   justify-content: space-evenly;
   max-width: 1450px;
+  margin-bottom: 50px;
 }
 
 #dprojetos {
@@ -362,14 +361,15 @@ a.aproj {
 }
 
 footer {
-  height: 20vh;
+  height: 40vh;
   margin: auto;
   padding: 10px;
   max-width: 1450px;
+  margin-top: 50px;
 }
 
 #dfooter {
-  height: 30vh;
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -385,7 +385,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 12vh;
+  height: 15vh;
 }
 
 .contato:hover {
@@ -402,7 +402,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 12vh;
+  height: 15vh;
 }
 
 .linkfooter:hover {
@@ -412,7 +412,7 @@ footer {
 
 .pfooter {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.5em;
+  font-size: 0.4em;
   margin-top: 15px;
   color: var(--color-two);
 }
