@@ -6,7 +6,7 @@
     gap: 40px;
   }
   #projetos {
-    height: 75vh;
+    height: 105vh;
   }
   #foto {
     background: url(imagens/fotoperfilgrande.jpeg);
@@ -16,5 +16,8 @@
   }
   main {
     height: 70vh;
+  }
+  p {
+    font-size: 1.2em;
   }
 }
