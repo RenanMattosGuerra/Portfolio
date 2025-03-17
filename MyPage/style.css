@@ -307,7 +307,7 @@ span {
 }
 
 #projetos {
-  height: 175vh;
+  height: 155vh;
   margin: auto;
   padding: 10px;
   display: flex;
@@ -321,7 +321,7 @@ span {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 1450px;
-  gap: 30px;
+  gap: 35px;
   height: 125vh;
 }
 
@@ -374,9 +374,14 @@ footer {
   height: 45vh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 10px;
   max-width: 1450px;
+}
+
+h5 {
+  font-size: 0.9em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .contato {
