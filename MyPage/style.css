@@ -37,7 +37,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid var(--color-two);
+  border-bottom: 2px solid var(--color-three);
   position: sticky;
   top: 0%;
   z-index: 50;
@@ -134,7 +134,7 @@ li:hover {
 
 main {
   margin: auto;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,7 +144,7 @@ main {
 }
 
 #dmain {
-  margin: auto;  
+  margin: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -154,8 +154,8 @@ main {
 
 #foto {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  width: 175px;
-  height: 195px;
+  width: 185px;
+  height: 205px;
   background: url(imagens/fotoperfil.jpeg);
   background-position: center center;
   border: 6px var(--color-three) double;
@@ -191,7 +191,7 @@ h2 {
   white-space: nowrap;
   overflow: hidden;
   animation: typing 3s steps(40) forwards, blink 0.5s step-end infinite;
-  font-family: var(--font-two);  
+  font-family: var(--font-two);
 }
 @keyframes typing {
   from {
@@ -246,7 +246,7 @@ span {
 }
 
 #sobre {
-  height: 30vh;
+  height: 45vh;
   margin: auto;
   padding: 10px;
   margin-bottom: 20px;
@@ -257,7 +257,7 @@ span {
 }
 
 #skills {
-  height: 45vh;
+  height: 50vh;
   margin: auto;
   padding: 10px;
   max-width: 1450px;
@@ -265,7 +265,7 @@ span {
 
 #dskills {
   margin: auto;
-  height: 40vh;
+  height: 45vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -307,7 +307,7 @@ span {
 }
 
 #projetos {
-  height: 145vh;
+  height: 175vh;
   margin: auto;
   padding: 10px;
   display: flex;
@@ -321,7 +321,7 @@ span {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 1450px;
-  gap: 5px;
+  gap: 30px;
   height: 125vh;
 }
 
@@ -363,15 +363,15 @@ a.aproj {
 }
 
 footer {
-  height: 40vh;
+  height: 45vh;
   margin: auto;
   padding: 10px;
   max-width: 1450px;
-  margin-top: 50px;
+  margin-top: 200px;
 }
 
 #dfooter {
-  height: 40vh;
+  height: 45vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
