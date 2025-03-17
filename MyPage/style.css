@@ -380,8 +380,8 @@ footer {
 }
 
 h5 {
-  font-size: 0.9em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  font-family: var(--font-one);
 }
 
 .contato {
