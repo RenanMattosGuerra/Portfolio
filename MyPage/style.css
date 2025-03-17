@@ -50,6 +50,13 @@ header {
   justify-content: space-evenly;
 }
 
+#modebox {
+  accent-color: var(--color-three);
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
 #bars {
   color: var(--color-three);
   font-size: 1.4em;
@@ -352,7 +359,7 @@ span {
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-  opacity: 65%;
+  opacity: 70%;
   box-shadow: 1px 1px 3px 1px black;
 }
 
