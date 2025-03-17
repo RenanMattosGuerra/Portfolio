@@ -19,9 +19,12 @@
 
 body {
   overflow-x: hidden;
-  height: 285vh;
   width: 100vw;
   background-color: var(--color-one);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .lightmode {
@@ -144,7 +147,7 @@ main {
 }
 
 #dmain {
-  width: 40vw;
+  width: 45vw;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -153,11 +156,11 @@ main {
 
 #foto {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  width: 215px;
-  height: 235px;
+  width: 155px;
+  height: 175px;
   background: url(imagens/fotoperfil.jpeg);
   background-position: center center;
-  border: 5px var(--color-five) dotted;
+  border: 6px var(--color-three) double;
 }
 
 .animefoto {
@@ -244,7 +247,7 @@ span {
 
 #sobre {
   width: 95vw;
-  height: 25vh;
+  height: 30vh;
   margin: auto;
   padding: 10px;
   margin-bottom: 20px;
@@ -256,6 +259,7 @@ span {
 
 #skills {
   width: 95vw;
+  height: 45vh;
   margin: auto;
   padding: 10px;
   max-width: 1450px;
@@ -307,7 +311,7 @@ span {
 
 #projetos {
   width: 95vw;
-  height: 125vh;
+  height: 145vh;
   margin: auto;
   padding: 10px;
   display: flex;
@@ -319,8 +323,9 @@ span {
 #dprojetos {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
   max-width: 1450px;
+  gap: 5px;
+  height: 125vh;
 }
 
 .proj {
