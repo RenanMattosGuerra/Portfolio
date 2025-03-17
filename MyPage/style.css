@@ -259,7 +259,7 @@ span {
 @keyframes slidein {
   0% {
     opacity: 0%;
-    transform: translateX(10%);
+    transform: translateX(-5%);
   }
   100% {
     opacity: 100%;
