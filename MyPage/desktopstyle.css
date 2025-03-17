@@ -15,7 +15,19 @@
     background-position: center;
   }
   main {
+    width: 100vw;
     height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #dmain {
+    width: 70vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
   }
   p {
     font-size: 1.2em;
@@ -25,6 +37,7 @@
   }
   h2 {
     font-size: 2em;
+    text-align: justify;
   }
   span {
     font-size: 2.5em;

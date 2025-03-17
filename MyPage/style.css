@@ -20,7 +20,7 @@
 body {
   overflow-x: hidden;
   width: 100vw;
-  height: 320vh;
+  height: 300vh;
   background-color: var(--color-one);
 }
 
@@ -38,7 +38,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid var(--color-two);
-  position: fixed;
+  position: sticky;
   top: 0%;
   z-index: 50;
 }
@@ -133,28 +133,29 @@ li:hover {
 }
 
 main {
-  width: 97vw;
   margin: auto;
-  height: 60vh;
+  height: 50vh;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   padding: 10px;
   max-width: 1450px;
 }
 
 #dmain {
-  width: 50vw;
+  margin: auto;  
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 #foto {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  width: 155px;
-  height: 175px;
+  width: 175px;
+  height: 195px;
   background: url(imagens/fotoperfil.jpeg);
   background-position: center center;
   border: 6px var(--color-three) double;
@@ -190,7 +191,7 @@ h2 {
   white-space: nowrap;
   overflow: hidden;
   animation: typing 3s steps(40) forwards, blink 0.5s step-end infinite;
-  font-family: var(--font-two);
+  font-family: var(--font-two);  
 }
 @keyframes typing {
   from {
@@ -208,19 +209,20 @@ h2 {
 
 h3 {
   color: whitesmoke;
-  font-size: 1.4em;
+  font-size: 1.7em;
   font-family: var(--font-two);
+  text-align: center;
 }
 p {
   color: var(--color-three);
   font-size: 1em;
-  text-align: justify;
+  text-align: center;
   max-width: 1400px;
 }
 
 span {
   animation: color 2s infinite ease-in-out;
-  font-size: 1.5em;
+  font-size: 1.9em;
   font-family: var(--font-one);
   text-align: center;
 }
