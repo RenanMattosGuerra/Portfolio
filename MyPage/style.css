@@ -41,6 +41,7 @@ header {
   position: sticky;
   top: 0%;
   z-index: 50;
+  overflow: hidden;
 }
 
 #dheader {
@@ -257,7 +258,7 @@ span {
   height: 35vh;
   margin: auto;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -276,13 +277,14 @@ span {
 }
 
 #skills {
+  width: 100vw;
   height: 50vh;
   margin: auto;
   padding: 10px;
-  margin-top: 80px;
+  margin-top: 90px;
   animation: slidein ease-in-out;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 35%;
 }
 
 #dskills {
@@ -332,14 +334,13 @@ span {
   width: 100vw;
   height: 155vh;
   margin: auto;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin-bottom: 50px;
   animation: slidein ease-in-out;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 35%;
 }
 
 #dprojetos {
@@ -398,6 +399,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 #dfooter {

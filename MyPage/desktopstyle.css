@@ -7,6 +7,9 @@
     width: 70vw;
     margin: auto;
   }
+  #dheader {
+    width: 20vw;
+  }
   #projetos {
     height: 80vh;
   }
