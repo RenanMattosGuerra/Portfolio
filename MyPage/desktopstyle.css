@@ -4,6 +4,8 @@
   #dprojetos {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    width: 70vw;
+    margin: auto;
   }
   #projetos {
     height: 80vh;

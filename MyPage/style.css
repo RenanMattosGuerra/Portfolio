@@ -147,7 +147,7 @@ main {
   align-items: center;
   justify-content: space-around;
   padding: 10px;
-  max-width: 1450px;
+  max-width: 1400px;
 }
 
 #dmain {
@@ -220,11 +220,11 @@ h3 {
   font-family: var(--font-two);
   text-align: center;
 }
+
 p {
   color: var(--color-three);
   font-size: 1em;
   text-align: center;
-  max-width: 1400px;
 }
 
 span {
@@ -260,7 +260,7 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  max-width: 1450px;
+  max-width: 1400px;
 }
 
 @keyframes slidein {
@@ -278,7 +278,6 @@ span {
   height: 50vh;
   margin: auto;
   padding: 10px;
-  max-width: 1450px;
   animation: slidein ease-in-out;
   animation-timeline: view();
   animation-range: entry 0 cover 40%;
@@ -290,7 +289,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 10px;
 }
 
@@ -334,7 +333,6 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  max-width: 1450px;
   margin-bottom: 50px;
   animation: slidein ease-in-out;
   animation-timeline: view();
@@ -344,9 +342,9 @@ span {
 #dprojetos {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 1450px;
   gap: 35px;
   height: 125vh;
+  margin: auto;
 }
 
 .proj {
@@ -390,7 +388,6 @@ footer {
   height: 45vh;
   margin: auto;
   padding: 10px;
-  max-width: 1450px;
   margin-top: 200px;
 }
 
@@ -400,7 +397,6 @@ footer {
   align-items: center;
   justify-content: space-around;
   padding: 10px;
-  max-width: 1450px;
 }
 
 h5 {
