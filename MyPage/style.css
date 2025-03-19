@@ -148,7 +148,7 @@ main {
   align-items: center;
   justify-content: space-around;
   padding: 10px;
-  max-width: 1400px;
+  max-width: 1550px;
 }
 
 #dmain {
@@ -221,6 +221,7 @@ h3 {
   font-size: 1.7em;
   font-family: var(--font-two);
   text-align: center;
+  max-width: 1550px;
 }
 
 p {
@@ -259,10 +260,11 @@ span {
   margin: auto;
   padding: 10px;
   margin-bottom: 25px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  max-width: 1400px;
+  max-width: 1550px;
 }
 
 @keyframes slidein {

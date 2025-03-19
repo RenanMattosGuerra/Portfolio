@@ -21,7 +21,7 @@
   }
   main {
     width: 100vw;
-    height: 70vh;
+    height: 75vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
