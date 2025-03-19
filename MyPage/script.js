@@ -37,12 +37,14 @@ photo.addEventListener("mouseover", () => {
 const page = document.getElementById("page");
 const lightdark = document.getElementById("modebox");
 const titles = document.querySelectorAll("h2,h3");
+const head = document.getElementById("hd");
 
 lightdark.addEventListener("change", () => {
   page.classList.toggle("lightmode");
   titles.forEach((title) => {
     title.classList.toggle("lightmode");
   });
+  head.classList.toggle("lightmode");
 });
 
 //Alerta com endereço de email
