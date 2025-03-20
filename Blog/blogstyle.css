@@ -177,14 +177,14 @@ i:hover {
 #sec1 {
   margin: auto;
   width: 70vw;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   animation: appear ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 50%;
+  animation-range: cover 0% cover 30%;
 }
 @keyframes appear {
   from {
@@ -256,7 +256,7 @@ h4 {
   border-top: 1px solid var(--secundary-color);
   animation: appear 1s ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 50%;
+  animation-range: cover 0% cover 30%;
 }
 h5 {
   color: var(--terciary-color);
@@ -276,7 +276,7 @@ article {
   align-items: center;
   animation: appear 1s ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 50%;
+  animation-range: cover 0% cover 30%;
 }
 .passeios {
   width: 25vw;
