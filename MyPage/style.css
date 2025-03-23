@@ -184,7 +184,7 @@ main {
   height: 205px;
   background: url(imagens/fotoperfil.jpeg);
   background-position: center center;
-  border: 6px var(--color-three) double;
+  border: 6px rgba(240, 255, 255, 0.596) double;
 }
 
 .animefoto {
@@ -211,6 +211,40 @@ h1 {
   font-size: 3.3em;
   margin-left: 30px;
 }
+
+.h1wobble {
+  animation: Wobble 2s ease-in-out;
+}
+
+@keyframes Wobble {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+    color: var(--color-four);
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
 h2 {
   color: whitesmoke;
   font-size: 0.9em;

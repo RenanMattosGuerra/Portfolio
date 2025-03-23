@@ -25,12 +25,24 @@ links.forEach((link) => {
   });
 });
 
+//Animação do Título
+const h1 = document.getElementById("head1");
+function wobble() {
+  h1.classList.toggle("h1wobble");
+}
+setInterval(wobble, 5000);
+
 //Animação da foto
 
 const photo = document.getElementById("foto");
 photo.addEventListener("mouseover", () => {
   photo.classList.toggle("animefoto");
 });
+
+function move() {
+  photo.classList.toggle("animefoto");
+}
+setInterval(move, 3000);
 
 //Modo claro e escuro da página
 
