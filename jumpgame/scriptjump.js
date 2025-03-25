@@ -7,6 +7,7 @@ const over = document.getElementById("gameover");
 const restart = document.getElementById("restart");
 const level = document.getElementById("level");
 const win = document.getElementById("winner");
+const section = document.getElementById("sect");
 
 //Animação de pular
 setTimeout(jump, 15);
@@ -58,6 +59,7 @@ startButton.addEventListener("click", () => {
       clearInterval(checkDead);
       winner.style.display = "flex";
       snake.style.display = "none";
+      section.style.display = "none";
     }
   }
 
@@ -75,6 +77,7 @@ startButton.addEventListener("click", () => {
     if (snakeLeft <= 70 && snakeLeft > 0 && cat.style.display == "block") {
       clearInterval(checkDead);
       over.style.display = "flex";
+      section.style.display = "none";
       alert("Você Perdeu!");
     }
     if (
@@ -85,6 +88,7 @@ startButton.addEventListener("click", () => {
     ) {
       clearInterval(checkDead);
       over.style.display = "flex";
+      section.style.display = "none";
       alert("Você Perdeu!");
     }
   }, 10);
