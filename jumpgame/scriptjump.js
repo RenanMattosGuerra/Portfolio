@@ -27,7 +27,7 @@ function jump() {
 //Início do jogo
 startButton.addEventListener("click", () => {
   snake.classList.add("snakemove");
-
+  startButton.style.backgroundColor = "green";
   //Passando de nível
   setTimeout(run, 15000);
   function run() {
