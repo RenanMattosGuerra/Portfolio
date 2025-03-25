@@ -30,7 +30,7 @@ const h1 = document.getElementById("head1");
 function wobble() {
   h1.classList.toggle("h1wobble");
 }
-setInterval(wobble, 5000);
+setTimeout(wobble, 4000);
 
 //Animação da foto
 
@@ -42,7 +42,7 @@ photo.addEventListener("mouseover", () => {
 function move() {
   photo.classList.toggle("animefoto");
 }
-setInterval(move, 3000);
+setTimeout(move, 2000);
 
 //Modo claro e escuro da página
 
