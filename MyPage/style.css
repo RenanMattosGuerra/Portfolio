@@ -20,7 +20,7 @@
 body {
   overflow-x: hidden;
   width: 100vw;
-  height: 300vh;
+  height: 320vh;
   background-color: var(--color-one);
 }
 
@@ -390,8 +390,8 @@ span {
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin-bottom: 50px;
+  justify-content: space-around;
+  margin-bottom: 80px;
   animation: slidein ease-in-out;
   animation-timeline: view();
   animation-range: entry 0 cover 35%;
@@ -401,7 +401,7 @@ span {
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 35px;
+  gap: 40px;
   height: 125vh;
   margin: auto;
 }
@@ -454,7 +454,7 @@ footer {
   height: 45vh;
   margin: auto;
   padding: 10px;
-  margin-top: 200px;
+  margin-top: 380px;
   display: flex;
   flex-direction: column;
   align-items: center;

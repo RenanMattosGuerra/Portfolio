@@ -2,8 +2,8 @@
 
 @media screen and (min-width: 992px) {
   #dprojetos {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
     width: 70vw;
     margin: auto;
   }
@@ -11,7 +11,8 @@
     width: 20vw;
   }
   #projetos {
-    height: 80vh;
+    height: 90vh;
+    margin-bottom: -250px;
   }
   #foto {
     background: url(imagens/fotoperfilgrande.jpeg);
@@ -37,6 +38,11 @@
   #cv {
     text-align: center;
     width: 18vw;
+  }
+  .skill {
+    font-size: 0.87em;
+    height: 110px;
+    width: 110px;
   }
   p {
     font-size: 1.2em;
