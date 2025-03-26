@@ -41,7 +41,7 @@ startButton.addEventListener("click", () => {
     snake.classList.remove("snakemovefaster");
     snake.classList.add("snakemoveevenfaster");
     level.innerText = "Nível 3";
-    level.style.color = "darkorange";
+    level.style.color = "brown";
   }
   setTimeout(run3, 45000);
   function run3() {

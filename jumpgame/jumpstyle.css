@@ -6,13 +6,19 @@
   padding: 0px;
 }
 
+:root {
+  --primary-color: rgb(65, 65, 65);
+  --primary-font: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
 body {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(65, 65, 65);
+  background-color: var(--primary-color);
   overflow: hidden;
 }
 
@@ -23,10 +29,14 @@ section {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgba(245, 245, 220, 0.877);
+  background-image: linear-gradient(
+    to top right,
+    rgb(0, 247, 255),
+    rgb(243, 255, 82)
+  );
   border-radius: 10px;
+  border: 2px solid black;
   padding: 10px;
-  border: 1px solid black;
   height: 20vh;
 }
 
@@ -36,27 +46,27 @@ button {
   border-radius: 20px;
   margin: 5px;
   cursor: pointer;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: var(--primary-font);
   font-size: 2em;
   font-weight: 600;
 }
 
 button:hover {
-  background-color: yellowgreen;
-  transition: 0.2s ease;
+  background-color: greenyellow;
+  transition: 0.22s ease;
 }
 
 h1 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--primary-font);
   font-weight: 700;
+  color: black;
 }
 
 h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--primary-font);
   color: darkgreen;
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 900;
   text-decoration: underline;
 }
 
@@ -135,16 +145,19 @@ main {
   position: absolute;
   top: 15%;
   font-size: 4em;
-  background-color: rgba(245, 245, 220, 0.87);
-  border: 1px solid black;
+  background-image: linear-gradient(
+    to top right,
+    rgb(0, 247, 255),
+    rgb(243, 255, 82)
+  );
+  border: 2px solid black;
   padding: 35px;
   border-radius: 10px;
   height: 300px;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: var(--primary-font);
 }
 
 #restart {
@@ -156,9 +169,9 @@ main {
 }
 
 #restart:hover {
-  background-color: yellowgreen;
+  background-color: greenyellow;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: 0.22s ease;
 }
 
 #winner {
@@ -166,13 +179,16 @@ main {
   position: absolute;
   top: 15%;
   font-size: 2em;
-  background-color: rgba(245, 245, 220, 0.822);
-  border: 1px solid black;
+  background-image: linear-gradient(
+    to top right,
+    rgb(0, 247, 255),
+    rgb(243, 255, 82)
+  );
+  border: 2px solid black;
   padding: 35px;
   border-radius: 50px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: darkgreen;
+  font-family: var(--primary-font);
+  color: black;
   justify-content: center;
   align-items: center;
 }
