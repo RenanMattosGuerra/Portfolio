@@ -20,7 +20,7 @@
 body {
   overflow-x: hidden;
   width: 100vw;
-  height: 320vh;
+  height: 410vh;
   background-color: var(--color-one);
 }
 
@@ -386,12 +386,12 @@ span {
 
 #projetos {
   width: 100vw;
-  height: 155vh;
+  height: 150vh;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 80px;
+  margin-bottom: 250px;
   animation: slidein ease-in-out;
   animation-timeline: view();
   animation-range: entry 0 cover 35%;
@@ -454,7 +454,7 @@ footer {
   height: 45vh;
   margin: auto;
   padding: 10px;
-  margin-top: 380px;
+  margin-top: 510px;
   display: flex;
   flex-direction: column;
   align-items: center;

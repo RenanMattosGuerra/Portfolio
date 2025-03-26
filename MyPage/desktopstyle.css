@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 992px) {
+  body {
+    height: 320vh;
+  }
   #dprojetos {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -12,7 +15,7 @@
   }
   #projetos {
     height: 90vh;
-    margin-bottom: -250px;
+    margin-bottom: -370px;
   }
   #foto {
     background: url(imagens/fotoperfilgrande.jpeg);
