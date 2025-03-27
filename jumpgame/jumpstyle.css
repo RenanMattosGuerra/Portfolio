@@ -82,7 +82,7 @@ main {
 }
 
 .snakemove {
-  animation: move 2s infinite linear;
+  animation: move 2.15s infinite linear;
 }
 
 @keyframes move {
@@ -123,20 +123,20 @@ main {
 }
 
 #cat {
-  position: relative;
+  position: absolute;
   top: 820px;
   display: block;
 }
 
 #jumpcat {
-  position: relative;
+  position: absolute;
   top: 820px;
   display: none;
 }
 
 #snake {
-  position: relative;
-  top: 720px;
+  position: absolute;
+  top: 820px;
   left: 1800px;
 }
 
@@ -191,4 +191,29 @@ main {
   color: black;
   justify-content: center;
   align-items: center;
+}
+
+#cursor {
+  display: none;
+  background-color: rgba(255, 255, 255, 0);
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: shine 0.5s ease infinite;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.7em;
+  color: rgba(0, 0, 0, 0.295);
+}
+
+@keyframes shine {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
 }

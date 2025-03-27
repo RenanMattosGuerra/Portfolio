@@ -53,7 +53,7 @@ startButton.addEventListener("click", () => {
   }
 
   //Vitória
-  setTimeout(win, 54000);
+  setTimeout(win, 57200);
   function win() {
     if (over.style.display !== "flex") {
       clearInterval(checkDead);
@@ -97,4 +97,23 @@ startButton.addEventListener("click", () => {
 // Restart game
 restart.addEventListener("click", () => {
   location.reload();
+});
+
+//Cursor de gato
+const cursor = document.getElementById("cursor");
+
+clickPage.addEventListener("click", () => {
+  cursor.style.display = "flex";
+  setTimeout(disaappear, 500);
+  function disaappear() {
+    cursor.style.display = "none";
+  }
+});
+
+document.addEventListener("mousemove", (e) => {
+  let x = e.pageX;
+  let y = e.pageY;
+
+  cursor.style.top = y + "px";
+  cursor.style.left = x + "px";
 });
