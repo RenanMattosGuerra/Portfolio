@@ -29,7 +29,7 @@ startButton.addEventListener("click", () => {
   snake.classList.add("snakemove");
   startButton.style.backgroundColor = "crimson";
   //Passando de nível
-  setTimeout(run, 15000);
+  setTimeout(run, 15150);
   function run() {
     snake.classList.remove("snakemove");
     snake.classList.add("snakemovefaster");
@@ -55,7 +55,7 @@ startButton.addEventListener("click", () => {
   }
 
   //Vitória
-  setTimeout(win, 57200);
+  setTimeout(win, 56400);
   function win() {
     if (over.style.display !== "flex") {
       clearInterval(checkDead);
