@@ -29,20 +29,16 @@ section {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-image: linear-gradient(
-    to top right,
-    rgb(0, 247, 255),
-    rgb(243, 255, 82)
-  );
+  background-image: linear-gradient(to top right, crimson, #f3ada6);
   border-radius: 10px;
   border: 2px solid black;
   padding: 10px;
-  height: 20vh;
+  height: 22vh;
 }
 
 button {
   padding: 8px;
-  background-color: yellow;
+  background-color: rgb(255, 255, 111);
   border-radius: 20px;
   margin: 5px;
   cursor: pointer;
@@ -52,7 +48,7 @@ button {
 }
 
 button:hover {
-  background-color: greenyellow;
+  background-color: #dc7d72;
   transition: 0.22s ease;
 }
 
@@ -64,10 +60,9 @@ h1 {
 
 h2 {
   font-family: var(--primary-font);
-  color: darkgreen;
+  color: black;
   font-size: 2em;
   font-weight: 900;
-  text-decoration: underline;
 }
 
 main {
@@ -145,11 +140,7 @@ main {
   position: absolute;
   top: 15%;
   font-size: 4em;
-  background-image: linear-gradient(
-    to top right,
-    rgb(0, 247, 255),
-    rgb(243, 255, 82)
-  );
+  background-image: linear-gradient(to top right, crimson, #da8980);
   border: 2px solid black;
   padding: 35px;
   border-radius: 10px;
@@ -161,7 +152,7 @@ main {
 }
 
 #restart {
-  background-color: yellow;
+  background-color: rgb(255, 255, 111);
   border-radius: 20px;
   border: 1px solid black;
   color: black;
@@ -169,7 +160,7 @@ main {
 }
 
 #restart:hover {
-  background-color: greenyellow;
+  background-color: #dc7d72;
   cursor: pointer;
   transition: 0.22s ease;
 }
@@ -179,11 +170,7 @@ main {
   position: absolute;
   top: 15%;
   font-size: 2em;
-  background-image: linear-gradient(
-    to top right,
-    rgb(0, 247, 255),
-    rgb(243, 255, 82)
-  );
+  background-image: linear-gradient(to top right, crimson, #da8980);
   border: 2px solid black;
   padding: 35px;
   border-radius: 50px;

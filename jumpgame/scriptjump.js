@@ -27,21 +27,23 @@ function jump() {
 //Início do jogo
 startButton.addEventListener("click", () => {
   snake.classList.add("snakemove");
-  startButton.style.backgroundColor = "green";
+  startButton.style.backgroundColor = "crimson";
   //Passando de nível
   setTimeout(run, 15000);
   function run() {
     snake.classList.remove("snakemove");
     snake.classList.add("snakemovefaster");
     level.innerText = "Nível 2";
-    level.style.color = "darkblue";
+    level.style.color = "rgb(255, 255, 111)";
+    level.style.fontSize = "2.2em";
   }
   setTimeout(run2, 30000);
   function run2() {
     snake.classList.remove("snakemovefaster");
     snake.classList.add("snakemoveevenfaster");
     level.innerText = "Nível 3";
-    level.style.color = "brown";
+    level.style.color = "orange";
+    level.style.fontSize = "2.6em";
   }
   setTimeout(run3, 45000);
   function run3() {
