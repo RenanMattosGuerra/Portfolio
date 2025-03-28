@@ -50,13 +50,15 @@ const page = document.getElementById("page");
 const lightdark = document.getElementById("modebox");
 const titles = document.querySelectorAll("h2,h3");
 const head = document.getElementById("hd");
+const main = document.getElementById("landing");
 
 lightdark.addEventListener("change", () => {
   page.classList.toggle("lightmode");
   titles.forEach((title) => {
-    title.classList.toggle("lightmode");
+    title.classList.toggle("lightmodetext");
   });
   head.classList.toggle("lightmode");
+  main.classList.toggle("mainlightmode");
 });
 
 //Alerta com endereço de email

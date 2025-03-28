@@ -12,6 +12,7 @@
   --color-three: #384e77;
   --color-four: #8bbeb2;
   --color-five: #e6f9af;
+  --color-six: azure;
   --font-one: "Indie Flower", cursive;
   --font-two: "Merienda", cursive;
   --font-three: "Tektur", sans-serif;
@@ -25,7 +26,11 @@ body {
 }
 
 .lightmode {
-  background-color: azure;
+  background-color: var(--color-six);
+  color: var(--color-one);
+}
+
+.lightmodetext {
   color: var(--color-one);
 }
 
@@ -149,6 +154,19 @@ main {
   justify-content: space-around;
   padding: 10px;
   max-width: 1550px;
+  background-image: radial-gradient(
+    ellipse farthest-side at center center,
+    var(--color-two) 1%,
+    var(--color-one) 99%
+  );
+}
+
+.mainlightmode {
+  background-image: radial-gradient(
+    ellipse farthest-side at center center,
+    var(--color-four) 1%,
+    var(--color-six) 99%
+  );
 }
 
 #dmain {
@@ -167,7 +185,7 @@ main {
   border: 2px solid var(--color-four);
   border-radius: 9px;
   padding: 7px;
-  background-color: azure;
+  background-color: var(--color-six);
   color: var(--color-one);
 }
 
@@ -246,13 +264,15 @@ h1 {
 }
 
 h2 {
-  color: whitesmoke;
+  color: var(--color-six);
   font-size: 0.9em;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 5s steps(150) forwards, blink 0.5s step-end infinite;
+  animation: typing 6s steps(150) forwards, blink 0.5s step-end infinite;
   font-family: var(--font-two);
+  max-width: 370px;
 }
+
 @keyframes typing {
   from {
     width: 0;
@@ -269,7 +289,7 @@ h2 {
 
 h3 {
   margin: auto;
-  color: whitesmoke;
+  color: var(--color-six);
   font-size: 1.7em;
   font-family: var(--font-two);
   text-align: center;
@@ -430,7 +450,7 @@ a.aproj {
   font-size: 1.1em;
   font-weight: lighter;
   font-family: Arial, Helvetica, sans-serif;
-  color: azure;
+  color: var(--color-six);
   text-align: center;
   display: flex;
   flex-direction: column;
