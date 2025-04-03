@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --fonte-primaria: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(imagens/pexels-marina-zasorina-7634988.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 80vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.801);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.options {
+  height: 60vh;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    "Arial Narrow", Arial, sans-serif;
+}
+
+h2 {
+  font-size: 1em;
+  font-family: var(--fonte-primaria);
+}
+
+.lists {
+  width: 50vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+li {
+  list-style: lower-alpha;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 12px;
+  width: 55vw;
+  font-family: var(--fonte-primaria);
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: lightslategray;
+  transition: 0.2s ease;
+}
+
+button {
+  visibility: hidden;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: lightslategray;
+  transition: 0.2s ease;
+}
+
+#two {
+  display: none;
+}
+
+#three {
+  display: none;
+}
+
+#four {
+  display: none;
+}
+
+h3 {
+  font-size: 2em;
+  display: none;
+  font-family: var(--fonte-primaria);
+}
+
+#resultado {
+  display: none;
+  font-size: 1.7em;
+  font-family: var(--fonte-primaria);
+}

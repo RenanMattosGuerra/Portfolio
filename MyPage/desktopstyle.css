@@ -5,7 +5,7 @@
     height: 320vh;
   }
   #dprojetos {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
     width: 70vw;
     margin: auto;
@@ -14,7 +14,7 @@
     width: 20vw;
   }
   #projetos {
-    height: 90vh;
+    height: 120vh;
     margin-bottom: -370px;
   }
   #foto {
@@ -47,6 +47,9 @@
     height: 110px;
     width: 110px;
   }
+  #game {
+    display: flex;
+  }
   p {
     font-size: 1.2em;
   }
@@ -63,5 +66,14 @@
   }
   #psobre {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #dprojetos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #projetos {
+    height: 90vh;
   }
 }

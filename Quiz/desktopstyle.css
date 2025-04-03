@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url(imagens/pexels-amar-30792658.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    background: url(imagens/pexels-pixabay-163031.jpg);
+    background-size: 120%;
+    background-position: center center;
+  }
+  main {
+    height: 60vh;
+    width: 40vw;
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+  .options {
+    width: 40vw;
+  }
+  .lists {
+    width: 30vw;
+  }
+  li {
+    width: 30vw;
+  }
+}
