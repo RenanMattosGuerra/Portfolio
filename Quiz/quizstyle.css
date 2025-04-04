@@ -103,6 +103,10 @@ button:hover {
   display: none;
 }
 
+#five {
+  display: none;
+}
+
 h3 {
   font-size: 2em;
   display: none;
