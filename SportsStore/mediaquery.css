@@ -31,6 +31,10 @@
     justify-content: space-between;
     width: 50vw;
   }
+  .cart {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
