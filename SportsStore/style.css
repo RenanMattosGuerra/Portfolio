@@ -269,11 +269,13 @@ h2 {
 }
 
 .content {
-  margin: auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
-  width: 92vw;
+  max-width: 1400px;
+  padding: var(--margin);
+  margin: auto;
+  width: 100%;
 }
 
 .product {
@@ -285,6 +287,7 @@ h2 {
   align-items: center;
   border-radius: 10px;
   cursor: pointer;
+  width: 100%;
 }
 
 .product:hover {

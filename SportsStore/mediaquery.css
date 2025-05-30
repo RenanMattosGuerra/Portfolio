@@ -3,7 +3,6 @@
 @media screen and (min-width: 992px) {
   .content {
     grid-template-columns: 1fr 1fr;
-    width: 75vw;
   }
   .anchor {
     display: inline-block;
@@ -29,7 +28,7 @@
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
-    width: 50vw;
+    width: 50%;
   }
   .cart {
     width: 75px;
@@ -37,10 +36,9 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   .content {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 75vw;
   }
   h5 {
     display: none;
