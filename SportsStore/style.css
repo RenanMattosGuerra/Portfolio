@@ -21,6 +21,7 @@ body {
   width: 100%;
   background-color: var(--color-one);
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 header {
@@ -217,6 +218,8 @@ span.navOptions:hover {
 
 section {
   opacity: 80%;
+  overflow: hidden;
+  position: relative;
 }
 
 section:hover {
