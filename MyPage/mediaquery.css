@@ -1,21 +1,13 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 992px) {
-  body {
-    height: 320vh;
-  }
   #dprojetos {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    width: 70vw;
     margin: auto;
-    height: 90vh;
   }
   #dheader {
     width: 20vw;
-  }
-  #projetos {
-    height: 90vh;
   }
   #foto {
     background: url(imagens/fotoperfilgrande.jpeg);
@@ -76,9 +68,18 @@
   #dprojetos {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr;
-    height: 90vh;
   }
-  #projetos {
-    height: 90vh;
+}
+
+@media (min-width: 768px) {
+  #dprojetos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #dprojetos {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
   }
 }

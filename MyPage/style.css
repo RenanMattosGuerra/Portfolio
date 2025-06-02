@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
 }
 
 :root {
@@ -20,9 +20,9 @@
 
 body {
   overflow-x: hidden;
-  width: 100vw;
+  width: 100%;
   background-color: var(--color-one);
-  height: 430vh;
+  min-height: 100vh;
 }
 
 .lightmode {
@@ -36,8 +36,8 @@ body {
 
 header {
   height: 10vh;
-  width: 100vw;
-  padding: 10px;
+  width: 100%;
+  padding: 1rem;
   background-color: var(--color-one);
   display: flex;
   justify-content: space-between;
@@ -147,13 +147,14 @@ li:hover {
 
 main {
   margin: auto;
-  height: 70vh;
+  width: 100%;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 10px;
-  max-width: 1550px;
+  padding: 2rem 1rem;
+  max-width: 1200px;
   background-image: radial-gradient(
     ellipse farthest-side at center center,
     var(--color-two) 1%,
@@ -293,7 +294,7 @@ h3 {
   font-size: 1.7em;
   font-family: var(--font-two);
   text-align: center;
-  max-width: 1550px;
+  align-self: center;
 }
 
 p {
@@ -351,14 +352,17 @@ span {
 }
 
 #skills {
-  width: 100vw;
-  height: 50vh;
+  width: 100%;
+  min-height: 300px;
   margin: auto;
-  padding: 10px;
+  padding: 2rem 1rem;
   margin-top: 90px;
   animation: slidein ease-in-out;
   animation-timeline: view();
   animation-range: entry 0 cover 35%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 #dskills {
@@ -405,10 +409,12 @@ span {
 }
 
 #projetos {
-  width: 100vw;
-  height: 150vh;
+  width: 100%;
+  padding: 3rem 1rem;
   margin: auto;
+  gap: 2rem;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 250px;
@@ -418,12 +424,19 @@ span {
 }
 
 #dprojetos {
-  width: 100vw;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
-  height: 125vh;
   margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .proj {
@@ -438,6 +451,8 @@ span {
   justify-content: space-evenly;
   opacity: 70%;
   box-shadow: 1px 1px 3px 1px black;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .proj:hover {
@@ -469,21 +484,28 @@ a.aproj {
   box-shadow: 1px 1px 4px 2px var(--color-two);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 #game {
   display: none;
 }
 
 footer {
-  width: 100vw;
-  height: 45vh;
+  width: 100%;
+  min-height: 100px;
   margin: auto;
-  padding: 10px;
+  padding: 1rem;
   margin-top: 510px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  text-align: center;
 }
 
 #dfooter {
