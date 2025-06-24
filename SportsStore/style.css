@@ -17,6 +17,10 @@
   --font-two: system-ui;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   background-color: var(--color-one);

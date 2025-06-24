@@ -18,6 +18,10 @@
   --font-three: "Tektur", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   width: 100%;
