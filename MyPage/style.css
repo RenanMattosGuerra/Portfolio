@@ -7,10 +7,10 @@
 }
 
 :root {
-  --color-one: #0d0630;
+  --color-one: rgb(13, 6, 48);
   --color-two: #18314f;
   --color-three: #384e77;
-  --color-four: #8bbeb2;
+  --color-four: rgb(139, 190, 178);
   --color-five: #e6f9af;
   --color-six: azure;
   --font-one: "Indie Flower", cursive;
@@ -371,7 +371,6 @@ span {
 
 #dskills {
   margin: auto;
-  height: 45vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -379,25 +378,22 @@ span {
   padding: 10px;
 }
 
+#dskills:has(:hover) :not(:hover) {
+  scale: 0.9;
+  filter: blur(2px);
+}
+
 .skill {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  font-family: var(--font-two);
-  font-size: 0.8em;
-  font-weight: bold;
-  color: var(--color-three);
-  padding: 2px;
+  margin: 7px;
+  transition: all 0.4s ease;
 }
 
 .skill:hover {
-  background-color: var(--color-five);
   transform: scale(1.1);
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 
 #html,
@@ -408,8 +404,8 @@ span {
 }
 
 #tailimg {
-  width: 55px;
-  height: 30px;
+  width: 45px;
+  height: 16px;
 }
 
 #projetos {
