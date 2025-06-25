@@ -144,6 +144,12 @@ li:hover {
   transform: scale(0.9);
   transition: 0.2s ease;
 }
+
+.anav {
+  font-family: var(--font-three);
+  font-weight: 400;
+}
+
 .anav:hover {
   color: var(--color-five);
   transition: 0.2s ease;
@@ -384,8 +390,8 @@ span {
 }
 
 .skill {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   margin: 7px;
   transition: all 0.4s ease;
