@@ -7,10 +7,10 @@
 }
 
 :root {
-  --color-one: rgb(13, 6, 48);
+  --color-one: #0d0630;
   --color-two: #18314f;
   --color-three: #384e77;
-  --color-four: rgb(139, 190, 178);
+  --color-four: #8bbeb2;
   --color-five: #e6f9af;
   --color-six: azure;
   --font-one: "Indie Flower", cursive;
@@ -99,7 +99,7 @@ nav {
   animation: appear 1s ease-in-out;
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  background-color: #0000009f;
+  background-color: #000000de;
   z-index: 50;
 }
 
@@ -208,28 +208,35 @@ main {
 }
 
 #foto {
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  width: 185px;
-  height: 205px;
-  background: url(imagens/fotoperfil.jpeg);
+  width: 295px;
+  height: 295px;
+  background: url(imagens/fotoperfil3.png);
   background-position: center center;
-  border: 6px rgba(240, 255, 255, 0.596) double;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#foto:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
 }
 
 .animefoto {
-  animation: clippath 2.5s ease;
+  animation: grow 2s ease;
 }
 
-@keyframes clippath {
+@keyframes grow {
   0% {
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    scale: 1;
+    transform: rotateY(0);
   }
-  50% {
-    clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
-    transform: scale(1.03);
+  75% {
+    scale: 1.1;
+    transform: rotateY(-180deg);
   }
   100% {
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    scale: 1;
+    transform: rotateY(0);
   }
 }
 
@@ -394,12 +401,7 @@ span {
   height: 80px;
   border-radius: 50%;
   margin: 7px;
-  transition: all 0.4s ease;
-}
-
-.skill:hover {
-  transform: scale(1.1);
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #html,

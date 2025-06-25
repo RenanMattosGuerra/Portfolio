@@ -10,9 +10,8 @@
     width: 20vw;
   }
   #foto {
-    background: url(imagens/fotoperfilgrande.jpeg);
-    width: 345px;
-    height: 335px;
+    width: 575px;
+    height: 565px;
     background-position: center;
   }
   main {
@@ -32,7 +31,7 @@
   }
   #cv {
     text-align: center;
-    width: 18vw;
+    width: 345px;
   }
   .skill {
     height: 110px;
