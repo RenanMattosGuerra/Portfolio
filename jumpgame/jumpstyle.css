@@ -45,11 +45,11 @@ button {
   font-family: var(--primary-font);
   font-size: 2em;
   font-weight: 600;
+  transition: all 0.22s ease-in-out;
 }
 
 button:hover {
   background-color: #dc7d72;
-  transition: 0.22s ease;
 }
 
 h1 {
@@ -157,12 +157,12 @@ main {
   border: 1px solid black;
   color: black;
   padding: 5px;
+  transition: all 0.22s ease-in-out;
 }
 
 #restart:hover {
   background-color: #dc7d72;
   cursor: pointer;
-  transition: 0.22s ease;
 }
 
 #winner {

@@ -54,17 +54,19 @@
   }
   #img {
     height: 40vh;
-    width: 40vw;
+    width: 65vw;
     background-image: url(imagens/jaguarmobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
   #text {
-    width: 40vw;
+    width: 65vw;
     height: 40vh;
   }
   #content {
     width: 90vw;
+    flex-direction: column;
+    padding: 10px;
   }
   article {
     width: 100vw;

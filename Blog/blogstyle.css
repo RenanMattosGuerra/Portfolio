@@ -58,6 +58,7 @@ label {
   color: var(--terciary-color);
   font-size: 1em;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transition: all 0.2s ease-in-out;
 }
 label:hover {
   cursor: pointer;
@@ -71,6 +72,7 @@ input {
   color: var(--terciary-color);
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 .navlinks:hover {
   color: var(--secundary-color);
@@ -83,13 +85,13 @@ button {
   font-family: "Sriracha", serif;
   font-size: 1em;
   background-color: azure;
+  transition: all 0.2s ease-in-out;
 }
 button:hover {
   cursor: pointer;
   background-color: var(--primary-color);
   color: var(--terciary-color);
   transform: scale(1.1);
-  transition: 0.2s ease-in-out;
 }
 #checkmode {
   padding: 5px;
@@ -160,6 +162,7 @@ aside {
 i {
   color: var(--secundary-color);
   padding: 2px;
+  transition: all 0.2s ease-in-out;
 }
 i:hover {
   cursor: pointer;
@@ -211,10 +214,10 @@ i:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s ease-in-out;
 }
 .animals:hover {
   transform: scale(1.1);
-  transition: 0.2s ease-in-out;
 }
 
 #arara {

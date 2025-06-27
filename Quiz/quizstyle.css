@@ -71,24 +71,24 @@ li {
   padding: 12px;
   width: 55vw;
   font-family: var(--fonte-primaria);
+  transition: all 0.2s ease-in-out;
 }
 
 li:hover {
   cursor: pointer;
   background-color: lightslategray;
-  transition: 0.2s ease;
 }
 
 button {
   visibility: hidden;
   padding: 15px;
   border-radius: 10px;
+  transition: all 0.2s ease-in-out;
 }
 
 button:hover {
   cursor: pointer;
   background-color: lightslategray;
-  transition: 0.2s ease;
 }
 
 #two {

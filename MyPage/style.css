@@ -72,11 +72,11 @@ header {
   font-size: 1.4em;
   padding: 8px;
   border-radius: 50%;
+  transition: 0.3s ease;
 }
 
 #bars:hover {
   background-color: var(--color-four);
-  transition: 0.3s ease;
   cursor: pointer;
 }
 
@@ -84,12 +84,12 @@ header {
   color: var(--color-three);
   font-size: 2.2em;
   display: none;
+  transition: 0.3s ease;
 }
 
 #xicon:hover {
   cursor: pointer;
   color: var(--color-four);
-  transition: 0.3s ease;
 }
 
 nav {
@@ -132,6 +132,7 @@ ul {
 
 li {
   list-style: none;
+  transition: 0.2s ease;
 }
 
 a {
@@ -142,17 +143,16 @@ a {
 }
 li:hover {
   transform: scale(0.9);
-  transition: 0.2s ease;
 }
 
 .anav {
   font-family: var(--font-three);
   font-weight: 400;
+  transition: 0.2s ease;
 }
 
 .anav:hover {
   color: var(--color-five);
-  transition: 0.2s ease;
 }
 
 main {
@@ -198,12 +198,12 @@ main {
   padding: 7px;
   background-color: var(--color-six);
   color: var(--color-one);
+  transition: 0.3s ease-in-out;
 }
 
 #cv:hover {
   background: linear-gradient(to right, var(--color-one), var(--color-four));
   color: azure;
-  transition: 0.3s ease;
   transform: scale(1.05);
 }
 
@@ -214,15 +214,15 @@ main {
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
 }
 
 #foto:hover {
   transform: scale(1.1);
-  transition: 0.5s ease;
 }
 
 .animefoto {
-  animation: grow 2s ease;
+  animation: grow 2s ease-in-out;
 }
 
 @keyframes grow {
@@ -389,6 +389,7 @@ span {
   align-items: center;
   justify-content: space-evenly;
   padding: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 #dskills:has(:hover) :not(:hover) {
@@ -401,7 +402,7 @@ span {
   height: 80px;
   border-radius: 50%;
   margin: 7px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 #html,
@@ -461,12 +462,12 @@ span {
   box-shadow: 1px 1px 3px 1px black;
   gap: 1rem;
   padding: 1rem;
+  transition: 0.3s ease-in-out;
 }
 
 .proj:hover {
   opacity: 100%;
   transform: scale(1.1);
-  transition: 0.5s ease;
 }
 
 a.aproj {
@@ -540,11 +541,11 @@ h5 {
   height: 15vh;
   width: 10%;
   margin: auto;
+  transition: all 0.3s ease-in-out;
 }
 
 .contato:hover {
   transform: scale(1.1);
-  transition: 0.5s ease;
   color: var(--color-four);
 }
 
@@ -559,11 +560,11 @@ h5 {
   height: 15vh;
   margin: auto;
   width: 10vw;
+  transition: all 0.3s ease-in-out;
 }
 
 .linkfooter:hover {
   color: var(--color-four);
-  transition: 0.5s ease;
 }
 
 .pfooter {
