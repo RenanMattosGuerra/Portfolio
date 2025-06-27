@@ -201,10 +201,10 @@ main {
 }
 
 #cv:hover {
-  background-color: var(--color-one);
-  color: var(--color-four);
-  transition: 0.2s ease;
-  transform: scale(0.95);
+  background: linear-gradient(to right, var(--color-one), var(--color-four));
+  color: azure;
+  transition: 0.3s ease;
+  transform: scale(1.05);
 }
 
 #foto {
