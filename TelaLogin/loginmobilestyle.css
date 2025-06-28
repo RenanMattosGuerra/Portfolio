@@ -27,14 +27,12 @@ div#robo {
 
 main {
   width: 85%;
-  height: 700px;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: none;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px 1px rgb(102, 102, 102);
   font-family: "Chakra Petch", serif;
   overflow: hidden;
 }
