@@ -27,7 +27,7 @@ div#robo {
 
 main {
   width: 85%;
-  height: 85vh;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
