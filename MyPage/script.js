@@ -25,18 +25,6 @@ links.forEach((link) => {
   });
 });
 
-//Animação da foto
-
-const photo = document.getElementById("foto");
-photo.addEventListener("mouseover", () => {
-  photo.classList.toggle("animefoto");
-});
-
-function move() {
-  photo.classList.toggle("animefoto");
-}
-setTimeout(move, 2000);
-
 //Modo claro e escuro da página
 
 const page = document.getElementById("page");
@@ -61,77 +49,95 @@ mail.addEventListener("click", () => {
   alert("rguerra1998@gmail.com");
 });
 
-//gsap Animação com Scroll
+//Animações apenas para telas maiores de 992px
 
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(SplitText);
+const mediaQuery = window.matchMedia("(min-width: 992px)");
 
-gsap.from(".appear1", {
-  xPercent: -50,
-  opacity: 0,
-  duration: 1,
-  ease: "back.out",
-  scrollTrigger: {
-    trigger: ".appear2",
-    toggleActions: "play pause none none",
-  },
-});
+if (mediaQuery.matches) {
+  //Animação da foto
 
-gsap.from(".appear2", {
-  xPercent: 50,
-  opacity: 0,
-  duration: 1,
-  ease: "back.out",
-  scrollTrigger: {
-    trigger: ".appear3",
-    toggleActions: "play pause none none",
-  },
-});
+  const photo = document.getElementById("foto");
+  photo.addEventListener("mouseover", () => {
+    photo.classList.toggle("animefoto");
+  });
 
-gsap.from(".appear3", {
-  xPercent: -50,
-  opacity: 0,
-  duration: 1,
-  ease: "back.out",
-  scrollTrigger: {
-    trigger: ".appear3",
-    toggleActions: "play pause none none",
-  },
-});
+  function move() {
+    photo.classList.toggle("animefoto");
+  }
+  setTimeout(move, 2000);
 
-gsap.from(".appear4", {
-  xPercent: -50,
-  opacity: 0,
-  duration: 1,
-  ease: "back.out",
-  scrollTrigger: {
-    trigger: ".appear4",
-    toggleActions: "play pause none none",
-  },
-});
+  //gsap Animação com Scroll
 
-//Animação do título
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(SplitText);
 
-gsap.from(".h1", {
-  duration: 1.3,
-  scale: 15,
-  rotation: -60,
-  scrollTrigger: {
-    trigger: ".h1",
-  },
-});
+  gsap.from(".appear1", {
+    xPercent: -50,
+    opacity: 0,
+    duration: 1,
+    ease: "back.out",
+    scrollTrigger: {
+      trigger: ".appear2",
+      toggleActions: "play pause none none",
+    },
+  });
 
-//Animação de texto
+  gsap.from(".appear2", {
+    xPercent: 50,
+    opacity: 0,
+    duration: 1,
+    ease: "back.out",
+    scrollTrigger: {
+      trigger: ".appear3",
+      toggleActions: "play pause none none",
+    },
+  });
 
-let = mySplitText = new SplitText(".split", { type: "chars" });
-let chars = mySplitText.chars;
+  gsap.from(".appear3", {
+    xPercent: -50,
+    opacity: 0,
+    duration: 1,
+    ease: "back.out",
+    scrollTrigger: {
+      trigger: ".appear3",
+      toggleActions: "play pause none none",
+    },
+  });
 
-gsap.from(chars, {
-  yPercent: -200,
-  xPercent: 1000,
-  stagger: 0.15,  
-  scrollTrigger: {
-    trigger: ".split",
-    toggleActions: "play pause restart pause",
-  },
-});
+  gsap.from(".appear4", {
+    xPercent: -50,
+    opacity: 0,
+    duration: 1,
+    ease: "back.out",
+    scrollTrigger: {
+      trigger: ".appear4",
+      toggleActions: "play pause none none",
+    },
+  });
+
+  //Animação do título
+
+  gsap.from(".h1", {
+    duration: 1.3,
+    scale: 15,
+    rotation: -60,
+    scrollTrigger: {
+      trigger: ".h1",
+    },
+  });
+
+  //Animação de texto
+
+  let = mySplitText = new SplitText(".split", { type: "chars" });
+  let chars = mySplitText.chars;
+
+  gsap.from(chars, {
+    yPercent: -200,
+    xPercent: 1000,
+    stagger: 0.15,
+    scrollTrigger: {
+      trigger: ".split",
+      toggleActions: "play pause restart pause",
+    },
+  });
+}
