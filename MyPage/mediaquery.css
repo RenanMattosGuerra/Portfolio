@@ -7,7 +7,7 @@
     margin: auto;
   }
   #dheader {
-    width: 20vw;
+    width: 20%;
   }
   #foto {
     width: 575px;
@@ -21,6 +21,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 70px;
   }
   #dmain {
     width: 70vw;
@@ -56,9 +57,16 @@
   }
   #psobre {
     text-align: center;
+    font-size: 24px;
   }
   footer {
     margin-top: -200px;
+  }
+  #sobre {
+    margin-bottom: 70px;
+  }
+  #skills {
+    margin-bottom: 70px;
   }
 }
 

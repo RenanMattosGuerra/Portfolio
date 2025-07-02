@@ -26,7 +26,6 @@ body {
   overflow-x: hidden;
   width: 100%;
   background-color: var(--color-one);
-  min-height: 100vh;
 }
 
 .lightmode {
@@ -41,23 +40,31 @@ body {
 header {
   height: 10vh;
   width: 100%;
-  padding: 1rem;
   background-color: var(--color-one);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 2px solid var(--color-three);
   position: sticky;
   top: 0%;
   z-index: 50;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  max-width: 1300px;
 }
 
 #dheader {
   width: 40%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 #modebox {
@@ -164,7 +171,7 @@ main {
   align-items: center;
   justify-content: space-around;
   padding: 2rem 1rem;
-  max-width: 1200px;
+  max-width: 1250px;
   background-image: radial-gradient(
     ellipse farthest-side at center center,
     var(--color-two) 1%,
@@ -222,10 +229,10 @@ main {
 }
 
 .animefoto {
-  animation: grow 2s ease-in-out;
+  animation: rotate 2s ease-in-out;
 }
 
-@keyframes grow {
+@keyframes rotate {
   0% {
     scale: 1;
     transform: rotateY(0);
@@ -245,40 +252,7 @@ h1 {
   font-family: var(--font-one);
   font-weight: bolder;
   font-size: 3.3em;
-  margin-left: 30px;
-}
-
-.h1wobble {
-  animation: Wobble 2s ease-in-out;
-}
-
-@keyframes Wobble {
-  0%,
-  100% {
-    transform: translateX(0%);
-    transform-origin: 50% 50%;
-    color: var(--color-four);
-  }
-
-  15% {
-    transform: translateX(-30px) rotate(-6deg);
-  }
-
-  30% {
-    transform: translateX(15px) rotate(6deg);
-  }
-
-  45% {
-    transform: translateX(-15px) rotate(-3.6deg);
-  }
-
-  60% {
-    transform: translateX(9px) rotate(2.4deg);
-  }
-
-  75% {
-    transform: translateX(-6px) rotate(-1.2deg);
-  }
+  margin-left: 1rem;
 }
 
 h2 {
@@ -286,28 +260,13 @@ h2 {
   font-size: 0.9em;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 6s steps(150) forwards, blink 0.5s step-end infinite;
   font-family: var(--font-two);
   max-width: 370px;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
 h3 {
-  margin: auto;
   color: var(--color-six);
+  margin: auto;
   font-size: 1.7em;
   font-family: var(--font-two);
   text-align: center;
@@ -321,7 +280,7 @@ p {
 }
 
 span {
-  animation: color 2s infinite ease-in-out;
+  animation: color 1s infinite ease-in-out;
   font-size: 1.9em;
   font-family: var(--font-one);
   text-align: center;
@@ -331,13 +290,7 @@ span {
   0% {
     color: var(--color-five);
   }
-  25% {
-    color: var(--color-four);
-  }
   50% {
-    color: var(--color-two);
-  }
-  75% {
     color: var(--color-four);
   }
   100% {
@@ -346,37 +299,22 @@ span {
 }
 
 #sobre {
-  height: 35vh;
   margin: auto;
-  padding: 10px;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  padding: 2rem 1rem;
+  margin-top: 3.5rem;
+  gap: 3rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
-  max-width: 1550px;
-}
-
-@keyframes slidein {
-  0% {
-    opacity: 0%;
-    transform: translateX(-4%);
-  }
-  100% {
-    opacity: 100%;
-    transform: translateX(0%);
-  }
+  max-width: 1250px;
 }
 
 #skills {
   width: 100%;
-  min-height: 300px;
+  max-width: 1550px;
   margin: auto;
   padding: 2rem 1rem;
-  margin-top: 90px;
-  animation: slidein ease-in-out;
-  animation-timeline: view();
-  animation-range: entry 0 cover 35%;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -388,7 +326,7 @@ span {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10px;
+  padding: 2rem 1rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -419,16 +357,13 @@ span {
 
 #projetos {
   width: 100%;
-  padding: 3rem 1rem;
+  max-width: 1350px;
   margin: auto;
   gap: 3rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  animation: slidein ease-in-out;
-  animation-timeline: view();
-  animation-range: entry 0 cover 35%;
   margin-bottom: 50px;
 }
 
@@ -443,9 +378,7 @@ span {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  margin: auto;
 }
 
 .proj {
@@ -453,7 +386,7 @@ span {
   background-color: var(--color-three);
   width: 280px;
   height: 240px;
-  border-radius: 5px;
+  border-radius: 2px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -478,7 +411,7 @@ a.aproj {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 280px;
   height: 240px;
@@ -488,7 +421,7 @@ a.aproj {
   width: 250px;
   height: 160px;
   border-radius: 5px;
-  margin-bottom: 6px;
+
   border: 2px solid var(--color-one);
   box-shadow: 1px 1px 4px 2px var(--color-two);
 }
@@ -505,24 +438,24 @@ img {
 
 footer {
   width: 100%;
-  min-height: 100px;
+  max-width: 1250px;
   margin: auto;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   text-align: center;
+  gap: 3rem;
+  margin-bottom: 70px;
 }
 
 #dfooter {
-  width: 100vw;
-  height: 45vh;
+  margin: auto;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
 }
 
 h5 {
@@ -539,7 +472,6 @@ h5 {
   align-items: center;
   justify-content: center;
   height: 15vh;
-  width: 10%;
   margin: auto;
   transition: all 0.3s ease-in-out;
 }
@@ -570,7 +502,7 @@ h5 {
 .pfooter {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.4em;
-  margin-top: 15px;
+  margin-top: 10px;
   color: var(--color-four);
 }
 

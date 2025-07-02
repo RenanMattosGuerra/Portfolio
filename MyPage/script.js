@@ -25,13 +25,6 @@ links.forEach((link) => {
   });
 });
 
-//Animação do Título
-const h1 = document.getElementById("head1");
-function wobble() {
-  h1.classList.toggle("h1wobble");
-}
-setTimeout(wobble, 4000);
-
 //Animação da foto
 
 const photo = document.getElementById("foto");
@@ -66,4 +59,79 @@ const mail = document.getElementById("mailadress");
 
 mail.addEventListener("click", () => {
   alert("rguerra1998@gmail.com");
+});
+
+//gsap Animação com Scroll
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(SplitText);
+
+gsap.from(".appear1", {
+  xPercent: -50,
+  opacity: 0,
+  duration: 1,
+  ease: "back.out",
+  scrollTrigger: {
+    trigger: ".appear2",
+    toggleActions: "play pause none none",
+  },
+});
+
+gsap.from(".appear2", {
+  xPercent: 50,
+  opacity: 0,
+  duration: 1,
+  ease: "back.out",
+  scrollTrigger: {
+    trigger: ".appear3",
+    toggleActions: "play pause none none",
+  },
+});
+
+gsap.from(".appear3", {
+  xPercent: -50,
+  opacity: 0,
+  duration: 1,
+  ease: "back.out",
+  scrollTrigger: {
+    trigger: ".appear3",
+    toggleActions: "play pause none none",
+  },
+});
+
+gsap.from(".appear4", {
+  xPercent: -50,
+  opacity: 0,
+  duration: 1,
+  ease: "back.out",
+  scrollTrigger: {
+    trigger: ".appear4",
+    toggleActions: "play pause none none",
+  },
+});
+
+//Animação do título
+
+gsap.from(".h1", {
+  duration: 1.3,
+  scale: 15,
+  rotation: -60,
+  scrollTrigger: {
+    trigger: ".h1",
+  },
+});
+
+//Animação de texto
+
+let = mySplitText = new SplitText(".split", { type: "chars" });
+let chars = mySplitText.chars;
+
+gsap.from(chars, {
+  yPercent: -200,
+  xPercent: 1000,
+  stagger: 0.15,  
+  scrollTrigger: {
+    trigger: ".split",
+    toggleActions: "play pause restart pause",
+  },
 });

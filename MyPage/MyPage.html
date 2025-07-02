@@ -30,16 +30,18 @@
       </div>
     </nav>
     <header id="hd">
-      <h1 id="head1">R</h1>
-      <div id="dheader">
-        <input type="checkbox" name="mode" id="modebox" />
-        <i class="fa fa-bars lg" id="bars"></i>
-        <i class="fa-solid fa-circle-xmark fa-lg" id="xicon"></i>
+      <div class="headContainer">
+        <h1 id="head1" class="h1">R</h1>
+        <div id="dheader">
+          <input type="checkbox" name="mode" id="modebox" />
+          <i class="fa fa-bars lg" id="bars"></i>
+          <i class="fa-solid fa-circle-xmark fa-lg" id="xicon"></i>
+        </div>
       </div>
     </header>
     <main id="landing">
       <div id="dmain">
-        <h2>Olá, seja bem-vindo!</h2>
+        <h2 class="split">Olá, seja bem-vindo!</h2>
         <span>Sou o Renan Guerra</span>
         <p>Desenvolvedor Front-End, músico e produtor</p>
         <a
@@ -53,7 +55,7 @@
       <div id="foto"></div>
     </main>
 
-    <section id="sobre">
+    <section id="sobre" class="appear1">
       <h3>Sobre mim</h3>
       <p id="psobre">
         Estou fazendo uma transição de carreira, para trabalhar com
@@ -64,7 +66,7 @@
       </p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="appear2">
       <h3>Habilidades</h3>
       <div id="dskills">
         <div class="skill">
@@ -85,7 +87,7 @@
       </div>
     </section>
 
-    <section id="projetos">
+    <section id="projetos" class="appear3">
 
       <div class="container">
         <h3>Projetos | Portfólio</h3>
@@ -179,7 +181,7 @@
           </div>
         </div>
             </section>
-            <footer>
+      <footer class="appear4">
         <h3>Contato</h3>
         <div id="dfooter">
           <div class="contato">
@@ -214,6 +216,9 @@
       </div>
       </div>
     </footer>
+    <script src="minified/gsap.min.js"></script>
+    <script src="minified/ScrollTrigger.min.js"></script>
+    <script src="minified/SplitText.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
