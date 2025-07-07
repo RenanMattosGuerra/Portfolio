@@ -14,10 +14,9 @@
   --color-five: #e6f9af;
   --color-six: rgb(235, 235, 235);
   --font-one: "Indie Flower", cursive;
-  --font-two: "Merienda", cursive;
-  --font-three: "Tektur", sans-serif;
+  --font-two: "Space Grotesk", sans-serif;
+  --font-three: Arial, Helvetica, sans-serif;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -153,7 +152,7 @@ li:hover {
 }
 
 .anav {
-  font-family: var(--font-three);
+  font-family: var(--font-two);
   font-weight: 400;
   transition: 0.2s ease;
 }
@@ -197,12 +196,12 @@ main {
 }
 
 #cv {
-  margin-top: 20px;
+  margin-top: 8px;
   font-size: 1.1em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-three);
   border: 2px solid var(--color-four);
-  border-radius: 9px;
-  padding: 7px;
+  border-radius: 8px;
+  padding: 6px;
   background-color: var(--color-six);
   color: var(--color-one);
   transition: 0.3s ease-in-out;
@@ -257,11 +256,12 @@ h1 {
 
 h2 {
   color: var(--color-six);
-  font-size: 0.9em;
+  font-size: 1.7em;
   white-space: nowrap;
   overflow: hidden;
   font-family: var(--font-two);
   max-width: 370px;
+  text-align: justify;
 }
 
 h3 {
@@ -275,15 +275,17 @@ h3 {
 
 p {
   color: var(--color-three);
-  font-size: 1em;
+  font-size: 1.1em;
   text-align: center;
 }
 
 span {
   animation: color 1s infinite ease-in-out;
-  font-size: 1.9em;
-  font-family: var(--font-one);
-  text-align: center;
+  font-size: 1.7em;
+  font-family: var(--font-two);
+  text-align: justify;
+  max-width: 370px;
+  white-space: nowrap;
 }
 
 @keyframes color {
@@ -339,7 +341,7 @@ span {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  margin: 7px;
+  margin: 8px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -406,7 +408,7 @@ span {
 a.aproj {
   font-size: 1.1em;
   font-weight: lighter;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-three);
   color: var(--color-six);
   text-align: center;
   display: flex;
@@ -420,8 +422,7 @@ a.aproj {
 .imgproj {
   width: 250px;
   height: 160px;
-  border-radius: 5px;
-
+  border-radius: 4px;
   border: 2px solid var(--color-one);
   box-shadow: 1px 1px 4px 2px var(--color-two);
 }
@@ -447,7 +448,7 @@ footer {
   overflow: hidden;
   text-align: center;
   gap: 3rem;
-  margin-bottom: 70px;
+  margin-bottom: 72px;
 }
 
 #dfooter {
@@ -500,19 +501,19 @@ h5 {
 }
 
 .pfooter {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-three);
   font-size: 0.4em;
-  margin-top: 10px;
+  margin-top: 8px;
   color: var(--color-four);
 }
 
 /* Scrollbar CSS code */
 *::-webkit-scrollbar {
-  height: 10px;
-  width: 10px;
+  height: 8px;
+  width: 8px;
 }
 *::-webkit-scrollbar-track {
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: var(--color-three);
 }
 
@@ -525,7 +526,7 @@ h5 {
 }
 
 *::-webkit-scrollbar-thumb {
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: var(--color-four);
 }
 

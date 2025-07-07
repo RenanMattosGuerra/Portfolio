@@ -3,7 +3,7 @@
 @media screen and (min-width: 992px) {
   #dprojetos {
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 32px;
     margin: auto;
   }
   #dheader {
@@ -21,7 +21,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
   #dmain {
     width: 70vw;
@@ -29,10 +29,12 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+    gap: 8px;
   }
   #cv {
     text-align: center;
     width: 345px;
+    padding: 8px;
   }
   .skill {
     height: 110px;
@@ -48,11 +50,11 @@
     font-size: 0.7em;
   }
   h2 {
-    font-size: 2em;
+    font-size: 2.2em;
     text-align: justify;
   }
   span {
-    font-size: 2.5em;
+    font-size: 2.3em;
     text-align: justify;
   }
   #psobre {
@@ -63,10 +65,10 @@
     margin-top: -200px;
   }
   #sobre {
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
   #skills {
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
 }
 

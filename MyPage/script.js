@@ -64,7 +64,7 @@ if (mediaQuery.matches) {
   function move() {
     photo.classList.toggle("animefoto");
   }
-  setTimeout(move, 2000);
+  setTimeout(move, 2500);
 
   //gsap Animação com Scroll
 
