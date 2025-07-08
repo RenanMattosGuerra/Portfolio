@@ -1,11 +1,6 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 992px) {
-  #dprojetos {
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    margin: auto;
-  }
   #dheader {
     width: 20%;
   }
@@ -40,9 +35,6 @@
     height: 110px;
     width: 110px;
   }
-  #game {
-    display: flex;
-  }
   p {
     font-size: 1.2em;
   }
@@ -70,6 +62,9 @@
   #skills {
     margin-bottom: 72px;
   }
+  #dfooter {
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -77,11 +72,17 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr;
   }
+  #game {
+    display: flex;
+  }
 }
 
 @media (min-width: 768px) {
   #dprojetos {
     grid-template-columns: repeat(2, 1fr);
+  }
+  #dfooter {
+    flex-direction: row;
   }
 }
 
