@@ -14,8 +14,9 @@
   main {
     width: 60%;
     height: 700px;
-    background-color: rgba(240, 255, 255, 0.719);
-    box-shadow: 0px 0px 1px 1px black;
+    background-color: rgba(255, 255, 255, 0.582);
+    box-shadow: 0px 0px 1px 1px rgb(63, 63, 63);
+    border-radius: 40px;
   }
   img#irobo {
     width: 300px;
