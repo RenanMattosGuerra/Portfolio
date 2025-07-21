@@ -115,17 +115,6 @@ if (mediaQuery.matches) {
     },
   });
 
-  //Animação do título
-
-  gsap.from(".h1", {
-    duration: 1.3,
-    scale: 15,
-    rotation: -60,
-    scrollTrigger: {
-      trigger: ".h1",
-    },
-  });
-
   //Animação de texto
 
   let = mySplitText = new SplitText(".split", { type: "chars" });
