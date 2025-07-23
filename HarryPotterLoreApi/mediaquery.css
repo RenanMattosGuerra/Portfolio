@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-one: #242423;
+  --color-two: #333533;
+  --color-three: #f5cb5c;
+  --color-four: #e8eddf;
+  --color-five: #131312fa;
+  --font-one: "Mountains of Christmas", serif;
+  --font-two: "Sacramento", cursive;
+  --font-three: Roboto, "Open Sans", sans-serif;
+  --margin-sm: 8px;
+  --margin-md: 16px;
+  --margin-lg: 32px;
+  --fontsize-sm: 16px;
+  --fontsize-md: 24px;
+  --fontsize-lg: 32px;
+  --fontsize-xl: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  #housesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #charsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #spellsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #charsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #spellsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #housesContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #charsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #spellsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
