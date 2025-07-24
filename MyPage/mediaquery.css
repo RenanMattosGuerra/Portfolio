@@ -53,9 +53,6 @@
     text-align: center;
     font-size: 24px;
   }
-  footer {
-    margin-top: -200px;
-  }
   #sobre {
     margin-bottom: 72px;
   }
@@ -70,9 +67,13 @@
 @media screen and (min-width: 1200px) {
   #dprojetos {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
   }
+
   #game {
+    display: flex;
+  }
+  #gsap {
     display: flex;
   }
 }
@@ -89,6 +90,6 @@
 @media (min-width: 1024px) {
   #dprojetos {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
