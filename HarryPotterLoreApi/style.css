@@ -71,7 +71,7 @@ nav {
   align-items: center;
 }
 
-a {
+a.navLinks {
   font-size: var(--fontsize-sm);
   color: var(--color-four);
   font-family: var(--font-three);
@@ -79,7 +79,7 @@ a {
   transition: all 0.25s ease-in-out;
 }
 
-a:hover {
+a.navLinks:hover {
   color: var(--color-three);
 }
 
@@ -186,4 +186,35 @@ section {
   border-radius: 15px;
   border: 2px solid var(--color-three);
   max-width: 150px;
+}
+
+#arrowUp {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--color-three);
+  background-color: var(--color-one);
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#arrowIcon {
+  font-size: var(--fontsize-lg);
+  color: var(--color-three);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#arrowUp:hover {
+  background-color: var(--color-two);
 }

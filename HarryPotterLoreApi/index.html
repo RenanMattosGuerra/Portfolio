@@ -17,17 +17,21 @@
       href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Sacramento"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/002403beec.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <h1>Harry Potter Lore</h1>
     </header>
 
     <nav>
       <div class="navBar">
-        <a href="#house">Houses</a>
-        <a href="#char">Characters</a>
-        <a href="#spell">Spells</a>
+        <a class="navLinks" href="#house">Houses</a>
+        <a class="navLinks" href="#char">Characters</a>
+        <a class="navLinks" href="#spell">Spells</a>
       </div>
     </nav>
 
@@ -45,6 +49,12 @@
         <div id="spellsContainer" class="containers"></div>
       </section>
     </main>
+
+    <div id="arrowUp">
+      <a id="arrowIcon" href="#header"
+        ><i class="fa-solid fa-arrow-up fa-lg"></i
+      ></a>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

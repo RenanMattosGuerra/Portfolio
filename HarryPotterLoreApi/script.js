@@ -86,7 +86,7 @@ function renderizarSpells(spells) {
   spellsContainer.innerHTML = html;
 }
 
-// Call APIs
+// Chamar APIs
 housesApi();
 charApi();
 spellsApi();
