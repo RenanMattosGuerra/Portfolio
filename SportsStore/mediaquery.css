@@ -34,6 +34,10 @@
     width: 75px;
     height: 75px;
   }
+  #openCart {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

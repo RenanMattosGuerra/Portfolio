@@ -414,7 +414,6 @@ a {
   width: 60px;
   height: 60px;
   font-size: 20px;
-  padding: 15px;
   background-color: white;
   border-radius: 50%;
   border: 1px solid var(--color-three);
@@ -468,4 +467,17 @@ a {
   align-items: center;
   padding: var(--margin);
   border-bottom: 1px solid var(--color-three);
+}
+
+#openCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+}
+
+#cartIcon {
+  margin-right: 1.5px;
 }
