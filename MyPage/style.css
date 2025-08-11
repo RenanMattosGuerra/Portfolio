@@ -399,12 +399,13 @@ span {
   box-shadow: 1px 1px 3px 1px black;
   gap: 1rem;
   padding: 1rem;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .proj:hover {
   opacity: 100%;
   transform: scale(1.1);
+  border-left: 10px solid var(--color-four);
 }
 
 a.aproj {
@@ -439,7 +440,7 @@ img {
   display: none;
 }
 
-#gsap{
+#gsap {
   display: none;
 }
 
