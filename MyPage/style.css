@@ -290,13 +290,13 @@ span {
 
 @keyframes color {
   0% {
-    color: var(--color-five);
+    color: var(--color-two);
   }
   50% {
     color: var(--color-four);
   }
   100% {
-    color: var(--color-five);
+    color: var(--color-two);
   }
 }
 
