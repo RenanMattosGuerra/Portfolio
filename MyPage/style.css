@@ -345,6 +345,11 @@ span {
   transition: all 0.3s ease-in-out;
 }
 
+.imgSkill {
+  width: 80px;
+  height: 80px;
+}
+
 #html,
 #css,
 #js {
