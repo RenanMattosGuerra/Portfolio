@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 992px) {
+  .anav {
+    font-size: 48px;
+  }
   #dheader {
     width: 20%;
   }

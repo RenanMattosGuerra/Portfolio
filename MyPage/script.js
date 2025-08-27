@@ -41,6 +41,7 @@ addEventListener("DOMContentLoaded", () => {
     });
     head.classList.toggle("lightmode");
     main.classList.toggle("mainlightmode");
+    document.body.classList.toggle("dark-mode");
   });
 
   //Alerta com endereço de email
