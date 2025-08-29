@@ -13,7 +13,7 @@
 body {
   width: 100vw;
   height: 100dvh;
-  background-image: url(imagens/pexels-marina-zasorina-7634988.jpg);
+  background-image: url(imagens/pexels-marina-zasorina-7634988.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,17 +22,40 @@ body {
   align-items: center;
 }
 
+#preloader {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid black;
+  border-top: 10px solid orangered;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 main {
   width: 80vw;
   height: 70vh;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgba(255, 255, 255, 0.801);
+  background-color: rgba(198, 204, 218, 0.849);
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 1px 1px black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 2px rgb(179, 125, 24);
 }
 
 .options {
@@ -80,7 +103,7 @@ li:hover {
 }
 
 button {
-  visibility: hidden;
+  display: none;
   padding: 15px;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
@@ -89,6 +112,13 @@ button {
 button:hover {
   cursor: pointer;
   background-color: lightslategray;
+}
+
+.button-wrapper {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #two {

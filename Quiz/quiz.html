@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="desktopstyle.css" />
   </head>
   <body>
-    <main>
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+
+    <main id="page">
       <h1>Quiz de Geografia</h1>
       <div class="options" id="one">
         <h2 id="question">1 - Qual o país mais populoso do mundo?</h2>
@@ -58,7 +62,10 @@
         </ol>
       </div>
 
-      <button id="btn">Próxima pergunta</button>
+      <div class="button-wrapper">
+        <button id="btn">Próxima pergunta</button>
+      </div>
+
       <h3 id="fim">Fim!</h3>
       <h4 id="resultado">Você acertou 0/5</h4>
     </main>

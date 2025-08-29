@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 768px) {
   body {
-    background: url(imagens/pexels-amar-30792658.jpg);
+    background: url(imagens/pexels-amar-30792658.webp);
     background-size: cover;
   }
   h1 {
@@ -15,7 +15,7 @@
 
 @media screen and (min-width: 1400px) {
   body {
-    background: url(imagens/pexels-pixabay-163031.jpg);
+    background: url(imagens/pexels-pixabay-163031.webp);
     background-size: 120%;
     background-position: center center;
   }
