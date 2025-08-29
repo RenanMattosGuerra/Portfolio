@@ -32,7 +32,7 @@ window.addEventListener("load", () => {
   });
 
   //Modo claro e escuro da página
-
+  const body = document.getElementById("body");
   const page = document.getElementById("page");
   const lightdark = document.getElementById("modebox");
   const titles = document.querySelectorAll("h2,h3");
@@ -41,6 +41,7 @@ window.addEventListener("load", () => {
 
   lightdark.addEventListener("change", () => {
     page.classList.toggle("lightmode");
+    body.classList.toggle("lightmode");
     titles.forEach((title) => {
       title.classList.toggle("lightmodetext");
     });
