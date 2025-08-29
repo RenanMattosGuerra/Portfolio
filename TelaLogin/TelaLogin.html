@@ -15,66 +15,75 @@
     />
   </head>
   <body>
-    <div id="robo">
-      <img id="irobo" src="imagens/robo corte.png" alt="" />
+    <div id="preloader">
+      <div class="spinner"></div>
     </div>
-    <main>
-      <h1>Login</h1>
-      <form action="post">
-        <label for="mail">E-mail</label>
-        <input
-          type="email"
-          name="mail"
-          id="mail"
-          required
-          placeholder="✉️ seuemail@exemplo.com"
-        />
-        <label for="pword">Senha</label>
-        <input
-          type="password"
-          name="pword"
-          id="pword"
-          required
-          placeholder="🗝️ Senha"
-          minlength="6"
-        />
 
-        <div>
+    <div id="page">
+      <div id="robo">
+        <img id="irobo" src="imagens/robo corte.png" alt="" />
+      </div>
+      <main>
+        <h1>Login</h1>
+        <form action="post">
+          <label for="mail">E-mail</label>
           <input
-            type="checkbox"
-            name="showpass"
-            id="showpass"
-            onclick="ShowHide()"
+            type="email"
+            name="mail"
+            id="mail"
+            required
+            placeholder="✉️ seuemail@exemplo.com"
           />
-          <label id="check" for="showpass">Mostrar/Ocultar Senha</label>
-        </div>
-        <a class="underline" href="">
-          <h3>Esqueci minha senha</h3>
-        </a>
-        <input type="submit" value="Acessar" id="submit" />
-      </form>
-      <section>
-        <p>ou</p>
-        <a href="https://www.google.com " target="_blank">
-          <button class="bcontinue">
-            <img class="logo" src="imagens/googlelogo.png" alt="google logo" />
-            Continue com Google
-          </button>
-        </a>
-        <a href="https://www.facebook.com" target="_blank">
-          <button class="bcontinue">
-            <img
-              class="logo"
-              src="imagens/facebooklogo.jpg"
-              alt="facebook logo"
-            />Continue com Facebook
-          </button>
-        </a>
-        <h2>
-          Não possui uma conta? <a class="underline" href="#">Cadastre-se!</a>
-        </h2>
-      </section>
-    </main>
+          <label for="pword">Senha</label>
+          <input
+            type="password"
+            name="pword"
+            id="pword"
+            required
+            placeholder="🗝️ Senha"
+            minlength="6"
+          />
+          <div>
+            <input
+              type="checkbox"
+              name="showpass"
+              id="showpass"
+              onclick="ShowHide()"
+            />
+            <label id="check" for="showpass">Mostrar/Ocultar Senha</label>
+          </div>
+          <a class="underline" href="">
+            <h3>Esqueci minha senha</h3>
+          </a>
+          <input type="submit" value="Acessar" id="submit" />
+        </form>
+        <section>
+          <p>ou</p>
+          <a href="https://www.google.com " target="_blank">
+            <button class="bcontinue">
+              <img
+                class="logo"
+                src="imagens/googlelogo.png"
+                alt="google logo"
+              />
+              Continue com Google
+            </button>
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <button class="bcontinue">
+              <img
+                class="logo"
+                src="imagens/facebooklogo.jpg"
+                alt="facebook logo"
+              />Continue com Facebook
+            </button>
+          </a>
+          <h2>
+            Não possui uma conta? <a class="underline" href="#">Cadastre-se!</a>
+          </h2>
+        </section>
+      </main>
+    </div>
 
     <script src="script.js"></script>
   </body>
