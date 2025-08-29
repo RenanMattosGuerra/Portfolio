@@ -1,4 +1,9 @@
-addEventListener("DOMContentLoaded", () => {
+//Mostrar apenas o preloader até a página carregar
+
+window.addEventListener("load", () => {
+  document.getElementById("preloader").style.display = "none";
+  document.getElementById("page").style.display = "block";
+
   // Abrir e fechar menu de navegação
 
   const openMenu = document.getElementById("bars");
