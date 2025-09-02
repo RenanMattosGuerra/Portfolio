@@ -1,4 +1,8 @@
-addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
+  const preloader = (document.getElementById("preloader").style.display =
+    "none");
+  const page = (document.getElementById("page").style.display = "block");
+
   gsap.registerPlugin(ScrollTrigger);
   gsap.registerPlugin(SplitText);
 
@@ -62,49 +66,49 @@ addEventListener("DOMContentLoaded", () => {
       toggleActions: "restart pause reverse pause",
     },
   });
-});
 
-gsap.to(".img", {
-  scrollTrigger: {
-    trigger: ".imgGrow",
-    start: "top 50%",
-    end: "bottom 90%",
-    scrub: true,
-  },
-  scale: 35,
-});
+  gsap.to(".img", {
+    scrollTrigger: {
+      trigger: ".imgGrow",
+      start: "top 50%",
+      end: "bottom 90%",
+      scrub: true,
+    },
+    scale: 35,
+  });
 
-gsap.from(".img2", {
-  scrollTrigger: {
-    trigger: ".borderAnime",
-    start: "top 70%",
-    end: "bottom 100%",
-    scrub: true,
-  },
-  scale: 0.1,
-  borderRadius: "5000%",
-});
+  gsap.from(".img2", {
+    scrollTrigger: {
+      trigger: ".borderAnime",
+      start: "top 70%",
+      end: "bottom 100%",
+      scrub: true,
+    },
+    scale: 0.1,
+    borderRadius: "5000%",
+  });
 
-gsap.from(".black", {
-  scrollTrigger: {
-    trigger: ".black",
-    scrub: true,
-    start: "bottom 190%",
-    end: "bottom 100%",
-  },
-  backgroundColor: "#ddccf0",
-});
+  gsap.from(".black", {
+    scrollTrigger: {
+      trigger: ".black",
+      scrub: true,
+      start: "bottom 190%",
+      end: "bottom 100%",
+    },
+    backgroundColor: "#ddccf0",
+  });
 
-let = mySplitText3 = new SplitText(".split3", { type: "chars" });
-let chars3 = mySplitText3.chars;
+  let = mySplitText3 = new SplitText(".split3", { type: "chars" });
+  let chars3 = mySplitText3.chars;
 
-gsap.from(chars3, {
-  scrollTrigger: {
-    trigger: ".split3",
-    toggleActions: "restart pause reverse pause",
-  },
-  ease: "elastic.out(1,0.3)",
-  y: -100,
-  duration: 2.5,
-  stagger: 0.03,
+  gsap.from(chars3, {
+    scrollTrigger: {
+      trigger: ".split3",
+      toggleActions: "restart pause reverse pause",
+    },
+    ease: "elastic.out(1,0.3)",
+    y: -100,
+    duration: 2.5,
+    stagger: 0.03,
+  });
 });

@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gsap Animations</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="components/robotbird.png" type="image/x-icon">
+    <link rel="shortcut icon" href="components/robotbird.webp" type="image/x-icon">
   </head>
   <body>
+    <div id="preloader">
+      <div class="spinner">
+      </div>
+    </div>
+    
+    <div id="page">    
     <main>
       <header>
         <h3 class="split">
@@ -15,7 +21,7 @@
         </h3>
         <img
           class="bird"
-          src="components/robotbird.png"
+          src="components/robotbird.webp"
           alt="robot bird image"
         />
       </header>
@@ -26,7 +32,7 @@
           <h1 class="text">Scroll Animations</h1>
           <img
             class="mainimg phone"
-            src="components/5c009976-fa00-4b1e-8935-ebb766b32d6f.png"
+            src="components/5c009976-fa00-4b1e-8935-ebb766b32d6f.webp"
             alt="phone image"
           />
         </div>
@@ -35,7 +41,7 @@
         <div class="container">
           <img
             class="mainimg notebook"
-            src="components/—Pngtree—cartoon black notebook free button_4703752.png"
+            src="components/—Pngtree—cartoon-black-notebook-free-button_4703752.webp"
             alt="notebook image"
           />
           <h2 class="text">With Gsap</h2>
@@ -53,11 +59,10 @@
     </section>
     <section class="borderAnime">
       <div class="img2">
-
         <h5 class="split3">Through space and time.</h5>
       </div>
     </section>
-
+</div>
     <script src="minified/gsap.min.js"></script>
     <script src="minified/ScrollTrigger.min.js"></script>
     <script src="minified/SplitText.min.js"></script>

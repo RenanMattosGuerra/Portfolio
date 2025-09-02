@@ -22,8 +22,8 @@
 }
 
 .spinner {
-  height: 220px;
-  width: 220px;
+  height: 120px;
+  width: 120px;
   border: 12px solid var(--secundary-color);
   border-top: 12px solid rgba(36, 38, 167, 0.39);
   border-radius: 50%;
