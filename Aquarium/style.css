@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-one: #11407e;
+  --color-two: #1b9cc7;
+  --color-three: #dae4ec;
+  --color-four: #dae4ec3f;
+  --font-one: "Schoolbell", cursive;
+}
+
+body {
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  background: linear-gradient(var(--color-one), var(--color-two));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin: auto;
+}
+
+.custom_loader_bar-wave {
+  width: 62px;
+  height: 62px;
+  position: relative;
+}
+
+.custom_loader_bar-wave {
+  display: flex;
+  gap: 6.2px;
+  align-items: center;
+  justify-content: center;
+  width: 124px;
+}
+
+.custom_loader_bar-wave div {
+  width: 12.4px;
+  height: 62px;
+  background: var(--color-three);
+  animation: custom_bar_wave 1.0909090909090908s ease-in-out infinite;
+}
+
+.custom_loader_bar-wave div:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.custom_loader_bar-wave div:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.custom_loader_bar-wave div:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.custom_loader_bar-wave div:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+@keyframes custom_bar_wave {
+  0%,
+  100% {
+    transform: scaleY(0.5);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+main {
+  display: none;
+  width: 85%;
+  height: 85dvh;
+  border: 6px solid var(--color-three);
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 0px lightgrey;
+  flex-direction: column;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 7dvh;
+  background-color: var(--color-four);
+}
+
+h1 {
+  font-family: var(--font-one);
+  font-size: 22px;
+  color: #0c1f38;
+}
+
+nav {
+  width: 100%;
+  height: 7dvh;
+  background-color: var(--color-four);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navFish {
+  width: 40px;
+}
+
+.navButton {
+  border-radius: 50%;
+  padding: 5px;
+  transition: 0.2s ease all;
+}
+
+.navButton:hover {
+  cursor: pointer;
+  background-color: #1b9cc7;
+  transform: scale(1.1);
+}
+
+.fish {
+  position: absolute;
+  pointer-events: none;
+  display: block;
+  transition: left 3s linear, top 3s linear, transform 0.3s ease;
+}
+
+section#Aquarium {
+  width: 100%;
+  height: 84%;
+  position: relative;
+  overflow: hidden;
+}
+
+.corals {
+  width: 100px;
+  position: absolute;
+  z-index: 99;
+}
+
+#coral1 {
+  bottom: -5%;
+  left: -3%;
+}
+
+#coral2 {
+  bottom: 0%;
+  left: 6%;
+}
+
+#coral3 {
+  bottom: -5%;
+  left: 60%;
+}
+
+#coral4 {
+  bottom: -2%;
+  left: 15%;
+}
+
+#coral5 {
+  bottom: -2%;
+  left: 80%;
+}
+
+#coral6 {
+  bottom: -7%;
+  left: 33%;
+  width: 150px;
+}
