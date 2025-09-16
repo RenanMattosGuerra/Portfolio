@@ -11,6 +11,7 @@
   --color-two: #1b9cc7;
   --color-three: #dae4ec;
   --color-four: #dae4ec3f;
+  --color-five: #e9f0ff86;
   --font-one: "Schoolbell", cursive;
 }
 
@@ -80,7 +81,7 @@ main {
   display: none;
   width: 85%;
   height: 85dvh;
-  border: 10px solid var(--color-three);
+  border: 10px solid var(--color-five);
   border-radius: 20px;
   flex-direction: column;
   position: relative;
@@ -116,8 +117,11 @@ nav {
 
 .navButton {
   border-radius: 50%;
-  padding: 5px;
+  padding: 4px;
   transition: 0.2s ease all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navButton:hover {
@@ -138,6 +142,7 @@ section#Aquarium {
   height: 84%;
   position: relative;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .corals {
