@@ -33,22 +33,22 @@ body {
 }
 
 .custom_loader_bar-wave {
-  width: 62px;
-  height: 62px;
+  width: 52px;
+  height: 52px;
   position: relative;
 }
 
 .custom_loader_bar-wave {
   display: flex;
-  gap: 6.2px;
+  gap: 5.2px;
   align-items: center;
   justify-content: center;
-  width: 124px;
+  width: 114px;
 }
 
 .custom_loader_bar-wave div {
-  width: 12.4px;
-  height: 62px;
+  width: 11.4px;
+  height: 52px;
   background: var(--color-three);
   animation: custom_bar_wave 1.0909090909090908s ease-in-out infinite;
 }
@@ -80,9 +80,8 @@ main {
   display: none;
   width: 85%;
   height: 85dvh;
-  border: 6px solid var(--color-three);
-  border-radius: 10px;
-  box-shadow: 2px 2px 4px 0px lightgrey;
+  border: 10px solid var(--color-three);
+  border-radius: 20px;
   flex-direction: column;
   position: relative;
 }
@@ -112,7 +111,7 @@ nav {
 }
 
 .navFish {
-  width: 25px;
+  width: 28px;
 }
 
 .navButton {
@@ -123,7 +122,7 @@ nav {
 
 .navButton:hover {
   cursor: pointer;
-  background-color: #1b9cc7;
+  background-color: var(--color-two);
   transform: scale(1.1);
 }
 
@@ -142,38 +141,8 @@ section#Aquarium {
 }
 
 .corals {
-  width: 100px;
+  width: 100%;
+  max-width: 700px;
   position: absolute;
-  z-index: 99;
-}
-
-#coral1 {
-  bottom: -5%;
-  left: -3%;
-}
-
-#coral2 {
   bottom: 0%;
-  left: 6%;
-}
-
-#coral3 {
-  bottom: -5%;
-  left: 60%;
-}
-
-#coral4 {
-  bottom: -2%;
-  left: 15%;
-}
-
-#coral5 {
-  bottom: -2%;
-  left: 80%;
-}
-
-#coral6 {
-  bottom: -9%;
-  left: 33%;
-  width: 150px;
 }
