@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 992px) {
+  #mobileCoral {
+    display: none;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  #resetBtn {
+    font-size: 16px;
+  }
+  .navFish {
+    width: 36px;
+  }
+}

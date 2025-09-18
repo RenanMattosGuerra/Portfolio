@@ -60,4 +60,10 @@ window.addEventListener("load", () => {
       setInterval(swim, 2000);
     });
   });
+
+  //Apaga todos peixes
+  const reset = document.getElementById("resetBtn");
+  reset.addEventListener("click", () => {
+    document.querySelectorAll("#Aquarium .fish").forEach((f) => f.remove());
+  });
 });

@@ -81,34 +81,36 @@ main {
   display: none;
   width: 85%;
   height: 85dvh;
-  border: 10px solid var(--color-five);
-  border-radius: 20px;
+  border: 6px solid var(--color-five);
+  border-radius: 16px;
   flex-direction: column;
   position: relative;
 }
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 7dvh;
+  height: 60px;
   background-color: var(--color-four);
+  border-bottom: 1px solid var(--color-five);
 }
 
 h1 {
   font-family: var(--font-one);
-  font-size: 16px;
+  font-size: 14px;
   color: #0c1f38;
 }
 
 nav {
   width: 100%;
-  height: 7dvh;
-  background-color: var(--color-four);
+  height: 60px;
+  background-color: #5985a865;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  border-bottom: 1px solid var(--color-five);
 }
 
 .navFish {
@@ -139,7 +141,7 @@ nav {
 
 section#Aquarium {
   width: 100%;
-  height: 84%;
+  height: 85%;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
@@ -147,7 +149,26 @@ section#Aquarium {
 
 .corals {
   width: 100%;
-  max-width: 700px;
+  max-width: 850px;
   position: absolute;
   bottom: 0%;
+  filter: blur(0.8px);
+}
+
+.btn {
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 7px;
+  background-color: var(--color-five);
+  color: var(--color-one);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  border: 1px solid var(--color-one);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-three);
+  cursor: pointer;
 }
