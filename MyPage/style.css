@@ -36,12 +36,12 @@
 }
 
 .spinner {
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   border: 6px solid var(--color-two);
   border-top: 6px solid var(--color-four);
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  animation: spin 0.5s linear infinite;
 }
 
 @keyframes spin {

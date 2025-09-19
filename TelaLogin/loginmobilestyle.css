@@ -22,12 +22,12 @@
 }
 
 .spinner {
-  height: 120px;
-  width: 120px;
-  border: 12px solid var(--secundary-color);
-  border-top: 12px solid rgba(36, 38, 167, 0.39);
+  height: 100px;
+  width: 100px;
+  border: 10px solid var(--secundary-color);
+  border-top: 10px solid rgba(36, 38, 167, 0.39);
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  animation: spin 0.5s linear infinite;
 }
 
 @keyframes spin {

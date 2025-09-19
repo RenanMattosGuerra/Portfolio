@@ -31,12 +31,12 @@ body {
 }
 
 .spinner {
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   border: 10px solid black;
-  border-top: 10px solid orangered;
-  animation: spin 1s linear infinite;
+  border-top: 10px solid rgba(202, 78, 33, 0.712);
+  animation: spin 0.5s linear infinite;
 }
 
 @keyframes spin {

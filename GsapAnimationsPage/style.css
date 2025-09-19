@@ -31,12 +31,12 @@ html {
 }
 
 .spinner {
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  border: 12px solid var(--color-black);
-  border-top: 12px solid var(--color-purple);
-  animation: spin 0.8s linear infinite;
+  border: 10px solid var(--color-black);
+  border-top: 10px solid var(--color-purple);
+  animation: spin 0.5s linear infinite;
 }
 
 @keyframes spin {
