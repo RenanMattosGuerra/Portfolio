@@ -2,14 +2,6 @@ window.addEventListener("load", () => {
   document.getElementById("preloader").style.display = "none";
   document.getElementById("main").style.display = "flex";
 
-  //Imagem do coral de acordo com tamanho da tela
-
-  const mobileCoral = document.getElementById("mobileCoral");
-  const mediaQuery = window.matchMedia("(min-width:768px)");
-  if (mediaQuery.matches) {
-    mobileCoral.style.display = "none";
-  }
-
   //Adicionar peixes
   const aquarium = document.getElementById("Aquarium");
   const fishes = document.querySelectorAll(".navFish");
@@ -21,7 +13,7 @@ window.addEventListener("load", () => {
       newFish.classList.add("fish");
 
       // Tamanho aleatório
-      const size = 40 + Math.random() * 60;
+      const size = 30 + Math.random() * 70;
       newFish.style.width = `${size}px`;
 
       // Posição inicial
