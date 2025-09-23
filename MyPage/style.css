@@ -454,13 +454,13 @@ span {
   background-color: var(--color-three);
   width: 280px;
   height: 240px;
-  border-radius: 2px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
   opacity: 70%;
-  box-shadow: 1px 1px 3px 1px black;
+  box-shadow: 8px 8px 0px 1px;
   gap: 1rem;
   padding: 1rem;
   transition: all 0.3s ease-in-out;
@@ -468,8 +468,7 @@ span {
 
 .proj:hover {
   opacity: 100%;
-  transform: scale(1.1);
-  border-left: 10px solid var(--color-four);
+  transform: scale(1.06);
 }
 
 a.aproj {
