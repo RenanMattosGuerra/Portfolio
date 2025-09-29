@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/002403beec.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main id="main">
+      <section id="songs">
+        <div id="img"></div>
+        <div id="musicplayer">
+          <h2 id="songTitle"></h2>
+          <input
+            type="range"
+            value="0"
+            id="progress"
+            placeholder="progress bar"
+          />
+          <div id="controls"></div>
+          <div class="volumeContainer">
+            <i class="fa-solid fa-volume-off fa-lg"></i>
+            <input
+              type="range"
+              value="1"
+              id="volume"
+              placeholder="volume bar"
+            />
+            <i class="fa-solid fa-volume-high fa-lg"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
