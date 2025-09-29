@@ -24,7 +24,7 @@ body {
 }
 
 main {
-  width: 350px;
+  width: 330px;
   height: 95dvh;
   border: double 12px var(--dark);
   border-radius: 15px;
@@ -59,7 +59,7 @@ h2 {
   font-weight: 600;
   color: var(--dark);
   box-shadow: 2px 2px 5px var(--dark);
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 5px;
   text-align: center;
 }
