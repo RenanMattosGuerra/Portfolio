@@ -15,6 +15,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    background: url(images/patternpad-2025-09-29-14-58-59.svg);
+    background-position: center center;
+    background-size: cover;
+  }
   main {
     width: 460px;
     height: 90dvh;
