@@ -24,8 +24,8 @@ body {
 }
 
 main {
-  width: 420px;
-  height: 90dvh;
+  width: 350px;
+  height: 95dvh;
   border: double 12px var(--dark);
   border-radius: 15px;
   display: flex;
