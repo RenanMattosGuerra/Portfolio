@@ -26,7 +26,7 @@ body {
 main {
   width: 330px;
   height: 90dvh;
-  border: solid 8px var(--dark);
+  border: double 8px var(--dark);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ div#img {
 
 h2 {
   width: 90%;
-  padding: 10px;
+  padding: 8px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 600;
   color: var(--dark);
@@ -106,15 +106,15 @@ div#musicplayer {
 }
 
 .nextSong {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   border-radius: 50%;
   color: var(--dark);
   border: 2px solid var(--dark);
   transition: all 0.2s ease-in-out;
   box-shadow: 1px 1px 5px;
-  font-size: 16px;
+  font-size: 12px;
   background-color: var(--light-grey);
   display: flex;
   justify-content: center;
@@ -126,8 +126,8 @@ div#musicplayer {
 }
 
 .playButton {
-  width: 75px;
-  height: 75px;
+  width: 65px;
+  height: 65px;
   cursor: pointer;
   border-radius: 50%;
   color: var(--dark);
@@ -135,7 +135,7 @@ div#musicplayer {
   border: 2px solid var(--dark);
   transition: all 0.2s ease-in-out;
   box-shadow: 1px 1px 5px;
-  font-size: 24px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;

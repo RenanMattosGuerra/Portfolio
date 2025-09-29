@@ -17,10 +17,21 @@
 @media screen and (min-width: 768px) {
   main {
     width: 460px;
-    height: 85dvh;
+    height: 90dvh;
     border: double 12px var(--dark);
   }
   h2 {
-    font-size: 20px;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .nextSong {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .playButton {
+    width: 75px;
+    height: 75px;
+    font-size: 24px;
   }
 }
