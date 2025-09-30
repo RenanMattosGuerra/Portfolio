@@ -7,7 +7,10 @@
 }
 
 :root {
-  --primary-color: rgb(65, 65, 65);
+  --color-one: rgb(65, 65, 65);
+  --color-two: #dc143c;
+  --color-three: #f3ada6;
+  --color-four: rgb(226, 226, 117);
   --primary-font: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -18,7 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-color);
+  background: url(imagens/patternpad-2025-09-30-01-36-20.svg);
   overflow: hidden;
 }
 
@@ -29,7 +32,11 @@ section {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-image: linear-gradient(to top right, crimson, #f3ada6);
+  background-image: linear-gradient(
+    to top right,
+    var(--color-two),
+    var(--color-three)
+  );
   border-radius: 10px;
   border: 2px solid black;
   padding: 10px;
@@ -38,7 +45,7 @@ section {
 
 button {
   padding: 8px;
-  background-color: rgb(255, 255, 111);
+  background-color: var(--color-four);
   border-radius: 20px;
   margin: 5px;
   cursor: pointer;
@@ -140,7 +147,11 @@ main {
   position: absolute;
   top: 15%;
   font-size: 4em;
-  background-image: linear-gradient(to top right, crimson, #da8980);
+  background-image: linear-gradient(
+    to top right,
+    var(--color-two),
+    var(--color-three)
+  );
   border: 2px solid black;
   padding: 35px;
   border-radius: 10px;
@@ -152,7 +163,7 @@ main {
 }
 
 #restart {
-  background-color: rgb(255, 255, 111);
+  background-color: var(--color-four);
   border-radius: 20px;
   border: 1px solid black;
   color: black;
@@ -170,7 +181,11 @@ main {
   position: absolute;
   top: 15%;
   font-size: 2em;
-  background-image: linear-gradient(to top right, crimson, #da8980);
+  background-image: linear-gradient(
+    to top right,
+    var(--color-two),
+    var(--color-three)
+  );
   border: 2px solid black;
   padding: 35px;
   border-radius: 50px;
