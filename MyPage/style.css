@@ -336,6 +336,7 @@ p {
   color: var(--color-three);
   font-size: 0.9em;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 span {
