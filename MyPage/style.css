@@ -36,12 +36,6 @@
 
 /*fonts */
 :root {
-  --color-one: #0d0630;
-  --color-two: #18314f;
-  --color-three: #384e77;
-  --color-four: #8bbeb2;
-  --color-five: #e6f9af;
-  --color-six: rgb(235, 235, 235);
   --font-one: "Indie Flower", cursive;
   --font-two: "Space Grotesk", sans-serif;
   --font-three: Arial, Helvetica, sans-serif;
