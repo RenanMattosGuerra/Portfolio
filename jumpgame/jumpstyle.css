@@ -7,10 +7,10 @@
 }
 
 :root {
-  --color-one: rgb(65, 65, 65);
+  --color-one: #414141;
   --color-two: #dc143c;
   --color-three: #f3ada6;
-  --color-four: rgb(226, 226, 117);
+  --color-four: #e2e275;
   --primary-font: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(imagens/patternpad-2025-09-30-01-36-20.svg);
+  background: url(imagens/patternpad-2025-10-02-15-33-33.svg);
   overflow: hidden;
 }
 
