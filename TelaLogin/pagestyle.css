@@ -1,37 +1,49 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 992px) {
+:root {
+  --font-one: "Tektur", serif;
+  --font-two: "Chakra Petch", serif;
+  --bg-dark: oklch(0.92 0.01 243);
+  --bg: oklch(0.96 0.01 243);
+  --bg-light: oklch(1 0.01 243);
+  --text: oklch(0.15 0.02 243);
+  --text-muted: oklch(0.4 0.02 243);
+  --highlight: oklch(1 0.02 243);
+  --border: oklch(0.6 0.02 243);
+  --border-muted: oklch(0.7 0.02 243);
+  --primary: oklch(0.4 0.1 243);
+}
+
+@media screen and (min-width: 768px) {
   body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
-    background: url(imagens/pexels-tara-winstead-8386440blurwebp.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
   }
   main {
     width: 60%;
-    height: 700px;
-    background-color: rgba(255, 255, 255, 0.747);
-    box-shadow: 8px 8px 6px 2px;
+    height: 720px;
+    background-color: var(--bg);
+    box-shadow: 5px 5px 10px 1px var(--text-muted);
     border-radius: 20px;
-  }
-  img#irobo {
-    width: 300px;
-    height: 451px;
   }
 
   form {
-    width: 60%;
+    width: 80%;
   }
 
   input#submit {
-    width: 250px;
+    width: 100%;
   }
   button.bcontinue {
     width: 300px;
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  label#check {
     font-size: 12px;
   }
 }
@@ -41,6 +53,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  img#irobo {
+    width: 300px;
+    height: 451px;
+    -webkit-box-reflect: below 5px
+      linear-gradient(transparent, transparent, rgba(255, 255, 255, 0.705));
   }
   main {
     width: 30vw;

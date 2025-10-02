@@ -47,23 +47,28 @@
             placeholder="🗝️ Senha"
             minlength="6"
           />
-          <div>
-            <input
-              type="checkbox"
-              name="showpass"
-              id="showpass"
-              onclick="ShowHide()"
-            />
-            <label id="check" for="showpass">Mostrar/Ocultar Senha</label>
+          <div class="belowInput">
+            <div>
+              <label id="check" for="showpass">
+                <input
+                  type="checkbox"
+                  name="showpass"
+                  id="showpass"
+                  onclick="ShowHide()"
+                />
+                Mostrar/Ocultar Senha</label
+              >
+            </div>
+            <a class="underline" href="" id="forgotPass">
+              <h3>Esqueci minha senha</h3>
+            </a>
           </div>
-          <a class="underline" href="">
-            <h3>Esqueci minha senha</h3>
-          </a>
+
           <input type="submit" value="Acessar" id="submit" />
         </form>
         <section>
           <p>ou</p>
-          <a href="https://www.google.com " target="_blank">
+          <a href="https://www.google.com " target="_blank" rel="noopener">
             <button class="bcontinue">
               <img
                 class="logo"
@@ -73,7 +78,7 @@
               Continue com Google
             </button>
           </a>
-          <a href="https://www.facebook.com" target="_blank">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener">
             <button class="bcontinue">
               <img
                 class="logo"

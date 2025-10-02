@@ -6,6 +6,35 @@
   box-sizing: border-box;
 }
 
+/* dark */
+:root {
+  --dark-bg-dark: oklch(9.693% 0.00001 271.152);
+  --dark-bg: oklch(14.479% 0.00002 271.152);
+  --dark-bg-light: oklch(0.2 0 79);
+  --dark-text: oklch(0.96 0 79);
+  --dark-text-muted: oklch(76.039% 0.00009 271.152);
+  --dark-highlight: oklch(0.5 0 79);
+  --dark-border: oklch(0.4 0 79);
+  --dark-border-muted: oklch(0.3 0 79);
+  --dark-primary: oklch(76.041% 0.09958 79.407);
+  --dark-secondary: oklch(0.76 0.1 259);
+}
+
+/*light */
+:root {
+  --light-bg-dark: oklch(0.92 0 79);
+  --light-bg: oklch(0.96 0 79);
+  --light-bg-light: oklch(1 0 79);
+  --light-text: oklch(0.15 0 79);
+  --light-text-muted: oklch(0.4 0 79);
+  --light-highlight: oklch(1 0 79);
+  --light-border: oklch(59.987% 0.00007 271.152);
+  --light-border-muted: oklch(0.7 0 79);
+  --light-primary: oklch(40.131% 0.08587 72.069);
+  --light-secondary: oklch(0.4 0.1 259);
+}
+
+/*fonts */
 :root {
   --color-one: #0d0630;
   --color-two: #18314f;
@@ -28,7 +57,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-one);
+  background-color: var(--dark-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,12 +65,11 @@
 }
 
 .spinner {
-  width: 90px;
-  height: 90px;
-  border: 6px solid var(--color-two);
-  border-top: 6px solid var(--color-four);
+  width: 70px;
+  height: 70px;
+  border-top: 2px solid var(--dark-primary);
   border-radius: 50%;
-  animation: spin 0.5s linear infinite;
+  animation: spin 0.4s linear infinite;
 }
 
 @keyframes spin {
@@ -57,23 +85,23 @@ html {
 body {
   overflow-x: hidden;
   width: 100%;
-  background-color: var(--color-one);
+  background-color: var(--dark-bg);
 }
 
 .lightmode {
-  background-color: var(--color-six);
-  color: var(--color-one);
+  background-color: var(--light-bg);
+  color: var(--light-text);
 }
 
 .lightmodetext {
-  color: var(--color-one);
+  color: var(--light-text);
 }
 
 header {
   height: 10vh;
   width: 100%;
-  background-color: var(--color-one);
-  border-bottom: 2px solid var(--color-three);
+  background-color: var(--dark-bg);
+  border-bottom: 2px solid var(--dark-border);
   position: sticky;
   top: 0%;
   z-index: 50;
@@ -100,7 +128,7 @@ header {
 }
 
 #modebox {
-  accent-color: var(--color-three);
+  accent-color: var(--light-primary);
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -108,12 +136,12 @@ header {
 
 #sun {
   display: none;
-  color: var(--color-three);
+  color: var(--light-primary);
 }
 
 #moon {
   display: block;
-  color: var(--color-three);
+  color: var(--light-primary);
 }
 
 body.dark-mode #sun {
@@ -132,7 +160,7 @@ body.dark-mode #moon {
 }
 
 #bars {
-  color: var(--color-three);
+  color: var(--light-primary);
   font-size: 1.4em;
   padding: 8px;
   border-radius: 50%;
@@ -140,12 +168,13 @@ body.dark-mode #moon {
 }
 
 #bars:hover {
-  background-color: var(--color-four);
+  background-color: var(--dark-primary);
   cursor: pointer;
+  color: var(--dark-bg);
 }
 
 #xicon {
-  color: var(--color-three);
+  color: var(--light-primary);
   font-size: 2.2em;
   display: none;
   transition: 0.3s ease;
@@ -153,7 +182,7 @@ body.dark-mode #moon {
 
 #xicon:hover {
   cursor: pointer;
-  color: var(--color-four);
+  color: var(--dark-primary);
 }
 
 nav {
@@ -201,7 +230,7 @@ li {
 
 a {
   font-size: 3em;
-  color: var(--color-four);
+  color: var(--dark-primary);
   text-decoration: none;
   font-family: var(--font-two);
 }
@@ -217,7 +246,7 @@ li:hover {
 }
 
 .anav:hover {
-  color: var(--color-five);
+  color: var(--dark-text);
 }
 
 main {
@@ -232,16 +261,16 @@ main {
   max-width: 1250px;
   background-image: radial-gradient(
     ellipse farthest-side at center center,
-    var(--color-two) 1%,
-    var(--color-one) 99%
+    var(--dark-bg-light) 1%,
+    var(--dark-bg) 99%
   );
 }
 
 .mainlightmode {
   background-image: radial-gradient(
     ellipse farthest-side at center center,
-    var(--color-four) 1%,
-    var(--color-six) 99%
+    var(--light-bg-dark) 1%,
+    var(--light-bg) 99%
   );
 }
 
@@ -258,24 +287,28 @@ main {
   margin-top: 8px;
   font-size: 1.1em;
   font-family: var(--font-three);
-  border: 2px solid var(--color-four);
+  border: 2px solid var(--light-border-muted);
   border-radius: 8px;
   padding: 6px;
-  background-color: var(--color-six);
-  color: var(--color-one);
+  background-color: var(--light-bg);
+  color: var(--light-text);
   transition: 0.3s ease-in-out;
 }
 
 #cv:hover {
-  background: linear-gradient(to right, var(--color-one), var(--color-four));
-  color: azure;
+  background: linear-gradient(
+    to right,
+    var(--light-primary),
+    var(--dark-primary)
+  );
+  color: var(--dark-text);
   transform: scale(1.05);
 }
 
 #foto {
   width: 270px;
   height: 270px;
-  background: url(imagens/fotoperfil2webp.webp);
+  background: url(imagens/fotoperfilorange.webp);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -306,7 +339,7 @@ main {
 }
 
 h1 {
-  color: var(--color-three);
+  color: var(--light-primary);
   font-family: var(--font-one);
   font-weight: bolder;
   font-size: 3.3em;
@@ -314,7 +347,7 @@ h1 {
 }
 
 h2 {
-  color: var(--color-six);
+  color: var(--dark-text);
   font-size: 1.7em;
   white-space: nowrap;
   overflow: hidden;
@@ -324,7 +357,7 @@ h2 {
 }
 
 h3 {
-  color: var(--color-six);
+  color: var(--dark-text);
   margin: auto;
   font-size: 1.7em;
   font-family: var(--font-two);
@@ -333,7 +366,7 @@ h3 {
 }
 
 p {
-  color: var(--color-three);
+  color: var(--dark-text-muted);
   font-size: 0.9em;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -350,13 +383,13 @@ span {
 
 @keyframes color {
   0% {
-    color: var(--color-two);
+    color: var(--dark-highlight);
   }
   50% {
-    color: var(--color-four);
+    color: var(--light-primary);
   }
   100% {
-    color: var(--color-two);
+    color: var(--dark-highlight);
   }
 }
 
@@ -410,18 +443,6 @@ span {
   height: 80px;
 }
 
-#html,
-#css,
-#js {
-  font-size: 3.2em;
-  color: var(--color-four);
-}
-
-#tailimg {
-  width: 45px;
-  height: 16px;
-}
-
 #projetos {
   width: 100%;
   max-width: 1350px;
@@ -452,7 +473,7 @@ span {
 
 .proj {
   margin: auto;
-  background-color: var(--color-three);
+  background-color: var(--dark-border);
   width: 280px;
   height: 240px;
   border-radius: 5px;
@@ -460,8 +481,8 @@ span {
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-  opacity: 70%;
-  box-shadow: 8px 8px 0px 1px;
+  opacity: 80%;
+  box-shadow: 8px 8px 0px 1px var(--dark-bg-light);
   gap: 1rem;
   padding: 1rem;
   transition: all 0.3s ease-in-out;
@@ -469,14 +490,14 @@ span {
 
 .proj:hover {
   opacity: 100%;
-  transform: scale(1.06);
+  transform: scale(1.08);
 }
 
 a.aproj {
   font-size: 1.1em;
   font-weight: lighter;
   font-family: var(--font-three);
-  color: var(--color-six);
+  color: var(--dark-text);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -490,8 +511,8 @@ a.aproj {
   width: 250px;
   height: 160px;
   border-radius: 4px;
-  border: 2px solid var(--color-one);
-  box-shadow: 1px 1px 4px 2px var(--color-two);
+  border: 2px solid var(--dark-bg-light);
+  box-shadow: 0px 0px 5px 1px var(--dark-bg);
 }
 
 img {
@@ -538,7 +559,7 @@ h5 {
 }
 
 .contato {
-  color: var(--color-three);
+  color: var(--dark-text);
   font-size: 1.2em;
   font-family: var(--font-one);
   display: flex;
@@ -552,12 +573,12 @@ h5 {
 
 .contato:hover {
   transform: scale(1.1);
-  color: var(--color-four);
+  color: var(--dark-primary);
 }
 
 .linkfooter {
   font-size: 1.4em;
-  color: var(--color-three);
+  color: var(--dark-primary);
   font-family: var(--font-one);
   display: flex;
   flex-direction: column;
@@ -570,14 +591,14 @@ h5 {
 }
 
 .linkfooter:hover {
-  color: var(--color-four);
+  color: var(--light-text-muted);
 }
 
 .pfooter {
   font-family: var(--font-three);
   font-size: 0.4em;
   margin-top: 8px;
-  color: var(--color-four);
+  color: var(--light-text-muted);
 }
 
 /* Scrollbar CSS code */
@@ -587,26 +608,26 @@ h5 {
 }
 *::-webkit-scrollbar-track {
   border-radius: 4px;
-  background-color: var(--color-three);
+  background-color: var(--light-border);
 }
 
 *::-webkit-scrollbar-track:hover {
-  background-color: var(--color-three);
+  background-color: var(--light-border);
 }
 
 *::-webkit-scrollbar-track:active {
-  background-color: var(--color-three);
+  background-color: var(--light-border);
 }
 
 *::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: var(--color-four);
+  background-color: var(--light-primary);
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-four);
+  background-color: var(--light-primary);
 }
 
 *::-webkit-scrollbar-thumb:active {
-  background-color: var(--color-five);
+  background-color: var(--dark-primary);
 }

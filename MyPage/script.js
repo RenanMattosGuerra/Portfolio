@@ -35,7 +35,7 @@ window.addEventListener("load", () => {
   const body = document.getElementById("body");
   const page = document.getElementById("page");
   const lightdark = document.getElementById("modebox");
-  const titles = document.querySelectorAll("h2,h3");
+  const titles = document.querySelectorAll("h2,h3,p");
   const head = document.getElementById("hd");
   const main = document.getElementById("landing");
 
@@ -57,7 +57,7 @@ window.addEventListener("load", () => {
     alert("rguerra1998@gmail.com");
   });
 
-  //Animações apenas para telas maiores de 992px
+  //Animações apenas para telas maiores que 992px
 
   const mediaQuery = window.matchMedia("(min-width: 992px)");
 
