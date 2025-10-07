@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Editor</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mountains+of+Christmas:wght@400;700&family=Sacramento&family=Schoolbell&family=Space+Grotesk:wght@300..700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/002403beec.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Image Editor</h1>
+      </header>
+      <section id="imgSection">
+        <div id="imgContainer">
+          <img src="assets/defaultImage.png" alt="Your Image" id="img" />
+        </div>
+        
+      </section>
+      <section id="ctrlSection">
+        <div class="controls">
+          <label for="brightness"
+            >Brightness
+            <input type="range" name="brightness" id="brightness" min="0" max="200" value="100" />
+          </label>
+          <label for="saturation"
+            >Saturation
+            <input type="range" name="saturation" id="saturation" min="0" max="200" value="100"/>
+          </label>
+          <label for="grayscale"
+            >Grayscale
+            <input type="range" name="grayscale" id="grayscale" min="0" max="100" value="0"/>
+          </label>
+          <label for="inversion">
+            Inversion
+            <input type="range" name="inversion" id="inversion" min="0" max="100" value="0"/>
+          </label>
+        </div>
+        <div class="controls">
+          <h2>Flip & Rotate</h2>
+          <div id="rotate">
+            <button type="button" class="rotateBtn" id="rotateRight">
+              <i class="fa-solid fa-rotate-right fa-lg"></i>
+            </button>
+            <button type="button" class="rotateBtn" id="rotateLeft">
+              <i class="fa-solid fa-rotate-left fa-lg"></i>
+            </button>
+            <button type="button" class="rotateBtn" id="flipVertical">
+              <i class="fa-solid fa-arrows-up-down fa-lg"></i>
+            </button>
+            <button type="button" class="rotateBtn" id="flipHorizontal">
+              <i class="fa-solid fa-arrows-up-down fa-rotate-90 fa-lg"></i>
+            </button>
+          </div>
+        </div>
+        <div class="controls">
+          <label for="contrast"
+            >Contrast
+            <input type="range" name="contrast" id="contrast" min="0" max="200" value="100" />
+          </label>
+          <label for="blur"
+            >Blur
+            <input type="range" name="blur" id="blur" min="0" max="10" value="0"/>
+          </label>
+          <label for="sepia"
+            >Sepia
+            <input type="range" name="sepia" id="sepia" min="0" max="100" value="0"/>
+          </label>
+          <label for="hue-rotate">
+            Hue-rotate
+            <input type="range" name="hue-rotate" id="hue-rotate" min="0" max="360" value="0" />
+          </label>
+        </div>
+      </section>
+      <section id="uploadSave">
+        <button type="button" class="optionBtn" id="resetBtn">Reset</button>
+        <input id="fileInput" type="file" placeholder="Upload" accept="image/*" hidden></input>
+        <button type="button" class="optionBtn" id="upload">Upload</button>
+        <button type="button" class="optionBtn" id="saveBtn">Save</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
