@@ -166,6 +166,11 @@ span.navOptions:hover {
 .slide {
   height: 450px;
   width: 100%;
+  border-image: linear-gradient(
+      hsla(178, 26%, 78%, 0.2),
+      hsla(180, 26%, 25%, 0.2)
+    )
+    fill 1;
 }
 
 .first {
@@ -480,4 +485,5 @@ a {
 
 #cartIcon {
   margin-right: 1.5px;
+  font-size: 20px;
 }
