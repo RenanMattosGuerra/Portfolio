@@ -35,8 +35,7 @@
     padding: 8px;
   }
   .skill {
-    height: 110px;
-    width: 110px;
+    width: 100px;
   }
   p {
     font-size: 1.1em;
@@ -66,8 +65,8 @@
     flex-direction: row;
   }
   .imgSkill {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
   }
 }
 
