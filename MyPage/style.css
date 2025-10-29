@@ -389,7 +389,7 @@ span {
 
 #sobre {
   margin: auto;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   margin-top: 3.5rem;
   gap: 3rem;
   display: flex;
@@ -397,6 +397,14 @@ span {
   align-items: center;
   justify-content: space-evenly;
   max-width: 1250px;
+}
+
+#psobre {
+  box-shadow: 0px 0px 5px 0px var(--dark-border-muted);
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  max-width: 900px;
+  text-align: center;
 }
 
 #skills {
@@ -545,6 +553,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 2px;
 }
 
 h5 {

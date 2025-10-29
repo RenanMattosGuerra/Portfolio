@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 992px) {
   .anav {
-    font-size: 48px;
+    font-size: 40px;
   }
   #dheader {
     width: 20%;
@@ -52,8 +52,7 @@
     text-align: justify;
   }
   #psobre {
-    text-align: center;
-    font-size: 24px;
+    font-size: 20px;
   }
   #sobre {
     margin-bottom: 72px;
