@@ -19,7 +19,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 72px;
   }
   #dmain {
     width: 70vw;
@@ -32,7 +31,6 @@
   #cv {
     text-align: center;
     width: 345px;
-    padding: 8px;
   }
   .skill {
     width: 100px;
@@ -53,12 +51,6 @@
   }
   #psobre {
     font-size: 20px;
-  }
-  #sobre {
-    margin-bottom: 72px;
-  }
-  #skills {
-    margin-bottom: 72px;
   }
   #dfooter {
     flex-direction: row;

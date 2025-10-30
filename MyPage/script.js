@@ -65,14 +65,11 @@ window.addEventListener("load", () => {
     //Animação da foto
 
     const photo = document.getElementById("foto");
-    photo.addEventListener("mouseover", () => {
-      photo.classList.toggle("animefoto");
-    });
 
     function move() {
       photo.classList.toggle("animefoto");
     }
-    setTimeout(move, 2500);
+    setTimeout(move, 2700);
 
     //gsap Animação com Scroll
 
