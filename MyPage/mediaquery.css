@@ -59,6 +59,10 @@
     width: 90px;
     height: 90px;
   }
+  #dskills {
+    -webkit-box-reflect: below 5px
+      linear-gradient(transparent, transparent, rgba(255, 255, 255, 0.301));
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -81,6 +85,9 @@
   }
   #dfooter {
     flex-direction: row;
+  }
+  #dskills {
+    margin-top: 0;
   }
 }
 
