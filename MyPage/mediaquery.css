@@ -79,7 +79,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   #dprojetos {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -91,9 +91,9 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   #dprojetos {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
