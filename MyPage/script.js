@@ -50,13 +50,6 @@ window.addEventListener("load", () => {
     document.body.classList.toggle("dark-mode");
   });
 
-  //Alerta com endereço de email
-  const mail = document.getElementById("mailadress");
-
-  mail.addEventListener("click", () => {
-    alert("rguerra1998@gmail.com");
-  });
-
   //Animações apenas para telas maiores que 992px
 
   const mediaQuery = window.matchMedia("(min-width: 992px)");
