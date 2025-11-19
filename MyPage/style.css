@@ -306,11 +306,6 @@ main {
 
 #foto {
   width: 270px;
-  height: 270px;
-  background: url(imagens/fotoperfilorange.webp);
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
   transition: 0.3s ease-in-out;
 }
 
