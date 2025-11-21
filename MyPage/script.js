@@ -50,7 +50,7 @@ window.addEventListener("load", () => {
     document.body.classList.toggle("dark-mode");
   });
 
-  //Animações apenas para telas maiores que 992px
+  //Animações apenas para telas de 992px ou mais
 
   const mediaQuery = window.matchMedia("(min-width: 992px)");
 
@@ -119,9 +119,10 @@ window.addEventListener("load", () => {
     let chars = mySplitText.chars;
 
     gsap.from(chars, {
-      yPercent: -200,
-      xPercent: 1000,
-      stagger: 0.15,
+      yPercent: 0,
+      xPercent: 4000,
+      stagger: 0.1,
+      duration: 0.3,
       scrollTrigger: {
         trigger: ".split",
         toggleActions: "play pause restart pause",
