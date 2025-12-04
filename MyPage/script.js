@@ -119,8 +119,8 @@ window.addEventListener("load", () => {
     let chars = mySplitText.chars;
 
     gsap.from(chars, {
-      yPercent: 0,
-      xPercent: 4000,
+      yPercent: -200,
+      xPercent: 0,
       stagger: 0.1,
       duration: 0.3,
       scrollTrigger: {
