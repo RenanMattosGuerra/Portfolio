@@ -388,22 +388,26 @@ span {
 
 #sobre {
   margin: auto;
-  padding: var(--space-xl);
+  padding: var(--space-lg);
   margin-top: var(--space-xxxl);
   gap: var(--space-xl);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: hsla(0, 0%, 9%, 0.164);
-  box-shadow: 0px 0px 5px 2px var(--dark-highlight);
+  background: linear-gradient(
+    oklch(20.463% 0.00002 271.152 / 0.164),
+    oklch(20.019% 0.00002 271.152 / 0.5)
+  );
+  box-shadow: 0px 0px 5px 2px var(--dark-border);
   width: 80%;
+  border: none;
   border-radius: 20px;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 #sobre:hover {
-  background-color: hsla(0, 0%, 9%, 0.288);
+  background-color: hsla(0, 0%, 18%, 0.192);
 }
 
 #psobre {

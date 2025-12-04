@@ -49,6 +49,7 @@
   }
   #sobre {
     width: 60%;
+    padding: var(--space-xl);
   }
   #psobre {
     font-size: 20px;

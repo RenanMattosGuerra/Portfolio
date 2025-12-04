@@ -72,7 +72,7 @@ window.addEventListener("load", () => {
     gsap.from(".appear1", {
       xPercent: -50,
       opacity: 0,
-      duration: 1,
+      duration: 0.4,
       ease: "back.out",
       scrollTrigger: {
         trigger: ".appear2",
