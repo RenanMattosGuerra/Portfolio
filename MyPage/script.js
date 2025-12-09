@@ -70,10 +70,9 @@ window.addEventListener("load", () => {
     gsap.registerPlugin(SplitText);
 
     gsap.from(".appear1", {
-      xPercent: -50,
-      opacity: 0,
-      duration: 0.4,
-      ease: "back.out",
+      yPercent: 50,
+      opacity: -1000,
+      duration: 0.1,
       scrollTrigger: {
         trigger: ".appear2",
         toggleActions: "play pause none none",
