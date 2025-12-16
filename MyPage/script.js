@@ -72,18 +72,17 @@ window.addEventListener("load", () => {
     gsap.from(".appear1", {
       yPercent: 50,
       opacity: -1000,
-      duration: 0.1,
+      duration: 0.5,
       scrollTrigger: {
-        trigger: ".appear2",
+        trigger: ".appear1",
         toggleActions: "play pause none none",
       },
     });
 
     gsap.from(".appear2", {
-      xPercent: 50,
+      yPercent: 150,
       opacity: 0,
-      duration: 1,
-      ease: "back.out",
+      duration: 0.5,
       scrollTrigger: {
         trigger: ".appear3",
         toggleActions: "play pause none none",
@@ -91,12 +90,11 @@ window.addEventListener("load", () => {
     });
 
     gsap.from(".appear3", {
-      xPercent: -50,
+      yPercent: 150,
       opacity: 0,
-      duration: 1,
-      ease: "back.out",
+      duration: 0.5,
       scrollTrigger: {
-        trigger: ".appear3",
+        trigger: ".appear2",
         toggleActions: "play pause none none",
       },
     });
